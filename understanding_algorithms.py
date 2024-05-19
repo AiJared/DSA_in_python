@@ -20,3 +20,26 @@ the most effective strategy.
 
 That is what is called algorithmic thinking.
 """
+
+# Strategies used in the above example
+"""
+The strategies used in the above scenario are examples of search algorithms. The strategy
+of starting from the beginning and adding one number after the other is called linear search
+or sequential search or just simple search.
+"""
+
+# Example of an Algorithm (Linear Search)
+"""
+Linear search is defined by having a list of items with our target items amongst them then we start
+to search for it from the beginnig of the list, progress through the list until we either find the
+item we are searching for or run out of items.
+"""
+
+# What should an Algorithm be
+"""
+1. Clearly defined problem statement, input and output.
+2. The steps in the algorith need to be in a very specific order
+3. The steps also need to be distinct
+4. The algorithm should produce a result.
+5. The algorithm should complete in a finit amount of time.
+"""
