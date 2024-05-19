@@ -113,3 +113,43 @@ it would take a lot of time to reach to the target number than Binary Search whi
 number, then eliminating half of the numbers that are irrelevant to reaching the target number hence reaching
 the target number faster.
 """
+
+# Time Complexity
+"""
+We always want to evaluate how the algorithm performs in terms of the worst case scenario. This means that an 
+algorithm that performs best will take less time when working on a larger set of data as compared to the other.
+In this case, while liear search might perform best on a smaller set of data than binary search, when we choose
+to increase the set of data to say 1000, it will take linear search 1000 tries while binary search just 10 tries.
+Increasing further to 10000, linear search will take 10000 tries while binary search will take just 14 tries.
+Ploting the performs on the Growth Rate graph of an algorithm will clearly show it.
+Different algorithms grow at different rates and by ploting the order of growth rate, we get to see how the algorithm
+grows when the number of sets increases.
+
+This brings us to what is known as Big O
+
+Big O
+This is the theoretical definition of the complexity of an algorithm as a function of the size.
+
+It is simply a notation used to describe complexity. An example of complexity written in terms of Big O looks like
+
+O(n)
+
+The O comes from "Order of magnitude of complexity." The complexity refers to the exercise of measuring the efficiency.
+
+Complexity is a relative measure, which means that to measure complexity of an algorithm, we need to do it with comparison
+to another algorithm.
+
+With that in mind, Big O is a usefull notation for understanding both time and space complexities but only when
+comparing among algorithms that solve the same problem.
+
+The last bit (n) is the function of the size. This means that Big O meausers complexity as the input size increases.
+
+Big O can also be referred to as the "Upper Bound" of the algorithm. This means that Big O also measures how the algorithm
+performs in the worst case scenario.
+
+Now these Big O notation variables for time compexity looks different in our two search algorithms that we have looked into so far, that is, Linear
+Search and Binary Search respectively as shown below.
+For Linear Search it is just "O(n)"
+For Binary Search it is "O(log n)" - more on this later.
+
+"""
