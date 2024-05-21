@@ -236,7 +236,10 @@ which is 100 values. This can be generalized to 10^2 since there are 10 values o
 one is a strategy known as 'Brute Force'. Brute force algorithms have exponential runtimes. Here there are 2 dials so n = 2 and each has 10 values so then we can generalize this
 algorithm as '10 ^ n' where n is the number of dials. The reason why this algorithm is so inefficient is because with just one more dial on the lock, the number of operations
 increases siginificantly. With 3 dials, the number of combinations in the worst case scenario where the correct code is the last digit in the range is 10 ^ 3 or 1000 values. With
-an increase in the number of n the number of operations increases exponentially to a point where it becomes unsolvable in a realistic amount of time.  
+an increase in the number of n the number of operations increases exponentially to a point where it becomes unsolvable in a realistic amount of time.
+
+The next class of Exponential Algorithms is best highlighted by a popular problem known as the 'Traveling Salesman'.
+
 
 
 """
