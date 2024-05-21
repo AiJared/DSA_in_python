@@ -200,4 +200,11 @@ value with the range of values from 1 to n again. Doing this way for the range o
 which is also n^2 or n*n. This is an algorithm with quadratic runtime because for any given value of n we carry out n^2 number of operations. In English, this
 is a 4 * 4 Grid. In Big O notation we would write this as O(n^2) or say that this is an algorithm with a 'Quadratic Runtime'. Many search algoritms have a worst
 case quadratic runtime.
+
+You may also encounter 'Cubic Runtime' as work with different algorithms.
+
+In such an algorithm for a given number of n, the algorithm executes n^3 number of operations. These aren't as common as the quadratic algorithms though. Plotting
+quadratic and cubic runtimes on a graph of n against tries would look 'computationally expensive' because for any small changes in n there are pretty significant 
+changes in the number of operations that we need to carry out.
+
 """
