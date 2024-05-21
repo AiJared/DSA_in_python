@@ -184,4 +184,12 @@ is below the linear search line, you might often here algorithms with logarithmi
 
 Sublinear runtimes are preferred to linear because they are more efficient but in practice, linear search has it's own advantages as well.
 
+In Linear Search Algorithm, the number of operations required to get the target given a list n is the same as the total number of the list n if the 
+target is the last item in the list. When the result in worst case scenario is almost the number of n, we say that the algorithm runs in 'Linear Time'.
+This is represented as O(n) also read as 'linear time'.
+
+The next Common Complexity you will come across is when an algorithm runs in 'Quadratic Time'. Quadratic means an operation is raised to the second power
+or something is squared.
+
+
 """
