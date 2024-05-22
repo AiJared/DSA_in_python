@@ -240,6 +240,19 @@ an increase in the number of n the number of operations increases exponentially 
 
 The next class of Exponential Algorithms is best highlighted by a popular problem known as the 'Traveling Salesman'.
 
+The problem statement goes like this; given a list of cities and the distance between each pair of cities, what is the shortest distance possible that travels each city and returns
+to the origin city?
 
+Now assuming that we have 3 cities A B and C, we have 6 possible routes, that is, A-B-C,A-C-B, B-A-C, B-C-A, C-A-B, C-B-A. From those 6 routes, we can determmine the shortest. If we
+increase them to 4 cities we jump into 24 combinations. The mathematical explanation that defines this is called a 'Factorial' and it is written by 'n!'. Factorials are basically
+n(n-1)(n-2)...(2)(1), that is n times n - 1 repeated until you reach one. For example the factorial of 3, 3!, is 3 * 2 * 1 = 6 which is the number of combinations we came up with for
+3 cities, while the factorial of 4, 4!, is 4 * 3 * 2 * 1 = 24 which is number of combinations we came up with for 4 cities. 
 
+In solving the travelling salesman problem, the most efficient algorithm will have a 'factorial/combinatorial runtime'. An low values of n algorithms of a factorial runtime may be used
+with larger values like 200! it would take longer than humans have been alive to solve the problem.
+
+Plotting the runtime on a graph, an algorithm that solves a problem with a factorial runtime has a worst case of O(n!). Studying exponential runtimes like this one are usefull for two reasons
+1. In studying how to make those algorithms efficient, we develope strategies that are usefull across the board and can be potentially used to make even existing algorithms efficient.
+2. It is important to be aware of problems that take a long time to solve, knowing right a way that a problem can take longer than realistic amount of time to solve, helps you focus on 
+other aspects of the problem.
 """
