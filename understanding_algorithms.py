@@ -256,3 +256,22 @@ Plotting the runtime on a graph, an algorithm that solves a problem with a facto
 2. It is important to be aware of problems that take a long time to solve, knowing right a way that a problem can take longer than realistic amount of time to solve, helps you focus on 
 other aspects of the problem.
 """
+
+# How to Determine the Worst Case Complexities of Different Algorithms
+"""
+Even though an algorithm has its own upper bound, each of its step has its own worst case complexity. 
+
+Let's bring up the Binary Search algorithm again; assuming that the list is sorted, the first step is to determine the middle of the list, in general this is going to be a constant time
+operation. Many programming languages hold on to information about the size of the list so don't have to walk through the list to actually know the size. Now if we didn't have information
+about the size of the list, we would have to manually count through each item of the list until the end and this is a linear time operation but realistically this is a Big O of 1 'O(1)' or
+a 'Constant Time'. Step two is to compare the element in the middle position to the target element. We can also assume that in most mordern programming languages this is a constant time
+operation because the documentation for the language tells us that it is. Step three is our success case and the algorithm ends, this is our best case and so far we have only incurred two 
+constant time operations. So we can therefore say that the best case for Binary Search Algorithm is a 'Constant Time'. Remember that the best case is a usefull metric so step four if we
+don't match is splitting the list into a sublists, assuming the worst case scenario, the algorithm will keep splitting into sublists until it the single 
+reached with a value that we are searching for. The runtime for this step is 'logarithmic' since we are discarding half the values each time. So in this algorithms there are couple steps which
+are constant time and one step which is logarithmic overall.
+
+When evaluating the runtime for an algorithm, we say that the algorithm has as its upper bound, the same runtime as the list efficient step in the algorithm. With the Binary Search Algorithm
+this means that it doesn't matter how fast we make the other steps because they are already as fast as they can be. In the worst case scenario, the splitting down to the single element list
+is what will impact the overall runing time of the algorithm. This is why we say that the runtime of the algorithm in the worst case is O(log n)/logarithmic Runtime. 
+"""
