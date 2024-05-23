@@ -265,4 +265,5 @@ When evaluating the runtime for an algorithm, we say that the algorithm has as i
 this means that it doesn't matter how fast we make the other steps because they are already as fast as they can be. In the worst case scenario, the splitting down to the single element list
 is what will impact the overall runing time of the algorithm. This is why we say that the runtime of the algorithm in the worst case is O(log n)/logarithmic Runtime. 
 
+### Binary Search Algorithm using Recursion
 
