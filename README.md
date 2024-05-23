@@ -1,13 +1,11 @@
 # Algorithms in Python
 
 ## Understaning Algorithms
-"""
+
 An algorithm is a set of steps taken by a program to perform a task. 
-"""
 
 ### Algorithmic Thinking
 
-"""
 In a real life senario we can use the game of thinking about a number and
 letting someone try to predict the number we are thinking about, for example,
 the number can be between 1 and 10, both 1 and 10 included. The steps that they
@@ -22,40 +20,35 @@ The one which will take fewer steps to the get to the correct answer is the winn
 the most effective strategy.
 
 This is what is called 'algorithmic thinking'.
-"""
 
 ## Strategies used in the above example
-"""
+
 The strategies used in the above scenario are examples of 'search algorithms'. The strategy
 of starting from the beginning and adding one number after the other is called 'linear search'
 or 'sequential search' or just 'simple search'.
-"""
 
 ## Example of an Algorithm (Linear Search)
-"""
+
 Linear search is defined by having a list of items with our target items amongst them then we start
 to search for it from the beginnig of the list, progress through the list until we either find the
 item we are searching for or run out of items.
-"""
 
 ## What should an Algorithm be
-"""
+
 1. Clearly defined problem statement, input and output.
 2. The steps in the algorithm need to be in a very specific order
 3. The steps also need to be distinct
 4. The algorithm should produce a result.
 5. The algorithm should complete in a finit amount of time.
-"""
 
 ## Evaluating an algorithm
-"""
+
 An algorithm is evaluated through:
 1. Correctness
 2. Efficiency.
-"""
 
 ## 1. Correctness
-"""
+
 An algorithm is deemed as correct if everytime we run it against all possible 'input'
 data we get an 'output' we expect.
 
@@ -63,10 +56,9 @@ Part of correctness also means that for every possible input the algorithm shoul
 always 'terminate/end'.
 
 If the above two are not met, then the algorithm is not correct.
-"""
 
 ## 2. Efficiency
-"""
+
 Efficiency helps us solve a problem 'faster'.
 
 There are two measures when it comes to evaluating efficiency
@@ -83,10 +75,8 @@ Good algorithms need to balance between these two to be useful.
 For example, if an algorithm is extremely fast but consumes more memory than
 you have available then it is not a good algorithm.
 
-"""
-
 ## Metric of measuring Time and Space Complexities
-"""
+
 1. Running Time
 
 The measure of the amount of time it took for an algorithm to run for a given set
@@ -116,10 +106,9 @@ Given that Linear Search requires trying out from the first number one all the w
 it would take a lot of time to reach to the target number than Binary Search which works by guessing a middle
 number, then eliminating half of the numbers that are irrelevant to reaching the target number hence reaching
 the target number faster.
-"""
 
 ## Time Complexity
-"""
+
 We always want to evaluate how the algorithm performs in terms of the worst case scenario. This means that an 
 algorithm that performs best will take less time when working on a larger set of data as compared to the other.
 In this case, while liear search might perform best on a smaller set of data than binary search, when we choose
@@ -156,10 +145,8 @@ that is, Linear Search and Binary Search respectively as shown below.
 For Linear Search it is just 'O(n)'
 For Binary Search it is 'O(log n)' - more on this later.
 
-"""
-
 ## Common Complexities 
-"""
+
 Each step in an algorithm has its own time and space complexity,in linear search for example there are multiple steps,start at the
 beginning of the list and compare the current value to the target value, if our current value is the same as our target value then
 we are done, if it's not, we will move on the next value and repeat step two. Step two is very important because there can be a situation
@@ -259,10 +246,9 @@ Plotting the runtime on a graph, an algorithm that solves a problem with a facto
 1. In studying how to make those algorithms efficient, we develope strategies that are usefull across the board and can be potentially used to make even existing algorithms efficient.
 2. It is important to be aware of problems that take a long time to solve, knowing right a way that a problem can take longer than realistic amount of time to solve, helps you focus on 
 other aspects of the problem.
-"""
 
 ## How to Determine the Worst Case Complexities of Different Algorithms
-"""
+
 Even though an algorithm has its own upper bound, each of its step has its own worst case complexity. 
 
 Let's bring up the Binary Search algorithm again; assuming that the list is sorted, the first step is to determine the middle of the list, in general this is going to be a constant time
@@ -278,4 +264,5 @@ are constant time and one step which is logarithmic overall.
 When evaluating the runtime for an algorithm, we say that the algorithm has as its upper bound, the same runtime as the list efficient step in the algorithm. With the Binary Search Algorithm
 this means that it doesn't matter how fast we make the other steps because they are already as fast as they can be. In the worst case scenario, the splitting down to the single element list
 is what will impact the overall runing time of the algorithm. This is why we say that the runtime of the algorithm in the worst case is O(log n)/logarithmic Runtime. 
-"""
+
+
