@@ -10,5 +10,12 @@ def linear_search(list, target):
     return None
 
 
+# A function to verify the linear search algorithm above
+def verify(index):
+    if index is not None:
+        print("Target found at index: ", index)
+    else:
+        print("Target not found in list")
 
+# list of values
 
