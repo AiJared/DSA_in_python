@@ -1,6 +1,6 @@
 # Algorithms in Python
 
-## Understaning Algorithms
+## Understanding Algorithms
 
 An algorithm is a set of steps taken by a program to perform a task. 
 
