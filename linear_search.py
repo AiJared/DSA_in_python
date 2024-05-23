@@ -18,4 +18,11 @@ def verify(index):
         print("Target not found in list")
 
 # list of values
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# check if our algorithm works
+result = linear_search(numbers, 12)
+verify(result)
+
+result = linear_search(numbers, 6)
+verify(result)
