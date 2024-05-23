@@ -89,14 +89,14 @@ you have available then it is not a good algorithm.
 The measure of the amount of time it took for an algorithm to run for a given set
 of values. It is used to define time compexity.
 
-The are three ways we can measure how well an algorithm does
+There are three ways we can measure how well an algorithm does
 
-a. Best Case Scenario - Happens when the algorithm takes less running time to complete the task 
+a. Best Case Scenario - This is when the algorithm takes less running time to complete the task 
 b. Average Case Scenario - Is the average running time an algorithm takes to complete the task.
 c. Worst Case Scenario - This is the maximum amount of time an algorithm can take to complete a task.
 
 While going back to the real life scenario of thinking of a number and letting other people guess 
-the correct number, we have already seen how Linear Search can be used to achieve, now let's see how 
+the correct number, we have already seen how Linear Search can be used to achieve it, now let's see how 
 another search algorithm can be used to achieve using even less time, that is, while looking at
 time complexity.
 
@@ -106,7 +106,8 @@ In this scenario, binary search can be implemented by guessing the number in the
 say 50 if the total number of the items in the whole list is 100 and our target number is 100.
 The person would then ask if 50 is the target number then I'll tell him that the number provided is too low.
 In this case the person will 'eliminate' all the numbers from 1 to 50 because they are irrelevant. He will then
-pick another number and keep on eliminating untill he reaches to 100 which is the target number.
+pick another number in the middle of the remaining list and keep on eliminating untill he reaches to 100 which is 
+the target number.
 
 Given that Linear Search requires trying out from the first number one all the way to the target number 100,
 it would take a lot of time to reach to the target number than Binary Search which works by guessing a middle
@@ -157,22 +158,22 @@ For Binary Search it is 'O(log n)' - more on this later.
 # Common Complexities 
 """
 Each step in an algorithm has its own time and space complexity,in linear search for example there are multiple steps,start at the
-beginning of the list and compare the our current value to the target value, if our current value is the same as our target value then
+beginning of the list and compare the current value to the target value, if our current value is the same as our target value then
 we are done, if it's not, we will move on the next value and repeat step two. Step two is very important because there can be a situation
 where we reach the end of the list and not get our target value. When at step two, we are reading the value to make a comparison in the
 list. Reading a value is a single operation and if we were to plot it on a graph of 'Runtime per operations' against 'n', it would be a 
 strait line that takes constat time regardless of n. Since it takes the same amount of time in any given case, we say that the runtime is
-a constant time.
+a 'constant time'.
 In Big O notation, it would be represented as 'O(1)' which is read as 'constant time'. This means that reading values in a list is a constant
 time operation.
 
 Now let's look at it with respect to Binary Search Algorithm
 
-While playing the game, we noticed that with every turn we were able to discard have of the data but there is another pattern that we did not
+While playing the game, we noticed that with every turn we were able to discard half of the data but there is another pattern that we did not
 explore. Let's assume that the number of values is 10 and our target item is at 10, the number of tries we would make to reach our target value
 would be 4. If we double our n to 20 and our target value at 20, we would make 5 tries and if then double n to 40 and our target value at 40 we
 would make 6 tries. So from this we have noticed that everytime we double the number of values, the number of tries increases by 1.
-There is a mathematical pattern to this problem is called the 'logarithm of n' (log n). Binary search works the same as logarithms. For example,
+There is a mathematical pattern to this problem called the 'logarithm of n' (log n). Binary search works the same as logarithms. For example,
 given that our target value is 16 at a list of 16 values, using binary search we would start in the middle 8, then to 12 then to 14 then 15 then
 finally 16 which is 5 tries or 'log2 of 16 + 1'. In general for a given value of n, the number of tries it takes to get the worst case scenario is
 'log2 of n + 1'. And this pattern is a logarithmic pattern, we then can say that the runtime of such alorithms is 'logarithmic runtime'. Plotting
@@ -201,7 +202,7 @@ which is also n^2 or n*n. This is an algorithm with quadratic runtime because fo
 is a 4 * 4 Grid. In Big O notation we would write this as O(n^2) or say that this is an algorithm with a 'Quadratic Runtime'. Many search algoritms have a worst
 case quadratic runtime.
 
-You may also encounter 'Cubic Runtime' as work with different algorithms.
+You may also encounter 'Cubic Runtime' as you work with different algorithms.
 
 In such an algorithm for a given number of n, the algorithm executes n^3 number of operations. These aren't as common as the quadratic algorithms though. Plotting
 quadratic and cubic runtimes on a graph of n against tries would look 'computationally expensive' because for any small changes in n there are pretty significant 
@@ -210,7 +211,7 @@ changes in the number of operations that we need to carry out.
 The next worst case runtime we are going to look at is 'Quasilinear Runtime'.
 
 It is easier to understand by starting with its Big O notation which is written as 'O(n log n)'. Remember that with O(log n) we saw that while n grew, there was only
-a small change in the number of tries while in the quasilinear runtime, what we are saying is that with for every value of n, we are going to execute a log n number of
+a small change in the number of tries while in the quasilinear runtime, what we are saying is that for every value of n, we are going to execute a log n number of
 operations hence a runtime of 'n times log n'. When you plot it in a graph, you will notice that the quasilinear runtime lies somewhere between a linear runtime and a
 quadratic runtime. So where would we expect to find a quasilinear runtime in practical use? Well 'Sorting Algorithms' is definately one place you will see it.
 'Merge Sort' for example is a sorting algorithm that has a worst case scenario of O(n log n). Here is an example, let's say we start of with a list of values that looks
@@ -223,7 +224,7 @@ comparison operations and thus brings the worst case runtime of this algorithm t
 The runtimes we have looked at here are called 'Polynomial Runtimes'. An algorithm is considered to have a polynomial runtime if for a given value of n, its worst case value
 is in the form of O(n^k) where k just means some value such as k = 2 (for quadratic runtime) k = 3 for a cubic runtime etc.
 
-Algorithms with an upper bound or a runtime with a Big O value that is Polynomial, are considerd efficient algorithms are likely to used in practise.
+Algorithms with an upper bound or a runtime with a Big O value that is Polynomial, are considerd efficient algorithms and likely to used in practise.
 
 Next let's look at algorithms that are considered to be inefficient. These algorithms are called 'Exponential Algorithms'.
 
@@ -244,11 +245,11 @@ The problem statement goes like this; given a list of cities and the distance be
 to the origin city?
 
 Now assuming that we have 3 cities A B and C, we have 6 possible routes, that is, A-B-C,A-C-B, B-A-C, B-C-A, C-A-B, C-B-A. From those 6 routes, we can determmine the shortest. If we
-increase them to 4 cities we jump into 24 combinations. The mathematical explanation that defines this is called a 'Factorial' and it is written by 'n!'. Factorials are basically
+increase them to 4 cities we jump to 24 combinations. The mathematical explanation that defines this is called a 'Factorial' and it is written by 'n!'. Factorials are basically
 n(n-1)(n-2)...(2)(1), that is n times n - 1 repeated until you reach one. For example the factorial of 3, 3!, is 3 * 2 * 1 = 6 which is the number of combinations we came up with for
 3 cities, while the factorial of 4, 4!, is 4 * 3 * 2 * 1 = 24 which is number of combinations we came up with for 4 cities. 
 
-In solving the travelling salesman problem, the most efficient algorithm will have a 'factorial/combinatorial runtime'. An low values of n algorithms of a factorial runtime may be used
+In solving the travelling salesman problem, the most efficient algorithm will have a 'factorial/combinatorial runtime'. On low values of n algorithms of a factorial runtime may be used
 with larger values like 200! it would take longer than humans have been alive to solve the problem.
 
 Plotting the runtime on a graph, an algorithm that solves a problem with a factorial runtime has a worst case of O(n!). Studying exponential runtimes like this one are usefull for two reasons
@@ -266,8 +267,8 @@ operation. Many programming languages hold on to information about the size of t
 about the size of the list, we would have to manually count through each item of the list until the end and this is a linear time operation but realistically this is a Big O of 1 'O(1)' or
 a 'Constant Time'. Step two is to compare the element in the middle position to the target element. We can also assume that in most mordern programming languages this is a constant time
 operation because the documentation for the language tells us that it is. Step three is our success case and the algorithm ends, this is our best case and so far we have only incurred two 
-constant time operations. So we can therefore say that the best case for Binary Search Algorithm is a 'Constant Time'. Remember that the best case is a usefull metric so step four if we
-don't match is splitting the list into a sublists, assuming the worst case scenario, the algorithm will keep splitting into sublists until it the single 
+constant time operations. So we can therefore say that the best case for Binary Search Algorithm is a 'Constant Time'. Remember that the best case is not a usefull metric so step four if we
+don't match is splitting the list into sublists, assuming the worst case scenario, the algorithm will keep splitting into sublists until a single is
 reached with a value that we are searching for. The runtime for this step is 'logarithmic' since we are discarding half the values each time. So in this algorithms there are couple steps which
 are constant time and one step which is logarithmic overall.
 
