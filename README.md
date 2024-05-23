@@ -6,6 +6,7 @@ An algorithm is a set of steps taken by a program to perform a task.
 """
 
 ##Algorithmic Thinking
+
 """
 In a real life senario we can use the game of thinking about a number and
 letting someone try to predict the number we are thinking about, for example,
