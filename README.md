@@ -280,3 +280,5 @@ With the above two stopping conditions, we have covered all the possible paths o
 Once you have the base cases, the rest of the implementation of the recursive function is to call the function on smaller <b>sublists</b> until we hit one these base cases.
 
 The number of times a recursive function calls itself is called a <b>Recursive Depth</b>.
+
+The way we implemented binary search the first time is called an <b>iterative solution</b>. The word iterative means the solution was implemented using a loop structure of some kind.
