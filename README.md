@@ -282,3 +282,5 @@ Once you have the base cases, the rest of the implementation of the recursive fu
 The number of times a recursive function calls itself is called a <b>Recursive Depth</b>.
 
 The way we implemented binary search the first time is called an <b>iterative solution</b>. The word iterative means the solution was implemented using a loop structure of some kind.
+
+A recursive solution on the other hand is the one that involves a set of stopping conditions and a function calling itself.
