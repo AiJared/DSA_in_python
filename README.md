@@ -1,6 +1,6 @@
 # Algorithms in Python
 
-## Understanding Algorithms
+## Introduction to Algorithms
 
 An algorithm is a set of steps taken by a program to perform a task. 
 
@@ -305,3 +305,7 @@ Let's assume we have a list of size n and in a worst case scenario the target va
 Now because of the pattern that we have seen above, the runtime of a binary search is logarithmic. In fact the space complexity of the recursive version of binary search is the same. If we start off with a memory of size N that mactches the size of the list, on each function call of recursive binary search we need to allocate additional memory of N / 2, N / 4 and so on until we have a sublist that is either empty or contains a single value. Because of this we say that the recursive version of the binary search runs in logarithmic time with a O(log n). Now there is an important caviet here, this totally depends on the language. This is due to <b>Tail Optimization</b>, let me explain; if you think of a function as having a head and a tail, if the recursive function call is the last line of the function as it is in our recursive_binary_search function, we call this <b> Tail Recursion</b> since it is the last part of the function that call itself. Swift for example uses a trick to reduce the amount of space and therefore computing overhead to keep track of these recursive calls is called <b>Tail Call Optimization</b> or <b>Tail Call Elimination</b>
 
 Python does not implement tail call optimization, so the recursive version of binary search takes logarithmic space. If we had to choose between the two implementations, given that time compexities of both are the same, we should definately go with the iterative implementation in Python since it runs in <b>constant space</b>.
+
+# Data Structures in Python
+
+## Introduction to Data Structures
