@@ -287,3 +287,5 @@ A recursive solution on the other hand is the one that involves a set of stoppin
 
 ## Space Complexity
 Space complexity is a measure of how much working storage or extra storage is needed as a particular algorithm grows.
+
+Like time compexity, space complexity is also measured using worst case scenario using Big O notation.
