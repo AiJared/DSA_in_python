@@ -286,3 +286,4 @@ The way we implemented binary search the first time is called an <b>iterative so
 A recursive solution on the other hand is the one that involves a set of stopping conditions and a function calling itself.
 
 ## Space Complexity
+Space complexity is a measure of how much working storage or extra storage is needed as a particular algorithm grows.
