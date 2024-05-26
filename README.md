@@ -309,3 +309,10 @@ Python does not implement tail call optimization, so the recursive version of bi
 # Data Structures in Python
 
 ## Introduction to Data Structures
+
+### Overview
+1. Arrays
+2. Linked Lists
+3. What motivates us to build specific kinds of structures and pros and cons of those structures
+by eploring four common operations, that is, <b>accessing a value, searching for a value, insearting a value and deleting a value</b>.
+4. Circle back to algorithms and implement a <b>sorting algorithm</b>.
