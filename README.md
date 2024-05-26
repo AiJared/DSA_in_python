@@ -329,3 +329,7 @@ It is the collection of values and the format they are stored in, the relationsh
 An array is one of very many data structures. In general, an array is a data structure that stores a collection of values where each value is referenced using an index or a key.
 
 A common analogy of thinking about arrays is that of train cars. Each car has a number and all cars are <b>ordered sequentially</b>. Inside each car there is some data stored in it. While this is a general representation of array, it can differe in some other languages but for the most part all these fundamentals remain the same.
+
+In Swift and Java, arrays are <b>homogenous containers</b>, which means that they can only contain values of the same type. In Python, arrays are <b>heterogeneous structures</b>, they can store mixed kinds of values.
+
+Regardless of the above nuance the fundamental feature of an array is <b>index</b>. This index value is used for every operation on the array, from accessing values, insearting, updating and deleting values.
