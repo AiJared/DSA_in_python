@@ -316,3 +316,12 @@ Python does not implement tail call optimization, so the recursive version of bi
 3. What motivates us to build specific kinds of structures and pros and cons of those structures
 by eploring four common operations, that is, <b>accessing a value, searching for a value, insearting a value and deleting a value</b>.
 4. Circle back to algorithms and implement a <b>sorting algorithm</b>.
+
+## Arrays
+It is a common data structure built into nearly every programming langauage. Arrays can be used to represent a collection of values. They can also be used building blocks to create even more custom data types and structures. In fact in most programming languages a text is repsented by a string type which is just a buch of characters stored in a particular order under an array. 
+
+Before we go any further into array, let's first understand what exactly a data structure is.
+
+A data structure is a way of storing data when programming.
+
+It is the collection of values and the format they are stored in, the relationships between the values in the collection as well as the operations applied on the data stored in the structure.
