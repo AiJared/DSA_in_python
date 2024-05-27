@@ -344,5 +344,4 @@ An array is a <b>contiguous</b> data structure. This means that an array is stor
 
 In a non-contiguous data structure, the structure stores a value as well as reference to where the next value is. To retreive that value, the languange has to follow that reference also called a <b>pointer</b> to the next block of memory. This adds some overhead which increases runtime of some common operations as we will see later.
 
-
-
+Remember that arrays can either be homogeneous or heterogeneous, these choices also affects the memory layout of the array. For example in languages like C, Swift or Java where arrays are homogeneous, when an array is created, since the kind of value is already known to the compiler, it can choose a contiguous block of memory that fits the array size and values created. If an array contains integers, assuming that an integer took up space represented by one of the blocks, then for a five item array, the compiler can allocate five blocks of equally sized memory. In Python however, this is not the case, we can put any value in a Python list, there is no restriction. The way this works is a combination of contiguous memory and a pointer as mentioned above. When we create a list in Python, there is no information of what will go into that array which makes it difficult to allocate contiguous memory of equal size. 
