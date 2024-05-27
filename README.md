@@ -318,7 +318,7 @@ by eploring four common operations, that is, <b>accessing a value, searching for
 4. Circle back to algorithms and implement a <b>sorting algorithm</b>.
 
 ## Arrays
-It is a common data structure built into nearly every programming langauage. Arrays can be used to represent a collection of values. They can also be used building blocks to create even more custom data types and structures. In fact in most programming languages a text is repsented by a string type which is just a buch of characters stored in a particular order under an array. 
+It is a common data structure built into nearly every programming langauage. Arrays can be used to represent a collection of values. They can also be used as building blocks to create even more custom data types and structures. In fact in most programming languages a text is repsented by a string type which is just a buch of characters stored in a particular order under an array. 
 
 Before we go any further into array, let's first understand what exactly a data structure is.
 
@@ -328,7 +328,7 @@ It is the collection of values and the format they are stored in, the relationsh
 
 An array is one of very many data structures. In general, an array is a data structure that stores a collection of values where each value is referenced using an index or a key.
 
-A common analogy of thinking about arrays is that of train cars. Each car has a number and all cars are <b>ordered sequentially</b>. Inside each car there is some data stored in it. While this is a general representation of array, it can differe in some other languages but for the most part all these fundamentals remain the same.
+A common analogy of thinking about arrays is that of train cars. Each car has a number and all cars are <b>ordered sequentially</b>. Inside each car there is some data stored in it. While this is a general representation of array, it can differ in some other languages but for the most part all these fundamentals remain the same.
 
 In Swift and Java, arrays are <b>homogenous containers</b>, which means that they can only contain values of the same type. In Python, arrays are <b>heterogeneous structures</b>, they can store mixed kinds of values.
 
@@ -340,7 +340,7 @@ In Python, the concept of arrays is a bit confusing. The type is mostly refered 
 
 Alright let's get back to arrays:
 
-An array is a <b>contiguous</b> data structure. This means that an array is stored in blocks or memory that are beside each other without any gaps between them. The advantage of doing this is that retreiving valyes is very easy.
+An array is a <b>contiguous</b> data structure. This means that an array is stored in blocks or memory that are beside each other without any gaps between them. The advantage of doing this is that retreiving values is very easy.
 
 In a non-contiguous data structure, the structure stores a value as well as reference to where the next value is. To retreive that value, the languange has to follow that reference also called a <b>pointer</b> to the next block of memory. This adds some overhead which increases runtime of some common operations as we will see later.
 
