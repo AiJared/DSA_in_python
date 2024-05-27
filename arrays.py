@@ -14,7 +14,7 @@ To search for an item in a list we can use one of two methods
 """
 # searching using an in operator
 """
-checks a list contains an item
+checks if a list contains an item
 """
 if 1 in new_list: print(True)
 

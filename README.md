@@ -372,4 +372,14 @@ When accessing a value in an array we use the index. To get the value of the arr
 Given that the array knows how much storage is need for each element, it can get the address of any element by starting off with the address of the first element and adding to that the index value value times the amount of storage per element. For example, to access the second value, we can start by M0, then to that add M times the index value 1 giving us M1 as the location in memory for the second address. This is simplified model but that is how more or less it works. It is only possible because of a contiguous memory locations with no gaps property.
 
 #### 2. Searching
-While arrays are fast at accessing values, they are pretty bad at searching. Taking an array as it is, the best way we can do is use linear search as a worst case linear runtime. 
+While arrays are fast at accessing values, they are pretty bad at searching. Taking an array as it is, the best way we can do is use linear search as a worst case linear runtime.
+
+To search for an item in a list we can use one of two methods.
+
+1. searching using an in operator
+checks if a list contains an item. The in operator actually calls a contains method that is defined in a list type
+which runs in a linear search operation.
+
+2. In addition to this we can use a for loop to iterate over the list manually and
+perform a comparison operation. This is more or less the implementation of linear search
+
