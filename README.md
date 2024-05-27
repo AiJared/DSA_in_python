@@ -355,3 +355,15 @@ Despite of a data structures you are working on, all data structures are expecte
 2. Search for an arbitrary values
 3. Insert values at any point into the structure
 4. Delete values in the structure.
+
+Let's look at how these structures are implemented on arrays to some detail starting with access.
+
+Elements in an array are identifies using a value known as an <b>index</b>. We use this index to access and read values in an array. Most programming languages follow a zero based numbering system when it comes to indexing an array. All this means is that the first index value is zero and not one. Generally speaking when an array is declared a base amount of contiguous memory is allocated as the array is stored. Computers refer to memory through the use of an <b>address</b>. 
+
+Instead of keeping the reference to all the memory allocated for an array, the array only has to store the address of the first location. Because the memory is contiguous, using the base address, the array can calculate the address of any value by using the index position of that value as an offset.
+
+Let's take a look at an example:
+
+Let's say we want to create an array of integers and each integer takes a certain amount of space in memory which we will call <b>M</b>. Let's also assume we know how many elements we are going to create so the size of the array is some number of elements we call <b>N</b>. The total amount of space we need to allocate is <b>N * M</b>. If the array keeps track of the location where the first element is held, let's say <b>M0</b>, then it has all the information it need to find the locations of all the other values in the memory. 
+
+When accessing a value in an array we use the index. To get the value of the array we use the 0 index, to get the second we use the index value 1 and so on.
