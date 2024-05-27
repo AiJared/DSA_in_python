@@ -367,3 +367,5 @@ Let's take a look at an example:
 Let's say we want to create an array of integers and each integer takes a certain amount of space in memory which we will call <b>M</b>. Let's also assume we know how many elements we are going to create so the size of the array is some number of elements we call <b>N</b>. The total amount of space we need to allocate is <b>N * M</b>. If the array keeps track of the location where the first element is held, let's say <b>M0</b>, then it has all the information it need to find the locations of all the other values in the memory. 
 
 When accessing a value in an array we use the index. To get the value of the array we use the 0 index, to get the second we use the index value 1 and so on.
+
+Given that the array knows how much storage is need for each element, it can get the address of any element by starting off with the address of the first element and adding to that the index value value times the amount of storage per element. For example, to access the second value, we can start by M0, then to that add M times the index value 1 giving us M1 as the location in memory for the second address.
