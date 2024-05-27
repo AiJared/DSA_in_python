@@ -384,3 +384,16 @@ which runs in a linear search operation.
 perform a comparison operation. This is more or less the implementation of linear search
 
 If the array is sorted however, we can use binary search but because sort operations incur costs of there own languages usually stay away from sorting a list  and running binary search since for smaller arrays, linear search on its own may be faster.
+
+#### 3. Inserting and Deleting values in an array
+a. <b>Inserting</b>
+
+In general most array implementations support three types of insert operations.
+
+i. True insert
+
+This makes use of an index value where we can insert an element anywhere in a list. This operation has a linear runtime.
+
+Given this list [5, 1, 3, 2, 6]
+
+Imagine if you had to insert an element 4 at the first position of the above list. 4 would take the first index value 0, 5 would move to the second position 1, 1 to index 2 and so forth until the last element 6 moves to index 5 making the new list to be [4, 5, 1, 3, 2, 6].
