@@ -412,3 +412,5 @@ contains one element. Now when we try to add another element using the same appe
 method, first we should keep in mind that the list had only one space for one element
 which was taken by 2, so here, it would have to allocate another space for our second
 item and thereby the size of the list. It does this by calling list resize operation.
+
+List resizing is quit interesting. Python doesn't resize the list just to accomodate the elements we want to add, instead in this case, it would allocate four blocks of memory to increase the size to a total of contiguous blocks of memory. It does this so that it does not have to add a memory everytime we add an element but at very specific points. The growth pattern of the list type in Python is <b>0,4,8,16,25,35,46...</b>. This means that as the list size approaches these specific values resize is called again. This may signify that append method has non-constant space complexity but it turns out that some operations don't increase space and others do. When you average all of them out, append operation takes constant space. We say that it has <b>Ammortized Constant Space Complexity</b>. 
