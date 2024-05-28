@@ -61,6 +61,6 @@ Now the memory allocation and the size of the list are the same since the list
 contains one element. Now when we try to add another element using the same append
 method, first we should keep in mind that the list had only one space for one element
 which was taken by 2, so here, it would have to allocate another space for our second
-item and thereby the size of the list. It does this by calling list resize operation
+item and thereby the size of the list. It does this by calling list resize operation.
 
 """

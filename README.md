@@ -403,3 +403,12 @@ ii. Appending
 Though technically an insert operation that adds an item to an array, it doesn't incure runtime cost because it simply adds the item at the end. We can simply say that this is constant time operation but it also depends on the language implementation of the array.
 
 To highlight why that matters, let's consider how lists in Python work. In Python when we create a list, the list doesn't know anything about the size of the list and how many items we are going to store.
+
+Creating an empty list in Python gives it a space of one element by default but the list returns a length of 0 because it does not contain a value yet. This means that the list does not use memory allocation as an indication of it's size. An example list "numbers" demonstrates this in the file <b>arrays.py</b>. Okay so this list numbers currently has space for one element, now let's use
+append method to insert a number at the end of the list.
+
+Now the memory allocation and the size of the list are the same since the list
+contains one element. Now when we try to add another element using the same append
+method, first we should keep in mind that the list had only one space for one element
+which was taken by 2, so here, it would have to allocate another space for our second
+item and thereby the size of the list. It does this by calling list resize operation.
