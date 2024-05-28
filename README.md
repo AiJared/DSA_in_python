@@ -399,3 +399,6 @@ Given this list [5, 1, 3, 2, 6]
 Imagine if you had to insert an element 4 at the first position of the above list. 4 would take the first index value 0, 5 would move to the second position 1, 1 to index 2 and so forth until the last element 6 moves to index 5 making the new list to be [4, 5, 1, 3, 2, 6]. In a worst case screnario, inserting at the 0 position of an array, every single item in the array has to shifted forward and we know that any operation that involves iterating through every single item is a linear runtime.
 
 ii. Appending
+
+Though technically an insert operation that adds an item to an array, it doesn't incure runtime cost because it simply adds the item at the end. We can simply say that this is constant time operation but it also depends on the language implementation of the array.
+
