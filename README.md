@@ -402,3 +402,4 @@ ii. Appending
 
 Though technically an insert operation that adds an item to an array, it doesn't incure runtime cost because it simply adds the item at the end. We can simply say that this is constant time operation but it also depends on the language implementation of the array.
 
+To highlight why that matters, let's consider how lists in Python work. In Python when we create a list, the list doesn't know anything about the size of the list and how many items we are going to store.
