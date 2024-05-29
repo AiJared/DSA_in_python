@@ -64,3 +64,4 @@ which was taken by 2, so here, it would have to allocate another space for our s
 item and thereby the size of the list. It does this by calling list resize operation.
 
 """
+numbers.extend([4, 5, 6])
