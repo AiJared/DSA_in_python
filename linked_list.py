@@ -19,3 +19,15 @@ N2 = Node(20)
 print(N2)
 N1.next_node = N2
 print(N1.next_node)
+
+"""
+Nodes are the building blocks for a list. And now that we have a node,
+we are going to use it to create a singly linked list.
+"""
+
+class LinkedList:
+    """
+    Singly linked list
+    """
+    def __init__(self):
+        self.head = None

@@ -449,4 +449,6 @@ Linked lists often comes in two forms:
 
 i. <b>A Singly Linked List</b> - Where each node stores a reference to the next node in the list or
 
-ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after. 
+ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after.
+
+Nodes are the building blocks for a list. 
