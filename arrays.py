@@ -64,4 +64,14 @@ which was taken by 2, so here, it would have to allocate another space for our s
 item and thereby the size of the list. It does this by calling list resize operation.
 
 """
+# extend operation
 numbers.extend([4, 5, 6])
+print(numbers)
+
+# insert operation
+numbers.insert(0, 1)
+print(numbers)
+
+# delete operation
+del numbers[0]
+print(numbers)
