@@ -423,3 +423,8 @@ iii. Extend
 Extend takes another list to add, it effectively makes a series of append calls of each of the elements in the new list until all of them have been appended to the new list.
 
 This operation has a runtime of <b>O(k)</b> where k represents the number of elements in the list that we are adding to our evisting list.
+
+iv. Delete
+Delete operation is similar to insert in that when an a delete operation occurs, the list needs to maintain correct index values. So where insert shifts every element to the right, delete operation shifts every element to the left. Just like insert as well, if we delete the first element in the list every single elememt in the list need to be shifted to the left.
+
+Delete operations have an upper bound of <b>O(n)</b> also known as linear runtime.
