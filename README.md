@@ -469,3 +469,6 @@ So far we've only implemented a single method which functions much like the appe
 
 #### Searching through linked list
 For the search operation, we are going to define a method that takes a value to search for and returns either the node containing the value if the value is found or None if it isn't.
+
+Check out the implementation of search operation in the file linked_list.py.
+
