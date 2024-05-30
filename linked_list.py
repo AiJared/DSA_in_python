@@ -25,7 +25,7 @@ Nodes are the building blocks for a list. And now that we have a node,
 we are going to use it to create a singly linked list.
 """
 
-class LinkedList:
+class LinkedList(Node):
     """
     Singly linked list
     """
@@ -68,7 +68,7 @@ class LinkedList:
 l = LinkedList()
 N1 = Node(10)
 l.head = N1
-print(l.size)
+print(l.size())
 
 # inserting values to a linked list
 """
