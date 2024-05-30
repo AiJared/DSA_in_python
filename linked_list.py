@@ -64,6 +64,14 @@ class LinkedList(Node):
             current = current.next_node
         
         return count
+    def add(self, data):
+        """
+        Adds new Node containing data at the head of the list
+        Takes O(1) time.
+        """
+        new_node = Node(data) 
+        new_node.next_node = self.head
+        self.head = new_node
 
 l = LinkedList()
 N1 = Node(10)
@@ -75,4 +83,8 @@ print(l.size())
 Since our list only keeps a reference to the head 
 we are going to add a new item to the head of the list.
 """
-
+l = LinkedList()
+l.add(1)
+l.add(2)
+l.add(3)
+print(l.size())
