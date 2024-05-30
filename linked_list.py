@@ -73,6 +73,21 @@ class LinkedList(Node):
         new_node.next_node = self.head
         self.head = new_node
 
+    def search(self, key):
+        """
+        Search for the first node containing data that matches the key
+        Return the node or 'None' if not found
+        Takes O(n) time
+        """
+        current = self.head
+
+        while current:
+            if current.data == key:
+                return current
+            else:
+                current = current.next_node
+        return None
+
     def __repr__(self):
         """
         Returns a string representation of the list
@@ -108,4 +123,12 @@ l.add(1)
 l.add(2)
 l.add(3)
 print(l.size())
+print(l)
+l.add(10)
+l.add(2)
+l.add(45)
+l.add(15)
+
+n = l.search(45)
+print(n)
 print(l)
