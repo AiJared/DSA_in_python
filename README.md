@@ -452,3 +452,6 @@ i. <b>A Singly Linked List</b> - Where each node stores a reference to the next 
 ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after.
 
 Nodes are the building blocks for a list. The concept behind nodes is demonstrated in Python in the file 'linked_list.py", please check it out to learn more about it practically.
+
+### Operations carried out on a linked list
+As at this moment we can create an empty linked list but that's it. Next let's define a method to add data to our list.
