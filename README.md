@@ -460,3 +460,5 @@ As at this moment we can create an empty linked list but that's it. Next let's d
 There are three ways we can add data to our list. We can add node at the head of the list, meaning that the most recent node we created would be the head and the first node we created would be the tail or we can flip that around, the most recent node would be the tail and the first node would be the head.
 
 One of the advantages of linked lists is that inserting data is more efficient that with arrays. This is true if we are inserting at the head or at the tail. Technically this isn't an insert, you would often here the method refered to <b>add</b>, <b>prepend</b> if the data is added to the head or <b>append</b> if the data is added to the tail. A true insert is when you can add data at any point in the list which is our third way of adding data and we will circle back to that later.
+
+If we wanted to insert at the tail, then the list need a reference to the tail node otherwise we would have to start to the head and walk down the list to find the tail. Since our list only keeps a reference to the head we are going to add a new item to the head of the list.

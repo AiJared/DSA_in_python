@@ -64,5 +64,15 @@ class LinkedList:
             current = current.next_node
         
         return count
-    
+
+l = LinkedList()
+N1 = Node(10)
+l.head = N1
+print(l.size)
+
+# inserting values to a linked list
+"""
+Since our list only keeps a reference to the head 
+we are going to add a new item to the head of the list.
+"""
 
