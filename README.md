@@ -486,3 +486,11 @@ Even though we can insert a new node without having the shift the rest, ultimate
 Removing nodes
 
 Much like insert, removing a node is quite fast and it occurs in constant time. But to actually get to the node we need to remove, we need to traverse the entire list in our worst case. So in the worst case, this takes a linear time. Let us add this operation to our data structure in the file linked_list.py.
+
+There are two ways we can define the remove method.
+
+1. where we provide a key to remove as an argument and
+
+2. where we provide an index.
+
+In the former, the key refers to the data the node stores, so in order to remove that node we would need to search for the data that matches that key. In our code we will implement that first method.
