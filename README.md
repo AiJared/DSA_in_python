@@ -473,3 +473,6 @@ For the search operation, we are going to define a method that takes a value to 
 Check out the implementation of search operation in the file linked_list.py.
 
 #### Inserts and Deletes at Specific Points
+Inserting on a linked list is quit interesting. Unlike in arrays where the index number of existing items needs to be shifted, with linked list we just need to change the references to next on a few nodes and we are good to go.
+
+Since each node points to the next one, by swaping out these references we can insert a node at any point in the list at constant time.
