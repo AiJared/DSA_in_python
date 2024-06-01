@@ -529,6 +529,6 @@ i. merge step - linear time, that is, O(n)
 
 ii. split step - logarithmic time, that is, O(log n) and
 
-iii. Overal - O(n log n) 
+iii. Overall - O(n log n) 
 
 and that is how merge sort actually works.
