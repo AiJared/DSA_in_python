@@ -509,3 +509,9 @@ After that the merge sort algorithm is going to work backwards, repeatedly mergi
 Solving a problem like this by recursively breaking down the problem into small subparts until it is easily solved it's an algorithmic strategy called <b>divide and conquer</b> 
 
 Checkout the code in the file "merge_sort.py" to learn how the merge sort algorithm is implemented practically.
+
+### The cost of running merge sort
+If we go back to the top level, that is the merge sort function in the code, what is the runtime does the runtime look like and what about it's space complexity, how does the memory usage grow as the algorithm runs?
+
+To answer those questions let's look at the individual steps starting with the <b>split function</b>. Here all we are doing is finding the midpoint of the list and splitting the list here. This seems like constant time operation but remember that the split function isn't called once, it is called as many times as we need it to, to go from initial list down to the single element list. This is a pattern we've seen a couple times now and we know that this runs in a <b>logarithmic runtime</b>.
+

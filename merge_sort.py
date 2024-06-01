@@ -20,6 +20,8 @@ def split(list):
     """
     Divide the unsorted list at midpoint into sublists
     Retrun two sublists - left and right
+
+    Takes O(log n) time
     """
 
     mid = len(list) // 2
