@@ -522,3 +522,9 @@ There is a caviet in the split operation part of the merge sort algorithm we hav
 This means that our implementation is much more expensive so that makes or overall top merge sort function runtime not O(n log n) but O(kn log n) which is again much more expensive.
 
 To fix it, we would need to remove the slicing operation. In the introduction to algorithms part we looked at two implementations of binary search, a recursive one and an iterative one. In the recursive one we used list slicing with every recursion call, we achieved a similar result using an iterative call without using list slicing. Over there we declared two variables to keep track of starting and ending positions in the list. We could rewrite merge sort to do the same. <b> Do it as an exercise</b>.
+
+Although our implementation is a bit more expensive the overall runtimes of merge sort are as follows:
+i. merge step - linear time, that is, O(n)
+ii. split step - logarithmic time, that is, O(log n) and
+iii. Overal - O(n log n) 
+and that is how merge sort actually works.
