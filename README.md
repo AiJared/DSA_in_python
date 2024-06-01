@@ -494,3 +494,14 @@ There are two ways we can define the remove method.
 2. where we provide an index.
 
 In the former, the key refers to the data the node stores, so in order to remove that node we would need to search for the data that matches that key. In our code we will implement that first method.
+
+## Merge Sort Algorithm
+Let's take a look at how merge sort works conceptually by using arrays.
+
+Let's start with an unsorted array [8 4 5 1 3 2 6 7]. The goal is to end up with an array sorted in ascending order.
+
+Merge sort works like binary search but splitting up the problem into subproblems but it takes the process one step further.
+
+On the first pass we are going to split the problem into two smaller arrays [8 4 5 1] [3 2 6 7]. On the next pass we are going to split them into further evenly sized arrays [8 4] [5 1] [3 2] [6 7]. We are going to keep doing this until we are down to single element arrays [8] [4] [5] [1] [3] [2] [6] [7].
+
+After that the merge sort algorithm is going to work backwards, repeatedly merging those elements and sorting them at the same time. Since we start at the bottom, by merging two single element arrays, you only need to make a single comparison to sort the resulting merged array [4 8] [1 5] [2 3] [6 7]. By starting with smaller arrays that are sorted as it grows, merge sort has to make fewer sort operations than when it started at the end [1 4 5 8] [2 3 6 7] -> [1 2 3 4 5 6 7 8].  
