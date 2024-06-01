@@ -53,3 +53,20 @@ def merge(left, right):
     while j < len(right):
         l.append(right[j])
         j += 1
+    return l
+
+
+# print(l)
+
+def verify_sorted(list):
+    n = len(list)
+
+    if n == 0 or n == 1:
+        return True
+    
+    return list[0] < list[1] and verify_sorted(list[1:])
+
+alist = [54, 62, 17, 77, 31, 44, 55, 20]
+l = merge_sort(alist)
+print(verify_sorted(alist))
+print(verify_sorted(l))
