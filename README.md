@@ -532,3 +532,7 @@ ii. split step - logarithmic time, that is, O(log n) and
 iii. Overall - O(n log n) 
 
 and that is how merge sort actually works.
+
+Now let's take a look at it's <b>Space Complexity</b>
+
+The merge sort algorithm takes <b>linear space</b>.
