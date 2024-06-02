@@ -535,4 +535,12 @@ and that is how merge sort actually works.
 
 Now let's take a look at it's <b>Space Complexity</b>
 
-The merge sort algorithm takes <b>linear space</b>.
+The merge sort algorithm takes <b>linear space</b>. Let me explain. If we start splitting our list from the beginning until we reach to a single item list, each of these new lists takes a certain amount of space say, n for the whole list, n/2 for the second list etc. This might seem that the sum of all this space is the additional space needed for merge sort but that's not actually the case. In reality there are two factors that make a difference.
+
+i. Not every single one of this sublists are created simultaneously.
+
+At step two we create two n/2 sublists. When we move to the next step however, we don't hold on to n/2 and then 4 n/4 sublists for the next split, instead after the 4 n/4 sublists are created, the n/2 are deleted from the memory because there is no reason to hold unto them any longer.
+
+ii. Our code doesn't execute every part simultaneously.
+
+Think of it this way, when we pass our code to the top merge sort function, our implementation calls split which returns the <b>left half</b> and the <b>right half</b>. The next line of code then calls merge sort on the left half again. This runs the merge sort function again with a new list. In that second run of the function split is run again we get a send left and right half and then again like before we call merge sort on the current left half. What this means is that code walks down the left path all the way down first until the initial left half is sorted and merged back into one array.
