@@ -33,3 +33,11 @@ def split(linked_list):
         size = linked_list.size()
         mid = size // 2
         
+        mid_node = linked_list.node_at_index(mid-1)
+
+        lef_half = linked_list
+        right_half = LinkedList()
+        right_half.head = mid_node.next_node
+        mid_node.next_node = None
+
+        return left_half, right_half
