@@ -18,3 +18,18 @@ def merge_sort(linked_list):
     right = merge_sort(right_half)
 
     return merge(left, right)
+
+def split(linked_list):
+    """
+    Divide the unsorted list at midpoint into sublists
+    """
+
+    if linked_list == None or linked_list.head is None:
+        left_half = linked_list
+        right_half = None
+
+        return left_half, right_half
+    else:
+        size = linked_list.size()
+        mid = size // 2
+        
