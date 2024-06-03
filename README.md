@@ -547,3 +547,4 @@ Think of it this way, when we pass our code to the top merge sort function, our 
 
 Esentially we don't run all these paths of codes at once so the algorithm does not need additional space for sublists infact it is the very last step that matters. In the last step, the two sublists are merged back while being sorted until the last list with sorted values is returned. That sorted list has an equal number of items as the original unsorted list. And because this is a new list, it means that at most the additional space the algorithm will require at a given time is n. Yes at different points in the algorithm we require log n amount of space but log n is smaller than n and so we consider merge sort to have a <b>Linear Space Complexity</b> because that is the overall factor.
 
+A true implementation of merge sort runs in quasilinear or log linear time, that is n times log n.
