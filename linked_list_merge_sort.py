@@ -35,7 +35,7 @@ def split(linked_list):
         
         mid_node = linked_list.node_at_index(mid-1)
 
-        lef_half = linked_list
+        left_half = linked_list
         right_half = LinkedList()
         right_half.head = mid_node.next_node
         mid_node.next_node = None
@@ -72,7 +72,7 @@ def merge(left, right):
             # Call next on right to set loop condition to False
             right_head = right_head.next_node
         # If the head node of right is None, we're past the tail
-        # Add the tail node from left to merges linked list
+        # Add the tail node from left to merged linked list
         elif right_head is None:
             current.next_node = left_head
             # Call next on left to set loop condition to False
@@ -85,7 +85,7 @@ def merge(left, right):
 
             # If data on left is less than right, set current to left node
             if left_data < right_data:
-                current.next_node = left_data
+                current.next_node = left_head
                 # Move left head to next node
                 left_head = left_head.next_node
             # If data on left is greater than right, set current to right node
@@ -103,3 +103,13 @@ def merge(left, right):
 
     return merged
 
+l = LinkedList()
+l.add(10)
+l.add(2)
+l.add(44)
+l.add(15)
+l.add(200)
+
+print(l)
+sorted_linked_list = merge_sort(l)
+print(sorted_linked_list)
