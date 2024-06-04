@@ -557,4 +557,4 @@ In our implementation of merge sort, we implemented a problem, if we go to the s
 
 Suppose we have a list of names, this list might be huge,like hundred thousand names of people and we need to lookup a specific name. Let us assume that there isn't an existing function to perform the task or if it exists, it doesn't suit our purpose well. For unsorted list, our option may be to use <b>linear search</b>. As you saw in the introduction to algorithms, with linear search you have to go through all the list every single time while not doing anything to narrow down the search each time. If you are searching down a huge list this might take a lot of time which might not be available most of the time.
 
-That might be the reason why another search algorithm might be efficient for the task, <b>binary search</b>.
+That might be the reason why another search algorithm might be efficient for the task, <b>binary search</b>. It is efficient because it as we discusses earlier it works by letting us get rid or half of the list each time it searches for our target value from the middle of the list. However, it does this by requiring that the list of values be sorted.
