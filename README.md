@@ -550,3 +550,11 @@ Esentially we don't run all these paths of codes at once so the algorithm does n
 A true implementation of merge sort runs in quasilinear or log linear time, that is n times log n.
 
 In our implementation of merge sort, we implemented a problem, if we go to the split operation, the bottleneck here, like list slicing, is splitting the linked list at the midpoint. Going back to our implementation "in the file linked_list_merge_sort", we can see that we use the node at index method, which finds the node we want by traversing the list. This means that every split operation incurs a O(k) cost where k here is the midpoint of the list effectively n/2 because we have to walk down the list counting up the index until we get to that node. Given that overall splits take logarithmic time, our split function just like the one we wrote earlier, incurs a cost of O(k log n).
+
+# Sorting and Searching Algorithms
+
+## Sorting Algorithms
+
+Suppose we have a list of names, this list might be huge,like hundred thousand names of people and we need to lookup a specific name. Let us assume that there isn't an existing function to perform the task or if it exists, it doesn't suit our purpose well. For unsorted list, our option may be to use <b>linear search</b>. As you saw in the introduction to algorithms, with linear search you have to go through all the list every single time while not doing anything to narrow down the search each time. If you are searching down a huge list this might take a lot of time which might not be available most of the time.
+
+That might be the reason why another search algorithm might be efficient for the task, <b>binary search</b>.
