@@ -12,8 +12,12 @@ def is_sorted(values):
     return True
 
 def bogo_sort(values):
+    attempts = 0
     while not is_sorted(values):
+        print(attempts)
         random.shuffle(values)
+        attempts += 1
     return values
 
 print(bogo_sort(numbers))
+
