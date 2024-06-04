@@ -564,3 +564,7 @@ So let's look at sorting algorithms. To start off we will look at sorting number
 ### Bogo Sort
 
 This sorting algorithm randomizes the order of the values in the list repeatedly until it is sorted.
+
+It is a very inefficient algorithm because it has to make attempts randomizing the order of values in the list over and over and again until when the list is sorted. For this reason, the number of attempts it can take varries and it can surprisingly take a lot of attempts for it to sort values of just a small list. Given a huge list, bogo sort would not be very helpful.
+
+Check out the implementation of bogo sort in the file "bogo_sort.py".
