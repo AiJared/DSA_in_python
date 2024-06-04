@@ -565,6 +565,12 @@ So let's look at sorting algorithms. To start off we will look at sorting number
 
 This sorting algorithm randomizes the order of the values in the list repeatedly until it is sorted.
 
-It is a very inefficient algorithm because it has to make attempts randomizing the order of values in the list over and over and again until when the list is sorted. For this reason, the number of attempts it can take varries and it can surprisingly take a lot of attempts for it to sort values of just a small list. Given a huge list, bogo sort would not be very helpful.
+It is a very inefficient algorithm because it has to make attempts randomizing the order of values in the list over and over and again until when the list is sorted. For this reason, the number of attempts it can take varries and it can surprisingly take a lot of attempts for it to sort values of just a small list. This means that it does not make any progress towards sorting the items in each attempt it makes. Given a huge list, bogo sort would not be very helpful.
 
 Check out the implementation of bogo sort in the file "bogo_sort.py".
+
+### Selection Sort
+
+It is still a slow sorting algorithm but at least each pass brings us closer to completion. Our implementation of selection sort is going to use use two arrays, an unsorted array and a sorted one. The sorted list starts out empty but we will be moving values from the unsorted list to the sorted list one at a time.
+
+With each pass, we will look through the unsorted array, take the smallest value and move it to the sorted array. We will start by the first value in the array and mark it as the minimum value, then move to the next value in the array and mark it as minimum again, we will keep on doing that until we reach the end of the array and at that point we will have known what the minimum value of all the values in the unsorted array is and take it.
