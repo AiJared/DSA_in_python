@@ -582,3 +582,9 @@ Check the implementation of selection sort in the file "selection_sort.py".
 Now there is no doubt that selection sort works way better than bogo sort but in our implementation we have used smaller arrays, however in real life, you would mostly be handling lists with hundreds of thousands of values or even millions. Well dealing with that kind of array can take a lot of time.
 
 You can assess the time it takes for the selection sort to run a given list by using the command <b>time python selection_sort.py 5.txt</b>.
+
+The next sorting algorithms rely on <b>recursion</b>, which is the ability of a function to call itself. But let us first begin by understanding how recursive functions work.
+
+<b>Recursive Functions</b>
+
+Let's suppose we need to write a function that adds together all the numbers in an array. Normally, we'd probably use a loop for this sort of operation. But we can do it using recursion as demonstrated in the file <b>recursion.py</b>. 
