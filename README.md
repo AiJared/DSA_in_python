@@ -590,3 +590,9 @@ The next sorting algorithms rely on <b>recursion</b>, which is the ability of a 
 Let's suppose we need to write a function that adds together all the numbers in an array. Normally, we'd probably use a loop for this sought of operation. We can create a function that takes in numbers, inside the function declare a variable total assign zero to it. The loop over the numbers as we add them to total until we reach the end of the list then at the end return the total. It works perfectly.
 
 But we can do it using recursion as demonstrated in the file <b>recursion.py</b>. But note that recursion is not the most efficient way to add a list of numbers. But this is a good problem to use to demonstrate recursion because it is so simple. The example code that demonstrates recursion is going to make the use of Python <b>slicing</b>. Remember that a slice is a way to get a series of values from a list.
+
+### Quick Sort
+
+We've seen bogo sort which doesn't make any progress in sorting items towards each pass. We've also seen selection sort which moves one value over to a sorted array on each pass so that it has fewer items to compare each time.
+
+<b>Quick sort</b> speeds up the process further but reducing the number of comparisons it makes. This algorithm relies on recursion. To implement it, we'll write a recursive function as demonstrated in the file <b>quicksort.py</b>
