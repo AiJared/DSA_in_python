@@ -596,3 +596,9 @@ But we can do it using recursion as demonstrated in the file <b>recursion.py</b>
 We've seen bogo sort which doesn't make any progress in sorting items towards each pass. We've also seen selection sort which moves one value over to a sorted array on each pass so that it has fewer items to compare each time.
 
 <b>Quick sort</b> speeds up the process further but reducing the number of comparisons it makes. This algorithm relies on recursion. To implement it, we'll write a recursive function as demonstrated in the file <b>quicksort.py</b>
+
+Now here is how the algorithm works. Suppose we load the numbers from our 8.txt file onto a list [4,6,3,2,9,7,3,5]. How do we divide it? It would probably be smart to have quick sort function divide the list in a way that brings it closer to being sorted. So we will pick an item from the list, say the first item 4. We will call this value we have picked the <b>pivot</b>. 
+
+We will then break the list into two set of sublists. The first sublist will contain items that are smaller than the pivot, that is, [3,2,2] and the second set will contain items that are greater than the pivot, that is [6,9,7,5] respectively. These two sublists are not sorted but what if they were, we could just join the sublists with our pivot and end up with a sorted list, so how do we sort the sublists?
+
+The sublists are sorted by calling a quick sort recursively on them.
