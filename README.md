@@ -621,4 +621,4 @@ Now comparing the time all the sorting algorithms we have looked at here using t
 
 ## Big O Notation
 
-Developers who need to implement their own algorithms often need to choose an algorithm for every problem they need to solve and they often need to discuss their problems with other developers. It might prove to be time consuming trying to explain all these algorithms in the level of detail we have looked at here. That's why <b>Big O Notation</b> was created.
+Developers who need to implement their own algorithms often need to choose an algorithm for every problem they need to solve and they often need to discuss their problems with other developers. It might prove to be time consuming trying to explain all these algorithms in the level of detail we have looked at here. That's why <b>Big O Notation</b> was created. It is a way of explaining how an algorithm performs as the dataset it's working on increases over time.
