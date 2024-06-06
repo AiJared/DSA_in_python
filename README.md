@@ -653,3 +653,8 @@ Suppose we are searching for a name in a list of names, even though linear searc
 
 Now linear search works for a smaller list well as demonstrated with searching 100 names in a list of hundred thousand names but what if we are working with a bigger list of names let's say millions of them? Well Linear search would perform really poorly and given that in reall world, we work with huge lists, linear search might be inefficient. Searching such from search a huge dataset we would need to use a different algorithm, in this case, <b>binary search</b>.
 
+### Binary Search
+
+In the example we have implemented using linear search above, we have seen that searching for a smaller list of names is working well but realistically speaking the real implementation of search algorithms would mean a huge list of names that linear search might perform poorly.
+
+Here is where binary search comes in handy, however to implement binary search, our list would need to be sorted first.
