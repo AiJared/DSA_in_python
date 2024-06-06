@@ -643,3 +643,9 @@ You see Big O Notation:
 - Doesn't describe duration of operation
 - A usefull tool for quickly describing how the run time of an algorithm increases as the data set it's operating on gets really, really big.
 
+## Searching Algorithms
+
+### Linear Search
+
+Having talked about sorting algorithms, I think the foundation has been layed to talk about searching algorithms. If you need to search through an unsorted list, binary search isn't an option because you have no idea which half of the list has what you are looking for, your only idea is start from the beginning and compare each item in the list with the real value one at a time until you find the value you are looking for. This kind algorithm as we have talked about it in the beginning is called linear search or sequential search as the search proceeds until the value you are looking for is found.
+
