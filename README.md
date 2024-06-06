@@ -627,3 +627,7 @@ Big O notation allows you to compare runtimes of different algorithms so that yo
 
 ### Big O Notation of Selection Sort
 Remember that the <b>n</b> in Big O notation refers to the number of elements you are working on. With selection sort you need to check each element in the list to see if it's the lowest so you can move it over to the sorted list. So that's n operations. Suppose you using selection sort on a list of five items [8, 5, 1, 4, 7], so n = 5. Here you need to loop over all the items in the list as you look for the lowest item. For our case there are five and you have to make five comparisons to move each one so it is more like five times five operations or more intuitively it is n time n operations (n^2). But you might think to yourself that half of that entire list is missing because we are testing one less item each time so runtime might be O(1/2 n^2) right? Well it is true we are not doing full n times n operations but remember in Big O notations, when the values of n gets really big, constants like 1/2 gets insignificant and so we discard them. The Big O runtime of selection sort is widely recognized as being O(n^2).
+
+### Big O Notation of Quick Sort
+
+Quick sort requires one operation for each element in the list it's sorting. It needs to select one element as the pivot and then it needs to divide the list into elements that are smaller than the list and the elements that are greater than the list. So that's n operations. That means, you have a list of 8 items, [3, 2, 3, 4, 6, 9, 7, 5], then n = 8, which also means 8 operations.
