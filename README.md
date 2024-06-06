@@ -625,4 +625,4 @@ Developers who need to implement their own algorithms often need to choose an al
 
 Big O notation allows you to compare runtimes of different algorithms so that you best choose the algorithm to use. The algorithm we have looked at here have different Big O Notations so let's take a look at them.
 
-Remember that the <b>n</b> in Big O notation refers to the number of elements you are working on.
+Remember that the <b>n</b> in Big O notation refers to the number of elements you are working on. With selection sort you need to check each element in the list to see if it's the lowest so you can move it over to the sorted list. So that's n operations. Suppose you using selection sort on a list of five items [8, 5, 1, 4, 7], so n = 5. Here you need to loop over all the items in the list as you look for the lowest item. For our case there are five and you have to make five comparisons to move each one so it is more like five times five operations or more intuitively it is n time n operations (n^2).
