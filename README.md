@@ -618,3 +618,7 @@ Now both merge sort and quick sort are recursive algorithms. The difference come
 In the file <b>mergesort.py</b> I have made another merge sort algorithm that I would recommend that you check it out because you might find it to be easier to understand than the previous one in the file <b>merge_sort.py</b> file.
 
 Now comparing the time all the sorting algorithms we have looked at here using the command <b>time python algorithm.py list.txt</b> whereby algorithm is the file of the algorithm running and list.txt is the list of values being sorted, proves that selection sort is the slowest algorithm despite it being the easiest to understand. Quick sort is a bit faster than merge sort but merge sort is still good.
+
+## Big O Notation
+
+Developers who need to implement their own algorithms often need to choose an algorithm for every problem they need to solve and they often need to discuss their problems with other developers. It might prove to be time consuming trying to explain all these algorithms in the level of detail we have looked at here. That's why <b>Big O Notation</b> was created.
