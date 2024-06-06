@@ -628,12 +628,18 @@ Big O notation allows you to compare runtimes of different algorithms so that yo
 ### Big O Notation of Selection Sort
 Remember that the <b>n</b> in Big O notation refers to the number of elements you are working on. With selection sort you need to check each element in the list to see if it's the lowest so you can move it over to the sorted list. So that's n operations. Suppose you using selection sort on a list of five items [8, 5, 1, 4, 7], so n = 5. Here you need to loop over all the items in the list as you look for the lowest item. For our case there are five and you have to make five comparisons to move each one so it is more like five times five operations or more intuitively it is n time n operations (n^2). But you might think to yourself that half of that entire list is missing because we are testing one less item each time so runtime might be O(1/2 n^2) right? Well it is true we are not doing full n times n operations but remember in Big O notations, when the values of n gets really big, constants like 1/2 gets insignificant and so we discard them. The Big O runtime of selection sort is widely recognized as being O(n^2).
 
-### Big O Notation of Quick Sort
+### Big O Notation of Quick Sort and Merge Sort
 
 Quick sort requires one operation for each element in the list it's sorting. It needs to select one element as the pivot and then it needs to divide the list into elements that are smaller than the list and the elements that are greater than the list. So that's n operations. That means, you have a list of 8 items, [3, 2, 3, 4, 6, 9, 7, 5], then n = 8, which also means 8 operations. But ofcourse, the list is not sorted by just splitting it around the pivot ones. You have to repeat those operations several times. In the best case, you'll pick a pivot that is right in the middle of the list so you are diving the list exactly in half then you keep dividing until you have a list with the length of one. The number of times you need to divide n in half until you reach 1 is expressed as <b>log n</b>. So you need to repeat n sorting operations log n times. That leaves us with the best case runtime of quick sort as <b>O(n log n)</b>. That is the best case, now what about the worst case? Well if you pick the wrong pivot, you won't be diving the list into half. If you pick a really bad pivot the next recursive call to quick will only reduce the length of the list by 1. Since our quick sort only picks the first item as the pivot, we can make it pick the worst possible pivot repeatedly, simply by giving it a list that is sorted in reverse order. If we pick the worst possible pivot everytime we'll have to split the list once for every item in the list and then do n sorting operations. This gives it a runtime of O(n^2) which is similar to selection sort. 
 
 So which should we consider when trying to decide whether to use quick sort, best case or worst case? Well as long as your implementations just picks the first item as the pivot, turns out that on average quick sort performs cloer to the best case. Many quick implementations accomplish this by picking pivots at random o each recursive loop.
-Random pivots sometimes give you the best case, sometime give you the worst case but it all averages out over multiple calls of the quick sort function. Now remember that at best case quick sort has a runtime of O(n log n) but in its worst case, the runtime is <b>O(n^2)</b>.
+Random pivots sometimes give you the best case, sometime give you the worst case but it all averages out over multiple calls of the quick sort function. 
 
-### Big O Notation of Merge Sort
+Now remember that at best case quick sort has a runtime of O(n log n) but in its worst case, the runtime is <b>O(n^2)</b> and yet out in the real world, quick sort is more commonly used than merge sort. Now why is that if quick sort's worst case runtime can sometimes be worse than merge sort? This is ones of those situations where Big O Notation doesn't tell you the whole story.
+
+You see Big O Notation:
+
+- Tells you number of times an operation is performed
+- Doesn't describe duration of operation
+- A usefull tool for quickly describing how the run time of an algorithm increases as the data set it's operating on gets really, really big.
 
