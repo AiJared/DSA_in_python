@@ -1,7 +1,7 @@
 import sys
-from load import load_numbers
+from load import load_strings
 
-numbers = load_numbers(sys.argv[1])
+numbers = load_strings(sys.argv[1])
 
 def quicksort(values):
     if len(values) <= 1:

@@ -658,3 +658,5 @@ Now linear search works for a smaller list well as demonstrated with searching 1
 In the example we have implemented using linear search above, we have seen that searching for a smaller list of names is working well but realistically speaking the real implementation of search algorithms would mean a huge list of names that linear search might perform poorly.
 
 Here is where binary search comes in handy, however to implement binary search, our list would need to be sorted first.
+
+We need to load our unsorted list from a file, sort it, then write the sorted names back to a new file. We will quick sort to achieve this.
