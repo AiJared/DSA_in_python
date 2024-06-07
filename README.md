@@ -663,4 +663,16 @@ We need to load our unsorted list from a file, sort it, then write the sorted na
 
 So we created another quick sort algorithm specifically for sorting strings. The code for the quick sort function is just the same as the one we used to sort numbers, the only difference is at the top where we load strings from a file instead of numbers. Then we used the algorithm to sort the unsorted list of 500 names to another sorted list but remember these names are in text files, the first file being <b>unsorted.txt</b> and the sorted being <b>sorted.txt</b>. The quick sort for strings code is in the file <b>quicksort_strings.py</b> so please make sure to check it out.
 
-Now that we have a sorted list of names, we can use binary search upon it. Let's see if it can speed up the search of hundred names from the whole list.
+Now that we have a sorted list of names, we can use binary search upon it. Let's see if it can speed up the search of hundred names from the whole list. The code for implementing this is in the file <b>binarysearch.py</b> so make sure to check it out.
+
+## Big O Notations of Linear Search and Binary Search
+
+Based on the previous implementation of both linear search and binary search algorithms when searching a list of 100 names among 500 names, came with different runtimes. We have tested linear search on unsorted list while binary search required us to sort the list first so we did so.
+
+Running the two search algorithms while testing for time it took both of them to search the names using the linux command <b>time linearsearch.py names/unsorted.txt</b> and <b>time binarysearch.py names/sorted.txt</b> proved that binary search runs faster than linear search.
+
+So having seen that practically, let's understand their Big O Notations then.
+
+The Big O runtime for linear search is O(n) also know as linear time.
+
+The Big O runtime of binary search is O(log n).
