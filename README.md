@@ -676,3 +676,5 @@ So having seen that practically, let's understand their Big O Notations then.
 The Big O runtime for linear search is O(n) also know as linear time.
 
 The Big O runtime of binary search is O(log n).
+
+Now that is just an introduction to algorithms and data structures, there is more to it than just those few algorithms and data structures we have looked at. We will look at more in a few. 
