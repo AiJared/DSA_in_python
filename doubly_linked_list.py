@@ -1,10 +1,10 @@
 # Create the node
 class Node:
-    def __init__(self, next=None, prev=None, data=None):
+    def __init__(self, data):
         # referencing to the next node
-        self.next = next
+        self.next = None
         # referencing to the previous node
-        self.prev = prev
+        self.prev = None
         self.data = data
 
 def traverse(head):
