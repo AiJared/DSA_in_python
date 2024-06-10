@@ -506,6 +506,8 @@ The nodes of a doubly linked list contain a data element and two links pointing 
 
 The representation of a doubly linked list in Python is different from the one we have seen above in a singly linked list. Check out the file <b>doubly_linked_list.py</b> to its representation.
 
+
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
