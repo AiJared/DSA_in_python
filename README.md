@@ -500,7 +500,11 @@ We have seen how those operations work on singly linked lists well, we have even
 
 ### ii. Doubly linked Lists
 
-The nodes of a doubly linked list contain a data element and two links pointing to the next and previous node in the sequence. This makes operations suh as traversals, insertions and deletions more efficient because they can be done from and in both directions.
+The nodes of a doubly linked list contain a data element and two links pointing to the next and previous node in the sequence. This makes operations suh as traversals, insertions and deletions more efficient because they can be done from and in both directions. We can easily traverse in forward and backward direction using the next and previous pointers respectively.
+
+#### Representating a Doubly Linked List in Python
+
+The representation of a doubly linked list in Python is different from the one we have seen above in a singly linked list. Check out the file <b>doubly_linked_list.py</b> to its representation.
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
