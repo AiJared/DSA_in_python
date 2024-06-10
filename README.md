@@ -451,6 +451,7 @@ i. <b>A Singly Linked List</b> - Where each node stores a reference to the next 
 
 ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after.
 
+### i. Singly Linked List
 Nodes are the building blocks for a list. The concept behind nodes is demonstrated in Python in the file 'linked_list.py", please check it out to learn more about it practically.
 
 ### Operations carried out on a linked list
@@ -496,6 +497,10 @@ There are two ways we can define the remove method.
 In the former, the key refers to the data the node stores, so in order to remove that node we would need to search for the data that matches that key. In our code we will implement that first method.
 
 We have seen how those operations work on singly linked lists well, we have even talked about how they would work on doubly linked list but not looked at any implementations. Now let's see take a look at doubly linked lists and see how those operations are carried out in doubly linked list.
+
+### ii. Doubly linked Lists
+
+The nodes of a doubly linked list contain a data element and two links pointing to the next and previous node in the sequence. This makes operations suh as traversals, insertions and deletions more efficient because they can be done from and in both directions.
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
