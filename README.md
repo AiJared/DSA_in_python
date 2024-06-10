@@ -506,7 +506,11 @@ The nodes of a doubly linked list contain a data element and two links pointing 
 
 The representation of a doubly linked list in Python is different from the one we have seen above in a singly linked list. Check out the file <b>doubly_linked_list.py</b> to its representation.
 
+#### Traversing in a Doubly Linked List in Python
 
+Traversing a doubly linked list in Python is simple. You can start from the head of the list and iterate through each node while outputing its data.
+
+To see how it is implemented, check out the file doubly_linked_list.py. 
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
