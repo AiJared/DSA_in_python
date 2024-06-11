@@ -533,6 +533,18 @@ Let's start by inserting at the beginnig of the list, it is quit simple and belo
 
 Check the file doubly_linked_list.py to see how this is implemented.
 
+<b>ii. Inserting after a certain specified node</b>
+
+A node can also be inserted after a given node in a doubly linked list. Below are the steps of inserting a node after a given node in a doubly linked list.
+
+- Create a new node with the given data
+- Set the <b>next</b> pointer of the new node to point to the next node of the given node.
+- Set the <b>previous</b> pointer of the new node to given node.
+- If the node of the given node id not None, update the <b>previous</b> pointer if that node to point to the new node.
+- Update the <b>next</b> pointer of the given node to point to the new node.
+
+Check out the implementation in Python in the file doubly_linked_list.py.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
