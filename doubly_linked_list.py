@@ -30,6 +30,24 @@ def insert_at_the_beginning(head, data):
         head.prev = new_node
     return new_node
 
+def insert_before_node(node, data):
+    """
+    Insert a node before a given node in the list
+    """
+    if node is None:
+        print("Error: The given node is None")
+        return
+    
+    new_node = Node(data)
+    new_node.prev = node.prev
+    new_node.next = node
+
+    if node.prev:
+        node.prev.next = new_node
+    
+    node.prev = new_node
+
+
 def insert_after_node(node, data):
     """
     Insert a node after a given node
@@ -59,6 +77,7 @@ def display(head):
 head = Node(1)
 node2 = Node(2)
 node3 = Node(3)
+
 head.next = node2
 node2.prev = head
 node2.next = node3
@@ -69,7 +88,8 @@ traverse(head)
 
 print("Doubly Linked List before insertion:")
 display(head)
-insert_after_node(node2, 4)
+
+insert_before_node(node2, 4)
 
 print("Doubly Linked List after insertion: ")
 display(head)
