@@ -30,12 +30,22 @@ def insert_at_the_beginning(head, data):
         head.prev = new_node
     return new_node
 
+# Show the elements of the doubly linked list
+def display(head):
+    current = head
+    while current:
+        print(current.data, end=" <-> ")
+        current = current.next
+    print("None")
+
 # Create the list    
 head = None
-head = insert_at_the_beginning(head, 4)
 head = insert_at_the_beginning(head, 3)
 head = insert_at_the_beginning(head, 2)
 head = insert_at_the_beginning(head, 1)
 
 # traverse and print the nodes
 traverse(head)
+
+print("Doubly Linked List after insertion at the beginning: ")
+display(head)
