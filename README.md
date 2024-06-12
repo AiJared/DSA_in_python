@@ -593,6 +593,8 @@ Below are the steps involved in deleting a node at the beginnig of a doubly link
 - Set the previous pointer of the new node to None
 - Optionally, free the memory allocated to the deleted node.
 
+Check the implementation in Python in the file doubly_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
