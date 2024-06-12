@@ -583,6 +583,16 @@ We've seen how to add nodes in a doubly linked list and we have learned that it 
 
 And by list here I mean doubly linked list.
 
+<b>1. Deletion at the beginning</b>
+
+Below are the steps involved in deleting a node at the beginnig of a doubly linked list in Python.
+
+- Check if the list is empty, that is, head is None. If it is empty, then there is nothing to delete.
+- If the list has only one node, set the head to None to delete the node.
+- Otherwise update the head to point to the next node.
+- Set the previous pointer of the new node to None
+- Optionally, free the memory allocated to the deleted node.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
