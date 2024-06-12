@@ -81,6 +81,22 @@ def insert_at_end(head, data):
     new_node.prev = current
     return head
 
+def delete_at_beginning(head):
+    """
+    Delete the first node of the list, which basically is the head of the list
+    """
+    if head is None:
+        print("Doubly linked list is empty")
+        return None
+    
+    if head.next is None:
+        return None
+    
+    new_head = head.next
+    new_head.prev = None
+    del head
+    return new_head
+
 # Show the elements of the doubly linked list
 def display(head):
     current = head
