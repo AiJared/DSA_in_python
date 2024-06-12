@@ -561,6 +561,18 @@ As we have done with inserting after a specified node, we can insert before a sp
 
 Check out it is implemented in Python in the file doubly_linked_list.py
 
+<b>iv Inserting at the end</b>
+
+As it is possible to insert a node at the beginning of the list, it is also possible to insert at the end of the list in Python. Below are the steps of inserting a node at the end of a doubly linked list.
+
+- Create a new node with the given data
+- If the list is empty, that is, head is None, then make the new node the head of the list.
+- If not, traverse the list to find the last node.
+- Set the next pointer of the last node to point to the new node.
+- Optionally, update the ead of the list to point to the new node if it's the first node in the list.
+
+Check the implement in Python in the file doubly_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
