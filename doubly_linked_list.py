@@ -108,9 +108,13 @@ def display(head):
 # Create the list    
 
 head = None
-head = insert_at_end(head, 1)
-head = insert_at_end(head, 2)
-head = insert_at_end(head, 3)
+head = insert_at_the_beginning(head, 4)
+head = insert_at_the_beginning(head, 3)
+head = insert_at_the_beginning(head, 2)
+head = insert_at_the_beginning(head, 1)
 
-print("Doubly Linked List after insertion at the end:")
-display(head)
+# Delete the first node
+head = delete_at_beginning(head)
+
+# Traverse and print the nodes after deletion
+traverse(head)
