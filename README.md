@@ -573,6 +573,16 @@ As it is possible to insert a node at the beginning of the list, it is also poss
 
 Check the implement in Python in the file doubly_linked_list.py
 
+#### Delete Operation
+
+We've seen how to add nodes in a doubly linked list and we have learned that it can be done in four different ways. Deleting a node in a doubly linked list generally involves modifying the next and the previous pointers of nodes. Deletion can be done in the three ways:
+
+- At the beginnig of the list
+- At the end of the list
+- At a given position in the list
+
+And by list here I mean doubly linked list.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
