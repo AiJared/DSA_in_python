@@ -128,6 +128,26 @@ def delete_at_position(head, position):
     del current
     return head
 
+def delete_at_end(head):
+    """
+    Delete the last node of the doubly linked list
+    """
+    if head is None:
+        print("Doubly linked list is empty")
+        return None
+    
+    if head.next is None:
+        return None
+    
+    current = head
+    while current.next.next:
+        current = current.next
+
+    del_node = current.next
+    current.next = None
+    del del_node
+    return head
+
 # Show the elements of the doubly linked list
 def display(head):
     current = head
