@@ -595,6 +595,19 @@ Below are the steps involved in deleting a node at the beginnig of a doubly link
 
 Check the implementation in Python in the file doubly_linked_list.py
 
+<b>ii. Delete at a given position</b>
+
+To delete a node at a given position in a doubly linked list in Python, you need to follow these steps:
+
+- Check if the list is empty, that is, head is None, and if empty then there is nothing to delete
+- If the position is less than 0, print an error message indicating that it's an invalid position.
+- Traverse the list to find the node at the given position
+- Update the next pointer of the previous node to skip the node to be deleted.
+- Update the previous pointer of the next node to point to the previous node of the node to be deleted.
+- Optionally, free the memory allocated to the deleted node.
+
+Check out its implementation in the file doubly_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
