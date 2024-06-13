@@ -145,7 +145,7 @@ head = insert_at_the_beginning(head, 2)
 head = insert_at_the_beginning(head, 1)
 
 # Delete the first node
-head = delete_at_beginning(head)
+head = delete_at_position(head, 2)
 
 # Traverse and print the nodes after deletion
 traverse(head)
