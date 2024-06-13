@@ -97,6 +97,37 @@ def delete_at_beginning(head):
     del head
     return new_head
 
+def delete_at_position(head, position):
+    """
+    Delete the node at a given position from the doubly linked list
+    """
+    if head is None:
+        print("Doubly linked is empty")
+        return None
+    
+    if position < 0:
+        print("Invalid position")
+        return head
+    
+    if position == 0:
+        if head.next:
+            head.next.prev = None
+        return head.next
+    
+    current = head
+    count = 0
+    while current and count < position:
+        current = current.next
+        count += 1
+
+    if current.next:
+        current.next.prev = current.prev
+    if current.prev:
+        current.prev.next = current.next
+    
+    del current
+    return head
+
 # Show the elements of the doubly linked list
 def display(head):
     current = head
