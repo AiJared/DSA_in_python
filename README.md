@@ -608,6 +608,18 @@ To delete a node at a given position in a doubly linked list in Python, you need
 
 Check out its implementation in the file doubly_linked_list.py
 
+<b>iii. Delete at the end</b>
+
+Well it is also possible to delete a node at the end of the doubly linked list in Python using the steps below.
+
+- Check if the list is empty, that is, head is None. If it is empty, there is nothing to delete.
+- If the list has only one node, set the head to None to delete the node.
+- Traverse the list to find the last node.
+- Set the next pointer of the second-to-last node to None.
+- Optionally, free the memory allocated to the deleted node.
+
+Check out the implementation in Python in the file doubly_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
