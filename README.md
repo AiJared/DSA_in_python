@@ -445,11 +445,13 @@ Every node other than the tail, points to the next node in the list but tail doe
 
 Nodes are what are called <b>self referential objects</b>. The definition of a node includes a link to another node. Self referential here means that definition of a node includes the node itself. 
 
-Linked lists often comes in two forms:
+Linked lists often comes in three forms:
 
 i. <b>A Singly Linked List</b> - Where each node stores a reference to the next node in the list or
 
 ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after.
+
+iii. <b>Circular Linked List</b>
 
 ### i. Singly Linked List
 Nodes are the building blocks for a list. The concept behind nodes is demonstrated in Python in the file 'linked_list.py", please check it out to learn more about it practically.
