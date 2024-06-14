@@ -622,6 +622,8 @@ Well it is also possible to delete a node at the end of the doubly linked list i
 
 Check out the implementation in Python in the file doubly_linked_list.py
 
+### iii. Circular Linked Lists
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
