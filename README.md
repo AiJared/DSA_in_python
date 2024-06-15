@@ -660,7 +660,7 @@ Check out the implementation in Python in the file circular_linked_list.py
 
 The <b>Time Complexity of our implementation is <b>O(1)</b>.
 
-
+The <b>Auxiliary Space</b> of our implementation is <b>O(1)</b>.
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
