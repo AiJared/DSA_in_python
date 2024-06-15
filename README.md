@@ -628,6 +628,8 @@ It is a variation of the standard linked list whereby in a standard linked list,
 
 Circular linked lists can be singly linked list or doubly linked list, meaning each node may have one or two pointers respectively. They can be used in various scenarios, such as representing circular buffers, round-robin scheduling algorithms and as an alternative to linear linked lists when operations involve wrapping around from the end to the beginning of the list.
 
+Check out the representation of a circular linked list in the file circular_linked_list.py.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
