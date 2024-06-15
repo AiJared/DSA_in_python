@@ -451,7 +451,7 @@ i. <b>A Singly Linked List</b> - Where each node stores a reference to the next 
 
 ii. <b>A Doubly Linked List</b> - Where each node stores a reference to both the node before and after.
 
-iii. <b>Circular Linked List</b>
+iii. <b>Circular Linked List</b> - Where the last element points back to the first element.
 
 ### i. Singly Linked List
 Nodes are the building blocks for a list. The concept behind nodes is demonstrated in Python in the file 'linked_list.py", please check it out to learn more about it practically.
