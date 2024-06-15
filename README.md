@@ -662,6 +662,19 @@ The <b>Time Complexity of our implementation is <b>O(1)</b>.
 
 The <b>Auxiliary Space</b> of our implementation is <b>O(1)</b>.
 
+<b>ii. Inserting a Node at a Particular Position</b>
+
+A node can also be inserted at a particular position in a circular linked list which we famously call the <b>index position</b>.
+
+Below are the steps followed to insert a node at a particular index position in a circular linked list.
+
+- Create a new node with given data.
+- Traverse the list to find the node at the desired position (index - 1)
+- Update the next pointer of the new node to point to the next node of the current node
+- Update the next pointer of the current node to point to the new node.
+
+Check out its implementation in the file circular_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
