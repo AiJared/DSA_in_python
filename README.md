@@ -630,6 +630,12 @@ Circular linked lists can be singly linked list or doubly linked list, meaning e
 
 Check out the representation of a circular linked list in the file circular_linked_list.py.
 
+#### Traversal of a Circular Linked List in Python
+
+Traversing a circular linked list involves visiting each node of the list starting from the head node and continuing until the head node is encountered again.
+
+Check out its implementation in Python in the file circular_linked_list.py.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
