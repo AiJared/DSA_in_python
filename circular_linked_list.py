@@ -29,6 +29,24 @@ class CircularLinkedList:
             current.next = new_node
             # Make the new node point back to the head
             new_node.next = self.head
+
+    def insert_at_beginning(self, data):
+        # Insert a new node with data at the beginnig of the
+        # linked list
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def display(self):
+        # Display the elements of the linked list
+        current = self.head
+        while current:
+            # Traverse through each node and print is
+            # its data
+            print(current.data, end=" -> ")
+            current = current.next
+        # Print None to indicate the end of the linked list
+        print(None)
     
     def traverse(self):
         # Traverse and display the elements of the circular linked list
@@ -45,9 +63,9 @@ class CircularLinkedList:
 
 # Driver code
 circular_linked_list = CircularLinkedList()
-circular_linked_list.append(1)
-circular_linked_list.append(2)
-circular_linked_list.append(3)
+circular_linked_list.insert_at_beginning(3)
+circular_linked_list.insert_at_beginning(2)
+circular_linked_list.insert_at_beginning(1)
 
-print("Traversing Circular Linked List:")
-circular_linked_list.traverse()
+print("Linked List after inserting at the beginning:")
+circular_linked_list.display()
