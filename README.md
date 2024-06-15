@@ -626,6 +626,8 @@ Check out the implementation in Python in the file doubly_linked_list.py
 
 It is a variation of the standard linked list whereby in a standard linked list, the last node points to null, showing the end of the list. However, in a circular linked list, the last element points back to the first element, forming a loop.
 
+Circular linked lists can be singly linked list or doubly linked list, meaning each node may have one or two pointers respectively. They can be used in various scenarios, such as representing circular buffers, round-robin scheduling algorithms and as an alternative to linear linked lists when operations involve wrapping around from the end to the beginning of the list.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
