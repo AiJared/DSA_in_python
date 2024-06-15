@@ -37,6 +37,35 @@ class CircularLinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def insert_at_position(self, position, data):
+        # Insert a new node with data at the specified
+        # position in the linked list
+        new_node = Node(data)
+        # check if the position is valid
+        if position < 0:
+            print("Invalid position")
+            return
+        # If the position is 0, insert the new node at the beginning
+        # of the linked list
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        current = self.head
+        count = 0
+        # Traverse the list until the node before the specified position
+        while count < position - 1 and current:
+            current = current.next
+            count += 1
+        # If the position is out of range, print an error message
+        if not current:
+            print("Position out of range")
+            return
+        # Insert the new node at the specified position
+        new_node.next = current.next
+        current.next = new_node
+        
+
     def display(self):
         # Display the elements of the linked list
         current = self.head
@@ -63,9 +92,9 @@ class CircularLinkedList:
 
 # Driver code
 circular_linked_list = CircularLinkedList()
-circular_linked_list.insert_at_beginning(3)
-circular_linked_list.insert_at_beginning(2)
-circular_linked_list.insert_at_beginning(1)
+circular_linked_list.insert_at_position(0, 1)
+circular_linked_list.insert_at_position(1, 3)
+circular_linked_list.insert_at_position(1, 2)
 
-print("Linked List after inserting at the beginning:")
+print("Linked List after inserting at a position:")
 circular_linked_list.display()
