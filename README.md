@@ -648,6 +648,15 @@ Nodes can be inserted in a circular list just as they can be inserted in a stand
 
 <b>1. Inserting a Node at the Beginning</b>
 
+Follow the following steps to inset a node at the beginnig of a circular linked list.
+
+- Create a new node with the given data
+- If the list is empty, make the new node the head and point it to itself.
+- Otherwise, set the next pointer of the new node to point to the current head.
+- Update the head to point to the new node.
+- Update the pointer of the last node to point to the new head, this helps maintain the circular structure.
+
+Check out the implementation in Python in the file circular_linked_list.py
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
