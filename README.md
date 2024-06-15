@@ -630,6 +630,8 @@ Circular linked lists can be singly linked list or doubly linked list, meaning e
 
 Check out the representation of a circular linked list in the file circular_linked_list.py.
 
+Now let's take a look at operations that can be carried out on a circular list.
+
 #### Traversal of a Circular Linked List in Python
 
 Traversing a circular linked list involves visiting each node of the list starting from the head node and continuing until the head node is encountered again.
@@ -639,6 +641,13 @@ Check out its implementation in Python in the file circular_linked_list.py.
 The <b>Time Complexity</b> in our implementation is <b>O(N)</b> where N is the number of nodes in the list.
 
 The <b>Auxiliary Space</b> is <b>O(1)</b>.
+
+#### Insertion in a Circular Linked List
+
+Nodes can be inserted in a circular list just as they can be inserted in a standard linked list and a doubly linked list as shown above. Just like in the doubly linked list, nodes can be inserted at different positions in the list. let's take a look at how nodes can be inserted at different positions in a circular list starting with at the head.
+
+<b>1. Inserting a Node at the Beginning</b>
+
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
