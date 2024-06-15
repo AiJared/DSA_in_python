@@ -624,6 +624,8 @@ Check out the implementation in Python in the file doubly_linked_list.py
 
 ### iii. Circular Linked Lists
 
+It is a variation of the standard linked list whereby in a standard linked list, the last node points to null, showing the end of the list. However, in a circular linked list, the last element points back to the first element, forming a loop.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
