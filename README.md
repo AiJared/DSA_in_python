@@ -693,6 +693,14 @@ The <b>Time Complexity</b> is <b>O(N)</b> where N is the number of nodes in the 
 
 The <b>Auxiliary Space</b> is <b>O(1)</b>.
 
+#### Deletion in Circular Linked List
+
+Well we have looked at inserting nodes in a circular linked list. We have seen that a node can be inserted at the beginning, at a specific position and at the end.
+
+Let's now look at how we can delete a node from a circular linked list. Much like inserting, deleting a node can also be done at different positions of the list.
+
+
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
