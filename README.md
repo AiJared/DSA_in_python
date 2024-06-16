@@ -712,6 +712,8 @@ To delete the head of the list, follow the steps below.
 - Update the head to point to the second node.
 - Optionally, free the memory allocated to the deleted node.
 
+Check the implementation in Python in the file circular_linked_list.py.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
