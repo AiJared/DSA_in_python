@@ -16,19 +16,16 @@ class CircularLinkedList:
         # Append a new node with data to the end of the
         # circular linked list
         new_node = Node(data)
+        # If the list is empty, make the new node the head
         if not self.head:
-            # If the list is empty, make the new node point to itself
-            new_node.next = new_node
             self.head = new_node
-        else:
-            current = self.head
-            while current.next != self.head:
-                # Traverse the list until the last node
-                current = current.next
-            # Make the last node point to the new node
-            current.next = new_node
-            # Make the new node point back to the head
-            new_node.next = self.head
+            return
+        current = self.head
+        # Traverse the list until the last node
+        while current.next:
+            current = current.next
+        # Assign the new node as the next node of the last node
+        current.next = new_node
 
     def insert_at_beginning(self, data):
         # Insert a new node with data at the beginnig of the
@@ -92,9 +89,9 @@ class CircularLinkedList:
 
 # Driver code
 circular_linked_list = CircularLinkedList()
-circular_linked_list.insert_at_position(0, 1)
-circular_linked_list.insert_at_position(1, 3)
-circular_linked_list.insert_at_position(1, 2)
+circular_linked_list.append(1)
+circular_linked_list.append(2)
+circular_linked_list.append(3)
 
-print("Linked List after inserting at a position:")
+print("Linked List after inserting at the end:")
 circular_linked_list.display()
