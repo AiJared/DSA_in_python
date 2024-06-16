@@ -13,22 +13,20 @@ class CircularLinkedList:
         self.head = None
 
     def append(self, data):
+        # Append a new node with data to the end of the linked list
         new_node = Node(data)
         if not self.head:
-          
-            # If the list is empty, make the new node point to itself
-            new_node.next = new_node
+            # If the linked list is empty, make the new node the head
             self.head = new_node
-            print(f"Appended {data} as head. Next points to itself.")
-        else:
-            current = self.head
-            while current.next != self.head:
-                current = current.next
-            current.next = new_node
-            
-            # Make the new node point back to the head
-            new_node.next = self.head
-            print(f"Appended {data}. New node points to head.")
+            return
+        current = self.head
+        while current.next:
+
+            # Traverse the linked list until the last node
+            current = current.next
+
+        # Assign the new node as the next node of the last node
+        current.next = new_node
 
     def insert_at_beginning(self, data):
         # Insert a new node with data at the beginnig of the
