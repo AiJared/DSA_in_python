@@ -658,7 +658,7 @@ Follow the following steps to inset a node at the beginnig of a circular linked 
 
 Check out the implementation in Python in the file circular_linked_list.py
 
-The <b>Time Complexity of our implementation is <b>O(1)</b>.
+The <b>Time Complexity</b> of our implementation is <b>O(1)</b>.
 
 The <b>Auxiliary Space</b> of our implementation is <b>O(1)</b>.
 
