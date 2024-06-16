@@ -679,6 +679,16 @@ The <b>Time Complexity</b> of our implementation is <b>O(N)</b>, where N is the 
 
 The <b>Auxiliary Space</b> of our implementation is <b>O(1)</b>.
 
+<b>Inserting a node at the end</b>
+
+It is also possible to insert a node at the end of a circular linked list. Below are the steps of inserting a node at the end of the list
+
+- Create a new node with the given data.
+- If the list is empty, make the new node the head and point it to itself.
+- Otherwise, traverse the list to find the last node.
+- Set the next pointer of the last node to point to the new node.
+- Set the next pointer of the new node to point back to the head( to maintain the circular structure).
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
