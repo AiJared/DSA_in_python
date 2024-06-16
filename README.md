@@ -699,7 +699,18 @@ Well we have looked at inserting nodes in a circular linked list. We have seen t
 
 Let's now look at how we can delete a node from a circular linked list. Much like inserting, deleting a node can also be done at different positions of the list.
 
+<b>i. Deletion at the beginning of the circular linked list</b>
 
+The head of a circular linked list can be deleted. This operation would then make the next node that the head points to as the new head and the last node of the list would have to point back to this new head.
+
+To delete the head of the list, follow the steps below.
+
+- Check if the list is empty. If it is empty then there is nothing to delete.
+- If the list is has only one node, set the head to None to delete the node.
+- Otherwise, find the last node of the list(the node whose next pointer points to the head).
+- Update the next pointer of the last node to point to the second node (head's next).
+- Update the head to point to the second node.
+- Optionally, free the memory allocated to the deleted node.
 
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
