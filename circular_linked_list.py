@@ -13,19 +13,22 @@ class CircularLinkedList:
         self.head = None
 
     def append(self, data):
-        # Append a new node with data to the end of the
-        # circular linked list
         new_node = Node(data)
-        # If the list is empty, make the new node the head
         if not self.head:
+          
+            # If the list is empty, make the new node point to itself
+            new_node.next = new_node
             self.head = new_node
-            return
-        current = self.head
-        # Traverse the list until the last node
-        while current.next:
-            current = current.next
-        # Assign the new node as the next node of the last node
-        current.next = new_node
+            print(f"Appended {data} as head. Next points to itself.")
+        else:
+            current = self.head
+            while current.next != self.head:
+                current = current.next
+            current.next = new_node
+            
+            # Make the new node point back to the head
+            new_node.next = self.head
+            print(f"Appended {data}. New node points to head.")
 
     def insert_at_beginning(self, data):
         # Insert a new node with data at the beginnig of the
@@ -62,6 +65,25 @@ class CircularLinkedList:
         new_node.next = current.next
         current.next = new_node
         
+    def delete_at_beginning(self):
+        if not self.head:
+            print("Circular Linked List is empty")
+            return
+
+        # If there is only one node in the list
+        if self.head.next == self.head:
+            self.head = None
+            return
+
+        current = self.head
+        while current.next != self.head:
+            current = current.next
+            
+        # Update the last node to point to the second node
+        current.next = self.head.next
+        
+        # Update the head to point to the second node
+        self.head = self.head.next
 
     def display(self):
         # Display the elements of the linked list
@@ -93,5 +115,11 @@ circular_linked_list.append(1)
 circular_linked_list.append(2)
 circular_linked_list.append(3)
 
-print("Linked List after inserting at the end:")
+print("Circular Linked List before deletion:")
+circular_linked_list.display()
+#print()
+
+circular_linked_list.delete_at_beginning()
+
+print("Circular Linked List after deletion at the beginning: ")
 circular_linked_list.display()
