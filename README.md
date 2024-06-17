@@ -728,6 +728,8 @@ You see just as it is possible to insert a node at a particular position in a ci
 - Update the next pointer of the current node to skip the node to be deleted (pointing to the next node of the node to be deleted).
 - Optionally, free the memory allocated to the deleted node.
 
+
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 

@@ -83,6 +83,35 @@ class CircularLinkedList:
         # Update the head to point to the second node
         self.head = self.head.next
 
+    def delete_at_position(self, position):
+        if not self.head:
+            print("Circular Linked List is empty")
+            return
+        if position < 0:
+            print("Invalid position")
+
+        # Delete the head node
+        if position == 0:
+            # Only one node in the list
+            if self.head.next == self.head:
+                self.head = None
+            else:
+                current = self.head
+                while current.next != self.head:
+                    current = current.next
+                current.next = self.head.next
+                self.head = self.head.next
+            return
+        current = self.head
+        count = 0
+        while count < position -1 and current.next != self.head:
+            current = current.next
+            count += 1
+        if count < position - 1:
+            print("Position out of range")
+            return
+        current.next = current.next.next
+
     def display(self):
         # Display the elements of the linked list
         current = self.head
@@ -115,9 +144,9 @@ circular_linked_list.append(3)
 
 print("Circular Linked List before deletion:")
 circular_linked_list.display()
-#print()
+print()
 
-circular_linked_list.delete_at_beginning()
+circular_linked_list.delete_at_position(1)
 
-print("Circular Linked List after deletion at the beginning: ")
+print("Circular Linked List after deletion at position1: ")
 circular_linked_list.display()
