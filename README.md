@@ -730,6 +730,8 @@ You see just as it is possible to insert a node at a particular position in a ci
 
 The <b>Time Complexity</b> is <b>O(N)</b> where N is the number of nodes in the linked list.
 
+The <b>Auxiliary Space</b> is <b>O(1)</b>.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
