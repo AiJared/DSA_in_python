@@ -718,6 +718,16 @@ The <b>Time Complexity</b> of deleting at the beginning of a circular linked lis
 
 The <b>Auxiliary Space</b> is <b>O(1)</b>
 
+<b>ii. Deleting at a particular position in Circular Linked List</b>
+
+You see just as it is possible to insert a node at a particular position in a circular linked list, deleting the same way can also be done. Use the steps below to delete a node at a particular position of a circular linked list.
+
+- Check if the list is empty. If it is empty, then there is nothing to delete.
+- If the position is 0, it means deleting the head node. In this case, update the next pointer of the last node to point to the second node and update the head.
+- Traverse the list to find the node at the desired position (index - 1)
+- Update the next pointer of the current node to skip the node to be deleted (pointing to the next node of the node to be deleted).
+- Optionally, free the memory allocated to the deleted node.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
