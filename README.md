@@ -732,6 +732,17 @@ The <b>Time Complexity</b> is <b>O(N)</b> where N is the number of nodes in the 
 
 The <b>Auxiliary Space</b> is <b>O(1)</b>.
 
+<b>iii. Deleting at the end of a Circular Linked List</b>
+
+Just like inserting a node at the end of the circular linked list, it is also possible to delete a node at the end of that very same list. So to delete at the end of the list, you need to follow the steps below.
+
+- Check if the list is empty. If it is empty then there is nothing to delete.
+- If the list has only one node, set the node to None to delete the node.
+- Otherwise, find the last node of the list(the node whose next pointer points to the head)
+- Update the next pointer of the last node to point to the second node (head's next).
+- Update the head to point to the second node.
+- Optionally, free the memory allocated to the deleted node.
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
