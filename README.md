@@ -743,6 +743,8 @@ Just like inserting a node at the end of the circular linked list, it is also po
 - Update the head to point to the second node.
 - Optionally, free the memory allocated to the deleted node.
 
+Check out its implementation in the file circular_linked_list.py
+
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
