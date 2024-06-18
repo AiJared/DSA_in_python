@@ -109,12 +109,12 @@ the target number faster.
 
 ## Time Complexity
 
-We always want to evaluate how the algorithm performs in terms of the worst case scenario. This means that an 
+We always want to evaluate how the algorithm performs in terms of the *worst case scenario*. This means that an 
 algorithm that performs best will take less time when working on a larger set of data as compared to the other.
 In this case, while liear search might perform best on a smaller set of data than binary search, when we choose
 to increase the set of data to say 1000, it will take linear search 1000 tries while binary search just 10 tries.
 Increasing further to 10000, linear search will take 10000 tries while binary search will take just 14 tries.
-Ploting the performs on the 'Growth Rate graph' of an algorithm will clearly show it.
+Ploting the performance on the **Growth Rate graph** of an algorithm will clearly show it.
 Different algorithms grow at different rates and by ploting the order of growth rate, we get to see how the algorithm
 grows when the number of sets increases.
 
