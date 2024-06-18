@@ -118,16 +118,16 @@ Ploting the performance on the **Growth Rate graph** of an algorithm will clearl
 Different algorithms grow at different rates and by ploting the order of growth rate, we get to see how the algorithm
 grows when the number of sets increases.
 
-This brings us to what is known as 'Big O'
+This brings us to what is known as **Big O**
 
-'Big O'
-This is the theoretical definition of the complexity of an algorithm as a 'function of the size'.
+### Big O
+This is the theoretical definition of the **complexity** of an algorithm as a *function of the size*.
 
-It is simply a 'notation' used to describe complexity. An example of complexity written in terms of Big O looks like
+It is simply a **notation** used to describe complexity. An example of complexity written in terms of Big O looks like
 
-'O(n)'
+**O(n)**.
 
-The O comes from 'Order of magnitude of complexity'. The complexity refers to the 'exercise of measuring the efficiency'.
+The O comes from **Order of magnitude of complexity**. The complexity refers to the **exercise of measuring the efficiency**.
 
 Complexity is a relative measure, which means that to measure complexity of an algorithm, we need to do it with comparison
 to another algorithm.
