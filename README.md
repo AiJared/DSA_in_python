@@ -147,15 +147,15 @@ For Binary Search it is **O(log n)** - more on this later.
 
 ## Common Complexities 
 
-Each step in an algorithm has its own time and space complexity,in linear search for example there are multiple steps,start at the
+Each step in an algorithm has its own time and space complexity, in linear search for example there are multiple steps,start at the
 beginning of the list and compare the current value to the target value, if our current value is the same as our target value then
 we are done, if it's not, we will move on the next value and repeat step two. Step two is very important because there can be a situation
 where we reach the end of the list and not get our target value. When at step two, we are reading the value to make a comparison in the
-list. Reading a value is a single operation and if we were to plot it on a graph of 'Runtime per operations' against 'n', it would be a 
-strait line that takes constat time regardless of n. Since it takes the same amount of time in any given case, we say that the runtime is
-a 'constant time'.
-In Big O notation, it would be represented as 'O(1)' which is read as 'constant time'. This means that reading values in a list is a constant
-time operation.
+list. Reading a value is a **single operation** and if we were to plot it on a graph of **Runtime per operations** against **n**, it would be a 
+**strait line** that takes **constat time** regardless of n. Since it takes the same amount of time in any given case, we say that the runtime is
+a **constant time**.
+
+In Big O notation, it would be represented as **O(1)** which is read as constant time. This means that reading values in a list is a *constant time operation*.
 
 Now let's look at it with respect to Binary Search Algorithm
 
