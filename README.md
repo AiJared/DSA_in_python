@@ -36,10 +36,10 @@ item we are searching for or run out of items.
 ## What should an Algorithm be
 
 1. Clearly defined problem statement, input and output.
-2. The steps in the algorithm need to be in a very specific order
-3. The steps also need to be distinct
-4. The algorithm should produce a result.
-5. The algorithm should complete in a finit amount of time.
+2. The steps in the algorithm need to be in a very **specific** order
+3. The steps also need to be **distinct**.
+4. The algorithm should produce a **result**.
+5. The algorithm should complete in a **finit amount of time**.
 
 ## Evaluating an algorithm
 
