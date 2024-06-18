@@ -16,10 +16,10 @@ Some might start guesing the numbers from the *beginning* 1 for example, and pro
 they get the correct number while some might start from a number in the *middle* say 5 then
 determine how close they are to the correct number delete *half the numbers* from the middle that are either less than or more than the correct number, adjust there thinking by repeating the same steps until they get the correct number.
 
-The one which will take fewer steps to the get to the correct answer is the winner as it is
-the most effective strategy.
+The one which will take *fewer* steps to the get to the correct answer is the *winner* as it is
+the **most effective strategy**.
 
-This is what is called 'algorithmic thinking'.
+This is what is called **algorithmic thinking**.
 
 ## Strategies used in the above example
 
