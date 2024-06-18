@@ -30,7 +30,7 @@ or **sequential search** or just **simple search**.
 ### Example of an Algorithm (Linear Search)
 
 Linear search is defined by having a list of items with our target items amongst them then we start
-to search for it from the beginnig of the list, progress through the list until we either find the
+to search for it from the *beginning* of the list, progress through the list until we either find the
 item we are searching for or run out of items.
 
 ## What should an Algorithm be
