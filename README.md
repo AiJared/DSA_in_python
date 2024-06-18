@@ -47,13 +47,13 @@ An algorithm is evaluated through:
 1. Correctness
 2. Efficiency.
 
-## 1. Correctness
+### 1. Correctness
 
 An algorithm is deemed as correct if everytime we run it against all possible 'input'
-data we get an 'output' we expect.
+data we get an 'output' we *expect*.
 
 Part of correctness also means that for every possible input the algorithm should
-always 'terminate/end'.
+always *terminate/end*.
 
 If the above two are not met, then the algorithm is not correct.
 
