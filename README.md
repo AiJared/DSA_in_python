@@ -184,12 +184,9 @@ The next worst case runtime we are going to look at is **Quasilinear Runtime**.
 
 It is easier to understand by starting with its Big O notation which is written as **O(n log n)**. Remember that with O(log n) we saw that while n grew, there was only a small change in the number of tries while in the quasilinear runtime, what we are saying is that for every value of n, we are going to execute a log n number of
 operations hence a runtime of *n times log n*. When you plot it in a graph, you will notice that the quasilinear runtime lies somewhere between a linear runtime and a quadratic runtime. So where would we expect to find a quasilinear runtime in practical use? Well **Sorting Algorithms** is definately one place you will see it.
-'Merge Sort' for example is a sorting algorithm that has a worst case scenario of O(n log n). Here is an example, let's say we start of with a list of values that looks
-like this [8,4,5,1,3,2,6,7], merge sort starts by splitting the list down the middle like this [8,4,5,1] and [3,2,6,7], it then takes each sublist and cuts it down the
-middle again like this [8,4] [5,1] [3,2] [6,7], it keeps doing this until we end up with just a list of a single number [8] [4] [5] [1] [3] [2] [6] [7]. When we are down
-to single numbers we can do one sort operation and merge the sublists back in the opposite direction. The first part of merge sort cuts those lists into sublists with half
-the numbers. Then we carry out comparison operations so that we can sort those values and if you look at each step of the algorithm, we are carrying out an n number of
-comparison operations and thus brings the worst case runtime of this algorithm to O(n log n) or 'Quasilinear Runtime'.
+**Merge Sort** for example is a sorting algorithm that has a worst case scenario of O(n log n). Here is an example, let's say we start of with a list of values that looks like this [8,4,5,1,3,2,6,7], merge sort starts by splitting the list down the middle like this [8,4,5,1] and [3,2,6,7], it then takes each sublist and cuts it down the
+middle again like this [8,4] [5,1] [3,2] [6,7], it keeps doing this until we end up with just a list of a single number [8] [4] [5] [1] [3] [2] [6] [7]. When we are down to single numbers we can do one sort operation and merge the sublists back in the opposite direction. The first part of merge sort cuts those lists into sublists with half
+the numbers. Then we carry out comparison operations so that we can sort those values and if you look at each step of the algorithm, we are carrying out an *n number of comparison operations* and thus brings the worst case runtime of this algorithm to O(n log n) or **Quasilinear Runtime**.
 
 The runtimes we have looked at here are called 'Polynomial Runtimes'. An algorithm is considered to have a polynomial runtime if for a given value of n, its worst case value
 is in the form of O(n^k) where k just means some value such as k = 2 (for quadratic runtime) k = 3 for a cubic runtime etc.
