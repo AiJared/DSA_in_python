@@ -180,10 +180,9 @@ You may also encounter **Cubic Runtime** as you work with different algorithms.
 In such an algorithm for a given number of n, the algorithm executes *n^3 number of operations*. These aren't as common as the quadratic algorithms though. Plotting quadratic and cubic runtimes on a graph of n against tries would look **computationally expensive** because for any small changes in n there are pretty significant 
 changes in the number of operations that we need to carry out.
 
-The next worst case runtime we are going to look at is 'Quasilinear Runtime'.
+The next worst case runtime we are going to look at is **Quasilinear Runtime**.
 
-It is easier to understand by starting with its Big O notation which is written as 'O(n log n)'. Remember that with O(log n) we saw that while n grew, there was only
-a small change in the number of tries while in the quasilinear runtime, what we are saying is that for every value of n, we are going to execute a log n number of
+It is easier to understand by starting with its Big O notation which is written as **O(n log n)**. Remember that with O(log n) we saw that while n grew, there was only a small change in the number of tries while in the quasilinear runtime, what we are saying is that for every value of n, we are going to execute a log n number of
 operations hence a runtime of 'n times log n'. When you plot it in a graph, you will notice that the quasilinear runtime lies somewhere between a linear runtime and a
 quadratic runtime. So where would we expect to find a quasilinear runtime in practical use? Well 'Sorting Algorithms' is definately one place you will see it.
 'Merge Sort' for example is a sorting algorithm that has a worst case scenario of O(n log n). Here is an example, let's say we start of with a list of values that looks
