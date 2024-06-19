@@ -177,7 +177,7 @@ case quadratic runtime.
 
 You may also encounter **Cubic Runtime** as you work with different algorithms.
 
-In such an algorithm for a given number of n, the algorithm executes *n^3 number of operations*. These aren't as common as the quadratic algorithms though. Plotting quadratic and cubic runtimes on a graph of n against tries would look 'computationally expensive' because for any small changes in n there are pretty significant 
+In such an algorithm for a given number of n, the algorithm executes *n^3 number of operations*. These aren't as common as the quadratic algorithms though. Plotting quadratic and cubic runtimes on a graph of n against tries would look **computationally expensive** because for any small changes in n there are pretty significant 
 changes in the number of operations that we need to carry out.
 
 The next worst case runtime we are going to look at is 'Quasilinear Runtime'.
