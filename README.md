@@ -171,14 +171,8 @@ In Linear Search Algorithm, the number of operations required to get the target 
 
 The next Common Complexity you will come across is when an algorithm runs in **Quadratic Time**. Quadratic means an operation is raised to the **second power** or something is squared.
 
-Let's say you and your friend are playing a 'tower defence game'. To start it off you are going to draw a map of a terrain, the map will be of a grid and
-you'll pick a random number to determine how large this grid is going to be, let's say n = 4. Next you need to come with the list of coordinates so that you
-place towers, enemies and other things. So how exactly can this be done, let's say you choose to start horizontally, you will have coordinates
-((1,1), (1,2), (1,3), (1,4)) the you grow up verticall ((2,1), (2,2), (2,3), (2,4)), then((3,1), (3,2), (3,3), (3,4)) then finally the last one
-((4,1), (4,2), (4,3), (4,4)). Notice a pattern here, for the range of values from 1 to n, for each value in that range, we create a point by combining that 
-value with the range of values from 1 to n again. Doing this way for the range of values from 1 to n we create an n number of values and we end up with 16 points
-which is also n^2 or n*n. This is an algorithm with quadratic runtime because for any given value of n we carry out n^2 number of operations. In English, this
-is a 4 * 4 Grid. In Big O notation we would write this as O(n^2) or say that this is an algorithm with a 'Quadratic Runtime'. Many search algoritms have a worst
+Let's say you and your friend are playing a **tower defence game**. To start it off you are going to draw a map of a terrain, the map will be of a grid and you'll pick a *random number* to determine how large this grid is going to be, let's say **n = 4**. Next you need to come with the list of coordinates so that you place towers, enemies and other things. So how exactly can this be done, let's say you choose to start horizontally, you will have coordinates
+((1,1), (1,2), (1,3), (1,4)) then you grow up verticall ((2,1), (2,2), (2,3), (2,4)), then((3,1), (3,2), (3,3), (3,4)) then finally the last one ((4,1), (4,2), (4,3), (4,4)). Notice a pattern here, for the range of values from 1 to n, for each value in that range, we create a point by combining that value with the range of values from 1 to n again. Doing this way for the range of values from 1 to n we create an n number of values and we end up with 16 points which is also n^2 or n*n. This is an algorithm with quadratic runtime because for any given value of n we carry out n^2 number of operations. In English, this is a **4 * 4 Grid**. In Big O notation we would write this as **O(n^2)** or say that this is an algorithm with a **Quadratic Runtime**. Many search algoritms have a worst
 case quadratic runtime.
 
 You may also encounter 'Cubic Runtime' as you work with different algorithms.
