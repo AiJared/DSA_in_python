@@ -188,8 +188,7 @@ operations hence a runtime of *n times log n*. When you plot it in a graph, you 
 middle again like this [8,4] [5,1] [3,2] [6,7], it keeps doing this until we end up with just a list of a single number [8] [4] [5] [1] [3] [2] [6] [7]. When we are down to single numbers we can do one sort operation and merge the sublists back in the opposite direction. The first part of merge sort cuts those lists into sublists with half
 the numbers. Then we carry out comparison operations so that we can sort those values and if you look at each step of the algorithm, we are carrying out an *n number of comparison operations* and thus brings the worst case runtime of this algorithm to O(n log n) or **Quasilinear Runtime**.
 
-The runtimes we have looked at here are called 'Polynomial Runtimes'. An algorithm is considered to have a polynomial runtime if for a given value of n, its worst case value
-is in the form of O(n^k) where k just means some value such as k = 2 (for quadratic runtime) k = 3 for a cubic runtime etc.
+The runtimes we have looked at here are called **Polynomial Runtimes**. An algorithm is considered to have a polynomial runtime if for a given value of n, its worst case value is in the form of **O(n^k)** where k just means some value such as k = 2 (for quadratic runtime) k = 3 for a cubic runtime etc.
 
 Algorithms with an upper bound or a runtime with a Big O value that is Polynomial, are considerd efficient algorithms and likely to used in practise.
 
