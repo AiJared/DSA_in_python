@@ -175,10 +175,9 @@ Let's say you and your friend are playing a **tower defence game**. To start it 
 ((1,1), (1,2), (1,3), (1,4)) then you grow up verticall ((2,1), (2,2), (2,3), (2,4)), then((3,1), (3,2), (3,3), (3,4)) then finally the last one ((4,1), (4,2), (4,3), (4,4)). Notice a pattern here, for the range of values from 1 to n, for each value in that range, we create a point by combining that value with the range of values from 1 to n again. Doing this way for the range of values from 1 to n we create an n number of values and we end up with 16 points which is also n^2 or n*n. This is an algorithm with quadratic runtime because for any given value of n we carry out n^2 number of operations. In English, this is a **4 * 4 Grid**. In Big O notation we would write this as **O(n^2)** or say that this is an algorithm with a **Quadratic Runtime**. Many search algoritms have a worst
 case quadratic runtime.
 
-You may also encounter 'Cubic Runtime' as you work with different algorithms.
+You may also encounter **Cubic Runtime** as you work with different algorithms.
 
-In such an algorithm for a given number of n, the algorithm executes n^3 number of operations. These aren't as common as the quadratic algorithms though. Plotting
-quadratic and cubic runtimes on a graph of n against tries would look 'computationally expensive' because for any small changes in n there are pretty significant 
+In such an algorithm for a given number of n, the algorithm executes *n^3 number of operations*. These aren't as common as the quadratic algorithms though. Plotting quadratic and cubic runtimes on a graph of n against tries would look 'computationally expensive' because for any small changes in n there are pretty significant 
 changes in the number of operations that we need to carry out.
 
 The next worst case runtime we are going to look at is 'Quasilinear Runtime'.
