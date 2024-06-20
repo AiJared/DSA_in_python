@@ -227,12 +227,14 @@ Binary search algorithm can also be recursive just like the one created in the <
 A <b>recursive function</b> is the one that calls itself. A good example is the recursive binary search we created. The <b>recursive_binary_search</b> function called itself inside the body of the function. When writing a recursive function you always need a **stopping condition** and typically we always start the body of the recursive function with a stopping condition. It's common to call the stopping condition a <b>base case</b>.
 
 In the recursive binary search function we created, we had two stopping conditions
+
 1. What the function should return if the list is empty.
+
 2. If the value at the midpoint is the same as the target, then we'll return True.
 
 With the above two stopping conditions, we have covered all the possible paths of logic through the search algorithm, you can either find the value or you don't.
 
-Once you have the base cases, the rest of the implementation of the recursive function is to call the function on smaller <b>sublists</b> until we hit one these base cases.
+Once you have the base cases, the rest of the implementation of the recursive function is to call the function on smaller <b>sublists</b> until we hit one of these base cases.
 
 The number of times a recursive function calls itself is called a <b>Recursive Depth</b>.
 
