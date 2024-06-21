@@ -253,7 +253,7 @@ When we eliminate a set of values we don't actually create a sublist, instead we
 
 This may seem confusing because as n grows we need more memory to account for that larger list size, while this is true, that storage is not what space complexity cares about measuring, we care about the **addition storage** needed as the algorithm runs as it tries to find the solution.
 
-If we assume something simple, say that for a given size of a list represented by a value n, it takes N amount of space to store it then for the iterative version of binary search, regardless of how large the list is, at the start middle and the end of the algorithm process the amount of storage required does not get larger than N and this is why we consider it to run in constant space.
+If we assume something simple, say that for a given size of a list represented by a value n, it takes N amount of space to store it then for the iterative version of binary search, regardless of how large the list is, at the start middle and the end of the algorithm process the amount of storage required does not get larger than N and this is why we consider it to run in **constant space**.
 
 In the recursive version of binary search we don't use variables to keep track of which potion of the list we are working with, instead we create new list everytime with a subset of values or sublists with every recursive function call.
 
