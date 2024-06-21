@@ -251,7 +251,7 @@ Going back to our iterative implementation of binary search (in the file binary_
 
 When we eliminate a set of values we don't actually create a sublist, instead we just *redefine first and last*, as in the code, that is, <b>first = midpoint + 1</b> and/or <b>last = midpoint - 1</b> to point to a different section of the list. Since the algorithm only considers the values of first and last when determining the midpoint, by redefining first and last as the algorithm proceeds we can find the solution using just the original list. This means that for every value of n, the space complexity of the iterative version of binary search is **constant** or the iterative version of binary search takes <b>constant space</b>. Remember that we would write this as <b>O(1)</b>.
 
-This may seem confusing because as n grows we need more memory to account for that larger list size, while this is true, that storage is not what space complexity cares about measuring, we care about the addition storage need as the algorithm runs as it tries to find the solution.
+This may seem confusing because as n grows we need more memory to account for that larger list size, while this is true, that storage is not what space complexity cares about measuring, we care about the **addition storage** needed as the algorithm runs as it tries to find the solution.
 
 If we assume something simple, say that for a given size of a list represented by a value n, it takes N amount of space to store it then for the iterative version of binary search, regardless of how large the list is, at the start middle and the end of the algorithm process the amount of storage required does not get larger than N and this is why we consider it to run in constant space.
 
