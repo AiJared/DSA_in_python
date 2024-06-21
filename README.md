@@ -243,9 +243,9 @@ The way we implemented binary search the first time is called an <b>iterative so
 A recursive solution on the other hand is the one that involves a set of stopping conditions and a function calling itself.
 
 ## Space Complexity
-Space complexity is a measure of how much working storage or extra storage is needed as a particular algorithm grows.
+Space complexity is a measure of how much working **storage or extra storage** is needed as a particular algorithm grows.
 
-Like time compexity, space complexity is also measured using worst case scenario using Big O notation. Let's take a look at an example.
+Like time compexity, space complexity is also measured using *worst case scenario* using Big O notation. Let's take a look at an example.
 
 Going back to our iterative implementation of binary search (in the file binary_search.py), let's take a look at what happens to our memory as n grows large. Let's say that we start off with a list of 10 elements. Inspecting the code we see that our solution relies heavily on two variables, that is, <b>first = 0</b> and <b>last = len(list) - 1</b>. First points to the start of the list and last points to the end.
 
