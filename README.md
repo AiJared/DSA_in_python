@@ -255,7 +255,7 @@ This may seem confusing because as n grows we need more memory to account for th
 
 If we assume something simple, say that for a given size of a list represented by a value n, it takes N amount of space to store it then for the iterative version of binary search, regardless of how large the list is, at the start middle and the end of the algorithm process the amount of storage required does not get larger than N and this is why we consider it to run in **constant space**.
 
-In the recursive version of binary search we don't use variables to keep track of which potion of the list we are working with, instead we create new list everytime with a subset of values or sublists with every recursive function call.
+In the **recursive version** of binary search we don't use variables to keep track of which potion of the list we are working with, instead we create *new list* everytime with a subset of values or sublists with every *recursive function call*.
 
 Let's assume we have a list of size n and in a worst case scenario the target value is the last in the list. Calling a recursive implementation of binary search on this list and target would lead to a scenario like this: The function will call itself and create a new list that goes from the midpoint to the end of the list, since we are discarding half of the list, the size of the sublist is <b>n / 2</b>. The function will keep calling itself, creating a new sublist that is half the size of the current list until it arrives at a single element list and a **stopping condition**.
 
