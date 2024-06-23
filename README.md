@@ -289,7 +289,7 @@ A common analogy of thinking about arrays is that of train cars. Each car has a 
 
 In Swift and Java, arrays are <b>homogenous containers</b>, which means that they can only contain values of the **same type**. In Python, arrays are <b>heterogeneous structures</b>, they can store **mixed kinds of values**.
 
-Regardless of the above nuance the fundamental feature of an array is <b>index</b>. This index value is used for every operation on the array, from accessing values, insearting, updating and deleting values.
+Regardless of the above nuance the fundamental feature of an array is <b>index</b>. This index value is used for every operation on the array, **from accessing values**, **insearting**, **updating** and **deleting values**.
 
 In Python, the concept of arrays is a bit confusing. The type is mostly refered to by most languages as arrays, in Python it is best represented by the list type in Python. Python has a type called array but we are not going to use it now. While Python calls it a list, it can be used to carry out operations that can be carried out in arrays of other languages.
 
