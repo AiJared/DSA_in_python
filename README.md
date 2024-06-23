@@ -275,7 +275,7 @@ by eploring *four common operations*, that is, <b>accessing a value, searching f
 4. Circle back to algorithms and implement a <b>sorting algorithm</b>.
 
 ## Arrays
-It is a common data structure built into nearly every programming langauage. Arrays can be used to represent a collection of values. They can also be used as building blocks to create even more custom data types and structures. In fact in most programming languages a text is repsented by a string type which is just a buch of characters stored in a particular order under an array. 
+It is a common data structure built into nearly every programming language. Arrays can be used to represent a **collection of values**. They can also be used as **building blocks** to create even more **custom data types and structures**. In fact in most programming languages a text is repsented by a string type which is just a buch of characters stored in a particular order under an array. 
 
 Before we go any further into array, let's first understand what exactly a data structure is.
 
