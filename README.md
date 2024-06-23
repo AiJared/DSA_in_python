@@ -291,13 +291,13 @@ In Swift and Java, arrays are <b>homogenous containers</b>, which means that the
 
 Regardless of the above nuance the fundamental feature of an array is <b>index</b>. This index value is used for every operation on the array, **from accessing values**, **insearting**, **updating** and **deleting values**.
 
-In Python, the concept of arrays is a bit confusing. The type is mostly refered to by most languages as arrays, in Python it is best represented by the list type in Python. Python has a type called array but we are not going to use it now. While Python calls it a list, it can be used to carry out operations that can be carried out in arrays of other languages.
+In Python, the concept of arrays is a bit confusing. The type is mostly refered to by most languages as arrays, in Python it is best represented by the **list type** in Python. Python has a type called array but we are not going to use it now. While Python calls it a list, it can be used to carry out operations that can be carried out in arrays of other languages.
 
 <b>Please Note that in computer science a list is a completely different data structure from the array and we will see the difference later on, generally though this structure is refered to us a linked list as opposed to just a list</b>.
 
 Alright let's get back to arrays:
 
-An array is a <b>contiguous</b> data structure. This means that an array is stored in blocks or memory that are beside each other without any gaps between them. The advantage of doing this is that retreiving values is very easy.
+An array is a <b>contiguous</b> data structure. This means that an array is stored in **blocks of memory** that are beside each other without any gaps between them. The advantage of doing this is that retreiving values is very easy.
 
 In a non-contiguous data structure, the structure stores a value as well as reference to where the next value is. To retreive that value, the languange has to follow that reference also called a <b>pointer</b> to the next block of memory. This adds some overhead which increases runtime of some common operations as we will see later.
 
