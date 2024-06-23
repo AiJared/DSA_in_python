@@ -279,9 +279,9 @@ It is a common data structure built into nearly every programming language. Arra
 
 Before we go any further into array, let's first understand what exactly a data structure is.
 
-A data structure is a way of storing data when programming.
+A data structure is a way of **storing data** when programming.
 
-It is the collection of values and the format they are stored in, the relationships between the values in the collection as well as the operations applied on the data stored in the structure.
+It is the **collection of values** and the **format they are stored in**, the **relationships** between the values in the collection as well as the **operations** applied on the data stored in the structure.
 
 An array is one of very many data structures. In general, an array is a data structure that stores a collection of values where each value is referenced using an index or a key.
 
