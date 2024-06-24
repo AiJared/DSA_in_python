@@ -316,7 +316,7 @@ Despite of a data structures you are working on, all data structures are expecte
 #### 1. Accessing values
 Let's look at how these operations are implemented on arrays to some detail starting with access.
 
-Elements in an array are identifies using a value known as an <b>index</b>. We use this index to access and read values in an array. Most programming languages follow a zero based numbering system when it comes to indexing an array. All this means is that the first index value is zero and not one. Generally speaking when an array is declared a base amount of contiguous memory is allocated as the array is stored. Computers refer to memory through the use of an <b>address</b>. 
+Elements in an array are identified using a value known as an <b>index</b>. We use this index to **access and read values** in an array. Most programming languages follow a **zero-based numbering system** when it comes to indexing an array. All this means is that the first index value is **zero** and not one. Generally speaking when an array is declared a base amount of **contiguous memory** is allocated as the array is stored. Computers refer to memory through the use of an <b>address</b>. 
 
 Instead of keeping the reference to all the memory allocated for an array, the array only has to store the address of the first location. Because the memory is contiguous, using the base address, the array can calculate the address of any value by using the index position of that value as an offset.
 
