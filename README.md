@@ -372,9 +372,9 @@ List resizing is quit interesting. Python doesn't resize the list just to accomo
 
 This also happens with insert operations. If we had a four element array, we would have four elements and four memory allocations. An insert operation at that point, doesn't matter where it happens on the list, but at that point it would triger a reset. Inserting is still expensive though because after the resize, every element need to shifted over 1.
 
-The last insert operation supported by most programming languages is the ability to add one list to another. In Python this is called an extend as demostrated in the arrays.py file.
+The last insert operation supported by most programming languages is the ability to add one list to another. In Python this is called an **extend** as demostrated in the arrays.py file.
 
-iii. Extend
+iii. **Extend**
 Extend takes another list to add, it effectively makes a series of append calls of each of the elements in the new list until all of them have been appended to the new list.
 
 This operation has a runtime of <b>O(k)</b> where k represents the number of elements in the list that we are adding to our evisting list.
