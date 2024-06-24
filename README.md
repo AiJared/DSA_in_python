@@ -314,7 +314,7 @@ Despite of a data structures you are working on, all data structures are expecte
 4. Delete values in the structure.
 
 #### 1. Accessing values
-Let's look at how these structures are implemented on arrays to some detail starting with access.
+Let's look at how these operations are implemented on arrays to some detail starting with access.
 
 Elements in an array are identifies using a value known as an <b>index</b>. We use this index to access and read values in an array. Most programming languages follow a zero based numbering system when it comes to indexing an array. All this means is that the first index value is zero and not one. Generally speaking when an array is declared a base amount of contiguous memory is allocated as the array is stored. Computers refer to memory through the use of an <b>address</b>. 
 
