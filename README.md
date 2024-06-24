@@ -336,8 +336,8 @@ To search for an item in a list we can use one of two methods.
 1. searching using an **in** operator
 checks if a list contains an item. The in operator actually calls a **contains** method that is defined in a list type which runs in a linear search operation.
 
-2. In addition to this we can use a for loop to iterate over the list manually and
-perform a comparison operation. This is more or less the implementation of linear search
+2. In addition to this we can use a **for loop** to **iterate** over the list manually and
+perform a **comparison** operation. This is more or less the implementation of linear search.
 
 If the array is sorted however, we can use binary search but because sort operations incur costs of there own languages usually stay away from sorting a list  and running binary search since for smaller arrays, linear search on its own may be faster.
 
