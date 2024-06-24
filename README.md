@@ -346,9 +346,9 @@ a. <b>Inserting</b>
 
 In general most array implementations support three types of insert operations.
 
-i. True insert
+i. **True insert**
 
-This makes use of an index value where we can insert an element anywhere in a list. This operation has a linear runtime.
+This makes use of an index value where we can insert an element anywhere in a list. This operation has a **linear runtime O(n)**.
 
 Given this list [5, 1, 3, 2, 6]
 
