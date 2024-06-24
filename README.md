@@ -352,7 +352,7 @@ This makes use of an index value where we can insert an element anywhere in a li
 
 Given this list [5, 1, 3, 2, 6]
 
-Imagine if you had to insert an element 4 at the first position of the above list. 4 would take the first index value 0, 5 would move to the second position 1, 1 to index 2 and so forth until the last element 6 moves to index 5 making the new list to be [4, 5, 1, 3, 2, 6]. In a worst case screnario, inserting at the 0 position of an array, every single item in the array has to shifted forward and we know that any operation that involves iterating through every single item is a linear runtime.
+Imagine if you had to insert an element 4 at the first position of the above list. 4 would take the first index value 0, 5 would move to the second position 1, 1 to index 2 and so forth until the last element 6 moves to index 5 making the new list to be [4, 5, 1, 3, 2, 6]. In a worst case screnario, inserting at the 0 position of an array, every single item in the array has to **shifted forward** and we know that any operation that involves iterating through every single item is a linear runtime.
 
 ii. Appending
 
@@ -360,16 +360,15 @@ Though technically an insert operation that adds an item to an array, it doesn't
 
 To highlight why that matters, let's consider how lists in Python work. In Python when we create a list, the list doesn't know anything about the size of the list and how many items we are going to store.
 
-Creating an empty list in Python gives it a space of one element by default but the list returns a length of 0 because it does not contain a value yet. This means that the list does not use memory allocation as an indication of it's size. An example list "numbers" demonstrates this in the file <b>arrays.py</b>. Okay so this list numbers currently has space for one element, now let's use
-append method to insert a number at the end of the list.
+Creating an empty list in Python gives it a *space of one element by default* but the list returns a *length of 0* because it does not contain a value yet. This means that the list does not use **memory allocation** as an indication of it's size. An example list **numbers** demonstrates this in the file <b>arrays.py</b>. Okay so this list numbers currently has space for one element, now let's use append method to insert a number at the end of the list.
 
 Now the memory allocation and the size of the list are the same since the list
 contains one element. Now when we try to add another element using the same append
 method, first we should keep in mind that the list had only one space for one element
 which was taken by 2, so here, it would have to allocate another space for our second
-item and thereby the size of the list. It does this by calling list resize operation.
+item and thereby the size of the list. It does this by calling list **resize operation**.
 
-List resizing is quit interesting. Python doesn't resize the list just to accomodate the elements we want to add, instead in this case, it would allocate four blocks of memory to increase the size to a total of contiguous blocks of memory. It does this so that it does not have to add a memory everytime we add an element but at very specific points. The growth pattern of the list type in Python is <b>0,4,8,16,25,35,46...</b>. This means that as the list size approaches these specific values resize is called again. This may signify that append method has non-constant space complexity but it turns out that some operations don't increase space and others do. When you average all of them out, append operation takes constant space. We say that it has <b>Ammortized Constant Space Complexity</b>. 
+List resizing is quit interesting. Python doesn't resize the list just to accomodate the elements we want to add, instead in this case, it would allocate four blocks of memory to increase the size to a total of contiguous 4 blocks of memory. It does this so that it does not have to add a memory everytime we add an element but at very specific points. The growth pattern of the list type in Python is <b>0,4,8,16,25,35,46...</b>. This means that as the list size approaches these specific values resize is called again. This may signify that append method has non-constant space complexity but it turns out that some operations don't increase space and others do. When you average all of them out, append operation takes constant space. We say that it has <b>Ammortized Constant Space Complexity</b>. 
 
 This also happens with insert operations. If we had a four element array, we would have four elements and four memory allocations. An insert operation at that point, doesn't matter where it happens on the list, but at that point it would triger a reset. Inserting is still expensive though because after the resize, every element need to shifted over 1.
 
