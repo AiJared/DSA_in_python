@@ -326,7 +326,7 @@ Let's say we want to create an array of integers and each integer takes a certai
 
 When accessing a value in an array we use the index. To get the first value of the array we use the 0 index, to get the second we use the index value 1 and so on.
 
-Given that the array knows how much storage is need for each element, it can get the address of any element by starting off with the address of the first element and adding to that the index value value times the amount of storage per element. For example, to access the second value, we can start by M0, then to that add M times the index value 1 giving us M1 as the location in memory for the second address. This is simplified model but that is how more or less it works. It is only possible because of a contiguous memory locations with no gaps property.
+Given that the array knows how much storage is need for each element, it can get the address of any element by starting off with the address of the first element and adding to that the index value value times the amount of storage per element. For example, to access the second value, we can start by M0, then to that add M times the index value 1 giving us M1 as the location in memory for the second address. This is a simplified model but that is how more or less it works. It is only possible because of a *contiguous memory locations with no gaps property*.
 
 #### 2. Searching
 While arrays are fast at accessing values, they are pretty bad at searching. Taking an array as it is, the best way we can do is use linear search as a worst case linear runtime.
