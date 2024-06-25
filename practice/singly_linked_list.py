@@ -28,3 +28,16 @@ class SinglyLinkedList(Node):
         A function to check if the list is empty
         """
         return self.head == None
+    
+    def size(self):
+        """
+        A function to calculate the size of the list
+        """
+        current = self.head
+        count = 0
+
+        while current:
+            count += 1
+            current = current.next_node
+
+        return count

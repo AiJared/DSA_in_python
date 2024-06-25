@@ -64,6 +64,7 @@ class LinkedList(Node):
             current = current.next_node
         
         return count
+    
     def add(self, data):
         """
         Adds new Node containing data at the head of the list
