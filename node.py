@@ -12,7 +12,7 @@ class Node:
         return "<Node data: %s>" % self.data
     
 
-
+# Implementing the node
 n1 = Node(10)
 print(n1)
 n2 = Node(12)
