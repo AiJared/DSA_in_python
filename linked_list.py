@@ -1,7 +1,7 @@
 class Node:
     """
     An object for storing a single object of a linked list
-    Models two attributes - daa and the link to the next node in the list
+    Models two attributes - data and the link to the next node in the list
     """
     data = None
     next_node = None
