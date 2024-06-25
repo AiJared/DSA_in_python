@@ -386,13 +386,13 @@ Delete operations have an upper bound of <b>O(n)</b> also known as **linear runt
 
 ## Linked List
 
-Here we will work on building data structures. Before we get into linked lists, let me first explain why building data structures instead of just using those that come built into our languages is important. Each data structure solves a particular problem, on the basics of arrays above, we have looked at the common operations carried out and their costs. We found out that arrays are particularly good at accessing as reading values happends in constant time. But arrays are pretty bad at inserting and deleting, both of which run in linear time.
+Here we will work on *building data structures*. Before we get into linked lists, let me first explain why building data structures instead of just using those that come built into our languages is important. Each data structure solves a particular problem, on the basics of arrays above, we have looked at the common operations carried out and their costs. We found out that arrays are particularly good at accessing as reading values happends in constant time. But arrays are pretty bad at inserting and deleting, both of which run in linear time.
 
-Linked lists on the other hand are somewhat better at this, although there are some caviets. If we are trying to solve a problem that involves more inserts and deletes that accessing, a linked list can be a more better tool than an array.
+Linked lists on the other hand are somewhat better at this, although there are some caviets. If we are trying to solve a problem that involves more inserts and deletes than accessing, a linked list can be a more better tool than an array.
 
 So what is a linked list?
 
-A <b>linked list</b> is a linear data structure where each element in the list is contained in a separate object called a <b>node</b>. 
+A <b>linked list</b> is a **linear data structure** where each element in the list is contained in a separate object called a <b>node</b>. 
 
 A node models two pieces of information; an individual item of the data we want to store, and a reference to the next node in the list. The first node in the linked list is called the <b>head</b> of the list and the last node of the list is called the <b>tail</b> of the list. The heads and the tail node are special because the list only maintans a reference to the head although in some implementations it keeps a reference to the tail as well.
 
