@@ -14,3 +14,17 @@ class Node:
     
 
 # Create a Singly Linked List
+
+class SinglyLinkedList(Node):
+    """
+    Singly linked list
+    """
+
+    def __init__(self):
+        self.head = None
+
+    def is_empty(self):
+        """
+        A function to check if the list is empty
+        """
+        return self.head == None
