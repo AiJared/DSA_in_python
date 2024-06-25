@@ -394,7 +394,7 @@ So what is a linked list?
 
 A <b>linked list</b> is a **linear data structure** where each element in the list is contained in a separate object called a <b>node</b>. 
 
-A node models two pieces of information; an individual item of the data we want to store, and a reference to the next node in the list. The first node in the linked list is called the <b>head</b> of the list and the last node of the list is called the <b>tail</b> of the list. The heads and the tail node are special because the list only maintans a reference to the head although in some implementations it keeps a reference to the tail as well.
+A node models two pieces of information; an individual *item of the data* we want to store, and a **reference** to the next node in the list. The first node in the linked list is called the <b>head</b> of the list and the last node of the list is called the <b>tail</b> of the list. The head and the tail nodes are special because the list only maintans a reference to the head although in some implementations it keeps a reference to the tail as well.
 
 Every node other than the tail, points to the next node in the list but tail doesn't point to anything, this is basically how we know the end of the list.
 
