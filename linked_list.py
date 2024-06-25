@@ -34,7 +34,7 @@ class LinkedList(Node):
 
     """
     Ideally we would try not to expose the inner workings of our data structure
-    to the code that uses it. Instead let's make this operation expression explicity
+    to the code that uses it. Instead let's make this operation expression explicitly
     by defining a method.
     """
     def is_empty(self):

@@ -1,3 +1,4 @@
+# Creating the node
 class Node:
     """
     A node stores the data item and a reference to the next node
@@ -12,3 +13,4 @@ class Node:
         return "<Node data: %s>" % self.data
     
 
+# Create a Singly Linked List
