@@ -41,3 +41,10 @@ class SinglyLinkedList(Node):
             current = current.next_node
 
         return count
+    
+    def add(self, data):
+        new_node = Node(data)
+        new_node.next_node = self.head
+        self.head = new_node
+
+    
