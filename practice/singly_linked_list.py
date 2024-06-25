@@ -47,4 +47,17 @@ class SinglyLinkedList(Node):
         new_node.next_node = self.head
         self.head = new_node
 
-    
+# create a singly linked list
+lst = SinglyLinkedList()
+n1 = Node(1)
+lst.head = n1
+
+#print the size of the list
+print(lst.size())
+
+# add elements to the list
+lst.add(12)
+lst.add(21)
+lst.add(76)
+
+print(lst.size())
