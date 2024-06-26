@@ -47,6 +47,20 @@ class SinglyLinkedList(Node):
         new_node.next_node = self.head
         self.head = new_node
 
+    def search(self, key):
+        """
+        A function to search for the first node containing the data that matches the key in a linked list
+        It returns the node or none if the node is not found.
+        It runs in linear time
+        """
+        current = self.head
+
+        while current:
+            if current.data == key:
+                return current
+            return current.next_node
+        return None
+
 # create a singly linked list
 lst = SinglyLinkedList()
 n1 = Node(1)
