@@ -58,7 +58,9 @@ class SinglyLinkedList(Node):
         while current:
             if current.data == key:
                 return current
+            
             return current.next_node
+        
         return None
 
 # create a singly linked list
