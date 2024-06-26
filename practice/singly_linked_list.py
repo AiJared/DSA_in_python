@@ -59,7 +59,8 @@ class SinglyLinkedList(Node):
             if current.data == key:
                 return current
             
-            return current.next_node
+            else:
+                current = current.next_node
         
         return None
 
@@ -83,4 +84,7 @@ lst.add(22)
 lst.add(45)
 lst.add(23)
 
-print(lst.search(45))
+n = lst.search(45)
+print(n)
+l = lst.search(11)
+print(l)
