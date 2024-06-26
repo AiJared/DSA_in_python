@@ -77,3 +77,10 @@ lst.add(21)
 lst.add(76)
 
 print(lst.size())
+
+lst.add(10)
+lst.add(22)
+lst.add(45)
+lst.add(23)
+
+print(lst.search(45))
