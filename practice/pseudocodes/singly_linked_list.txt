@@ -1,4 +1,4 @@
-CLASS NODE
+CLASS Node
 	SET data to NONE
 	SET next node to NONE
 
