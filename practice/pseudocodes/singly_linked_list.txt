@@ -8,3 +8,14 @@ CLASS NODE
 	PROCESS REPR with self
 		RETURN Node data as self data
 
+CLASS Singly Linked List (Inherit CLASS Node)
+	
+	PROCEES INIT with self
+		SET self head to NONE
+
+	
+	PROCESS isempty with self
+		"""A function to check if the list is empty"""
+		RETURN self head is equal to NONE
+
+	
