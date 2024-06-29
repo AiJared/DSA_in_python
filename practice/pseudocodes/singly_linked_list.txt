@@ -18,4 +18,13 @@ CLASS Singly Linked List (Inherit CLASS Node)
 		"""A function to check if the list is empty"""
 		RETURN self head is equal to NONE
 
+	PROCESS size with self
+		"""A function to calculate the size of the list"""
+		SET current to self head
+		SET count to zero
+		
+		WHILE at current
+			INCREASE count by 1
+			then SET current to current's next node
+		RETURN count
 	
