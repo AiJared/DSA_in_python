@@ -1,0 +1,9 @@
+CLASS NODE
+	SET data to NONE
+	SET new node to NONE
+	
+	PROCESS INIT with SELF and DATA
+		SET SELF DATA to DATA
+
+	PROCESS REPR with SELF
+		RETURN node data as SELF DATA
