@@ -20,6 +20,7 @@ CLASS Singly Linked List (Inherit CLASS Node)
 
 	PROCESS size with self
 		"""A function to calculate the size of the list"""
+		
 		SET current to self head
 		SET count to zero
 		
@@ -30,7 +31,23 @@ CLASS Singly Linked List (Inherit CLASS Node)
 
 	PROCESS add with self and data
 		"""A function to add a node at the beginning of the list"""
+		
 		SET new node to CLASS Node's data object
 		SET new node's next node as self head
 		SET self head as new node
+
+	PROCESS search with self and key
+		"""This is a function to search for the first node containing the
+		the data that matches the key in a linked list. It either returns 
+		the node or none if the node is not found"""
+		
+		SET current to self head
+
+		WHILE at current
+			IF current's data is equal to the key
+				then RETURN current
+			ELSE
+				SET current to current's next node
+
+		RETURN None
 	
