@@ -1,4 +1,7 @@
 CLASS Node
+
+	"""A class for creating a node object in a singly linked list"""
+
 	SET data to NONE
 	SET next node to NONE
 
@@ -16,6 +19,7 @@ CLASS Singly Linked List (Inherit CLASS Node)
 	
 	PROCESS isempty with self
 		"""A function to check if the list is empty"""
+		
 		RETURN self head is equal to NONE
 
 	PROCESS size with self
