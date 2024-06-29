@@ -27,4 +27,10 @@ CLASS Singly Linked List (Inherit CLASS Node)
 			INCREASE count by 1
 			then SET current to current's next node
 		RETURN count
+
+	PROCESS add with self and data
+		"""A function to add a node at the beginning of the list"""
+		SET new node to CLASS Node's data object
+		SET new node's next node as self head
+		SET self head as new node
 	
