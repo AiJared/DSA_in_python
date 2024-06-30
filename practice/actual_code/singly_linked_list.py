@@ -87,6 +87,28 @@ class SinglyLinkedList(Node):
             prev_node.next_node = new
             new.next_node = next_node
 
+    def __repr__(self):
+        """
+        Returns a string representation of the list.
+        Takes linear time.
+        """
+
+        nodes = []
+        current = self.head
+
+        while current:
+            if current is self.head:
+                nodes.append("[Head: %s]" % current.data)
+            elif current.next_node == None:
+                nodes.append("[Tail: %s]" % current.data)
+            else:
+                nodes.append("[%s]" % current.data)
+
+            current = current.next_node
+
+        return "->".join(nodes)
+    
+
 # create a singly linked list
 lst = SinglyLinkedList()
 n1 = Node(1)
