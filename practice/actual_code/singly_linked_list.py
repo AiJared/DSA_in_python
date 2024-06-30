@@ -113,3 +113,5 @@ l = lst.search(11)
 print(l)
 
 print(lst.size())
+# lst.insert(5, 27)
+print(lst.size())
