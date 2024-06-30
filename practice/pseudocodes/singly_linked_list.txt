@@ -91,6 +91,10 @@ CLASS Singly Linked List (Inherit CLASS Node)
 				nodes append "[Tail: %s]" % to current's data
 			ELSE
 				nodes append "[%s]" % to current's data
+			
+			SET current to current's next_node
+		
+		RETURN '->' joined nodes
  
 				
 	
