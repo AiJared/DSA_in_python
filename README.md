@@ -441,7 +441,7 @@ Imagine you have a linked list of 5 items, that is, [5]->[1]->[3]->[2]->[6] and 
 
 Even though we can insert a new node without having to shift the rest, ultimately adding to either the head or the tail if you have a reference is much more efficient.
 
-Removing nodes
+**Removing nodes**
 
 Much like insert, removing a node is quite fast and it occurs in constant time. But to actually get to the node we need to remove, we need to traverse the entire list in our worst case. So in the worst case, this takes a linear time. Let us add this operation to our data structure in the file linked_list.py.
 
