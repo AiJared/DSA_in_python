@@ -111,3 +111,5 @@ n = lst.search(45)
 print(n)
 l = lst.search(11)
 print(l)
+
+print(lst.size())
