@@ -55,3 +55,10 @@ CLASS Singly Linked List (Inherit CLASS Node)
 
 		RETURN None
 	
+	PROCESS insert with self, data and index
+		"""Inserts new Node containing data at index position
+		Insertion takes O(1) but finding the node at the insertion
+		point takes O(n) time. So it takes overall O(n) time.
+		
+		
+	
