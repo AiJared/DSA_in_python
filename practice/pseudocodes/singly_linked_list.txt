@@ -60,5 +60,20 @@ CLASS Singly Linked List (Inherit CLASS Node)
 		Insertion takes O(1) but finding the node at the insertion
 		point takes O(n) time. So it takes overall O(n) time.
 		
+		IF index is equal to 0
+			then self add data
 		
+		IF index < 0
+			SET new to Node's data object
+			SET position to index
+			SET current to self head
+
+			WHILE position > 1
+				SET current to Node's next node object
+				DECREASE position by 1
+			SET previous node to current
+			SET next node to current's next node
+
+			SET previous node's next node to new
+			SET new's next node to next node
 	
