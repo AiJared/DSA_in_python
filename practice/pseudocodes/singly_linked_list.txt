@@ -63,7 +63,7 @@ CLASS Singly Linked List (Inherit CLASS Node)
 		IF index is equal to 0
 			then self add data
 		
-		IF index < 0
+		IF index > 0
 			SET new to Node's data object
 			SET position to index
 			SET current to self head
@@ -76,4 +76,21 @@ CLASS Singly Linked List (Inherit CLASS Node)
 
 			SET previous node's next node to new
 			SET new's next node to next node
+
+	PROCESS repr with self
+		"""Returns a string representation of the list
+		Takes linear time"""
+
+		SET nodes to an empty list
+		SET current to self head
+
+		WHILE at current
+			IF current is self head
+				nodes APPEND "[Head: %s]" % to current's data
+			ELSE IF current's next node is NONE
+				nodes append "[Tail: %s]" % to current's data
+			ELSE
+				nodes append "[%s]" % to current's data
+ 
+				
 	
