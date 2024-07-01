@@ -443,7 +443,7 @@ Even though we can insert a new node without having to shift the rest, ultimatel
 
 **Removing nodes**
 
-Much like insert, removing a node is quite fast and it occurs in constant time. But to actually get to the node we need to remove, we need to traverse the entire list in our worst case. So in the worst case, this takes a linear time. Let us add this operation to our data structure in the file linked_list.py.
+Much like insert, removing a node is quite fast and it occurs in **constant time**. But to actually get to the node we need to remove, we need to **traverse the entire list** in our **worst case**. So in the worst case, this takes a **linear time**. Let us add this operation to our data structure in the file linked_list.py.
 
 There are two ways we can define the remove method.
 
