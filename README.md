@@ -451,7 +451,7 @@ There are two ways we can define the remove method.
 
 2. where we provide an index.
 
-In the former, the key refers to the data the node stores, so in order to remove that node we would need to search for the data that matches that key. In our code we will implement that first method.
+In the former, the key refers to the **data** the node stores, so in order to remove that node we would need to search for the data that matches that key. In our code we will implement that first method.
 
 We have seen how those operations work on singly linked lists well, we have even talked about how they would work on doubly linked list but not looked at any implementations. Now let's see take a look at doubly linked lists and see how those operations are carried out in doubly linked list.
 
