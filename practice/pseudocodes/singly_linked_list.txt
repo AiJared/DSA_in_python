@@ -77,6 +77,28 @@ CLASS Singly Linked List (Inherit CLASS Node)
 			SET previous node's next node to new
 			SET new's next node to next node
 
+	PROCESS remove with self and key
+		"""Removes the node containing data that matches the key 
+		and returns the node or none if the key doesn't have a match
+		Takes linear time"""
+		
+		SET current to self head
+		SET previous to None
+		SET found to False
+
+		WHILE at current and not found
+			IF current's data equals key and current is self's head
+				then found is True
+				SET self's head to current's next node
+			ELSE IF current's data equals the key
+				then also found is True
+				SET previous' next node to current's next node
+			ELSE
+				SET previous to current
+				SET current to current's next node
+		RETURN current	
+
+
 	PROCESS repr with self
 		"""Returns a string representation of the list
 		Takes linear time"""
