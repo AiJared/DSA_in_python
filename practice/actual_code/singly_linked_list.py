@@ -43,6 +43,7 @@ class SinglyLinkedList(Node):
 
         return count
     
+    # A function to add a Node at the beginning of the list
     def add(self, data):
         new_node = Node(data)
         new_node.next_node = self.head
