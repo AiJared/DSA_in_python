@@ -91,6 +91,7 @@ class SinglyLinkedList(Node):
             prev_node.next_node = new
             new.next_node = next_node
 
+    # Function that removes a node containing data that matches a given key
     def remove(self, key):
         """
         Removes the node containing data that matches the key
