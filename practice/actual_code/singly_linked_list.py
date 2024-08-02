@@ -115,6 +115,7 @@ class SinglyLinkedList(Node):
                 current = current.next_node
         return current
 
+    # A function to return a string representation of the list
     def __repr__(self):
         """
         Returns a string representation of the list.
