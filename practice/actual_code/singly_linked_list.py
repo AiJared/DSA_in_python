@@ -29,6 +29,7 @@ class SinglyLinkedList(Node):
         """
         return self.head == None
     
+    # Size of the list
     def size(self):
         """
         A function to calculate the size of the list
@@ -86,6 +87,7 @@ class SinglyLinkedList(Node):
 
             prev_node.next_node = new
             new.next_node = next_node
+
     def remove(self, key):
         """
         Removes the node containing data that matches the key
