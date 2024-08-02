@@ -49,6 +49,7 @@ class SinglyLinkedList(Node):
         new_node.next_node = self.head
         self.head = new_node
 
+    # A function to search for the first node containing the data
     def search(self, key):
         """
         A function to search for the first node containing the data that matches the key in a linked list
