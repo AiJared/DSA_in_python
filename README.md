@@ -457,7 +457,7 @@ We have seen how those operations work on singly linked lists well, we have even
 
 ### ii. Doubly linked Lists
 
-The nodes of a doubly linked list contain a data element and two links pointing to the next and previous node in the sequence. This makes operations suh as traversals, insertions and deletions more efficient because they can be done from and in both directions. We can easily traverse in forward and backward direction using the next and previous pointers respectively.
+The nodes of a doubly linked list contain a data element and **two links** pointing to the next and previous node in the sequence. This makes operations suh as traversals, insertions and deletions more efficient because they can be done from and in both directions. We can easily traverse in forward and backward direction using the next and previous pointers respectively.
 
 #### Representing a Doubly Linked List in Python
 
