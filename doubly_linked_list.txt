@@ -79,4 +79,18 @@ CLASS DoublyLinkedList(inherit Node)
 		ASSIGN new_node to current.next
 		ASSIGN current to new_node.pre
 		RETURN head
+
+	PROCESS delete_at_beginning(head)
+		"""
+		Delete the head
+		"""
+		IF head is None
+			PRINT("Doubly linked list is empty")
+			RETURN None
+		IF head.next is None
+			return None
+		ASSIGN head.next to new_head
+		ASSIGN None to new_head.prev
+		del head
+		RETURN new_head
 		
