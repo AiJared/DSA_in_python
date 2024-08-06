@@ -6,3 +6,8 @@ CLASS Node
 		# referencing to the previous node
 		ASSIGN None to self.prev
 		ASSIGN data to self.data
+
+CLASS DoublyLinkedList(inherit Node)
+	PROCESS init (self and data)
+		super().init(data) # calling the super constructor
+	
