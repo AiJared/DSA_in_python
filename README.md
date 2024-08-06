@@ -461,7 +461,7 @@ The nodes of a doubly linked list contain a data element and **two links** point
 
 #### Representing a Doubly Linked List in Python
 
-The representation of a doubly linked list in Python is different from the one we have seen above in a singly linked list. Check out the file <b>doubly_linked_list.py</b> to its representation.
+The representation of a doubly linked list in Python is different from the one we have seen above in a singly linked list. Check out the file <b>doubly_linked_list.py</b> to see its representation.
 
 #### Traversing in a Doubly Linked List in Python
 
