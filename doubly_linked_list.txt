@@ -1,0 +1,8 @@
+# Create the Node
+CLASS Node
+	PROCESS init (self and data)
+		# referencing to the next node
+		ASSIGN None to self.next
+		# referencing to the previous node
+		ASSIGN None to self.prev
+		ASSIGN data to self.data
