@@ -30,6 +30,21 @@ CLASS DoublyLinkedList(inherit Node)
 		"""
 		Create Node(data) then ASSIGN it to new_node
 		ASSIGN head to new_node.data
-		IF head
+		IF head exits
 			ASSIGN new_node to head.prev
 		RETURN new_node
+
+	PROCESS insert_before_node(node and data)
+		"""
+		Insert a node before a given node in a doubly linked list
+		"""
+		IF node is None
+			PRINT ("Error: The given node is None")
+			RETURN
+		create Node(data) and ASSIGN it to new_node
+		ASSIGN node.pre to new_node.prev
+		ASSIGN node to new_node.next
+
+		IF node.prev exists
+			then ASSIGN new_node to node.pre.next
+		ASSIGN new_node to node.prev
