@@ -23,4 +23,13 @@ CLASS DoublyLinkedList(inherit Node)
 			ASSIGN current.next to current
 		# Print None if the list is empty
 		PRINT ("None")
-	
+
+	PROCESS insert_at_the_beginning(head and data)
+		"""
+		Inserting new data at the beginning of the list
+		"""
+		Create Node(data) then ASSIGN it to new_node
+		ASSIGN head to new_node.data
+		IF head
+			ASSIGN new_node to head.prev
+		RETURN new_node
