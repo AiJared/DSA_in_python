@@ -471,11 +471,14 @@ To see how it is implemented, check out the file doubly_linked_list.py.
 
 #### Insert Operation
 
-Inserting a new node here is same as inserting new node in a singly linked list though it needs an extra operation that maintains the link of the previous node. There are four different ways of inserting a node in a doubly linked list.
+Inserting a new node here is same as inserting new node in a singly linked list though it needs an extra operation that maintains the *link of the previous node*. There are four different ways of inserting a node in a doubly linked list.
 
 i. At the beginnig of the list
+
 ii. After a certain specified node
+
 iii. Before a certain specified node
+
 iv. At the end of the list
 
 <b>i. Inserting at the beginnig</b>
