@@ -10,4 +10,17 @@ CLASS Node
 CLASS DoublyLinkedList(inherit Node)
 	PROCESS init (self and data)
 		super().init(data) # calling the super constructor
+
+	PROCESS traverse(head)
+		"""
+		Traverse through the list as you print its elements
+		"""
+		ASSIGN head to current
+		WHILE at current
+			# print current node's data
+			PRINT (current.data,end=" <-> ")
+			# Go to the next node
+			ASSIGN current.next to current
+		# Print None if the list is empty
+		PRINT ("None")
 	
