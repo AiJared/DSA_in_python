@@ -93,4 +93,3 @@ CLASS DoublyLinkedList(inherit Node)
 		ASSIGN None to new_head.prev
 		del head
 		RETURN new_head
-		
