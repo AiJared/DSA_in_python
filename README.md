@@ -486,10 +486,10 @@ iv. At the end of the list
 Let's start by inserting at the beginnig of the list, it is quit simple and below are the steps.
 
 - Create a new node with the given data
-- Set the <b>next</b> pointer of the new node to point to the current head if it exists.
-- Set the <previous> pointer of the new node to None because it is our new head now.
-- If the list has data, update the <b>previous</b> pointer of the current head to point to the new node.
-- Update the head of the list to point to the new node.
+- Set the <b>next</b> pointer of the new node to point to the **current head** if it exists.
+- Set the **previous** pointer of the new node to **None** because it is our new head now.
+- If the list has data, update the <b>previous</b> pointer of the **current head** to point to the **new node**.
+- Update the **head** of the list to point to the **new node**.
 
 Check the file doubly_linked_list.py to see how this is implemented.
 
