@@ -491,7 +491,7 @@ Let's start by inserting at the beginnig of the list, it is quit simple and belo
 - If the list has data, update the <b>previous</b> pointer of the **current head** to point to the **new node**.
 - Update the **head** of the list to point to the **new node**.
 
-Check the file doubly_linked_list.py to see how this is implemented.
+Check the file doubly_linked_list.txt for the pseudocode and doubly_linked_list.py to see how its implemented.
 
 <b>ii. Inserting after a certain specified node</b>
 
