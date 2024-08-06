@@ -48,3 +48,20 @@ CLASS DoublyLinkedList(inherit Node)
 		IF node.prev exists
 			then ASSIGN new_node to node.pre.next
 		ASSIGN new_node to node.prev
+
+	PROCESS insert_after_node(node and data)
+		"""
+		Insert a node after a given node
+		"""
+		IF node is None
+			PRINT ("Erro: The given node is None")
+			RETUTN
+		create Node(data) and ASSIGN it to new_node
+		ASSIGN node to new_node.prev
+		ASSIGN node.next to new_node.next
+
+		IF node.next exists
+			then ASSIGN new_node to node.next.prev
+		ASSIGN new_node to node.next
+
+		
