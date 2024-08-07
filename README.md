@@ -519,7 +519,7 @@ As we have done with inserting after a specified node, we can insert before a sp
 
 - Update the previous pointer of the given node to point to the new node.
 
-Check out it is implemented in Python in the file doubly_linked_list.py
+Check out its pseudocode in the file doubly_linked_list.txt and its implemented in Python in the file doubly_linked_list.py
 
 <b>iv Inserting at the end</b>
 
