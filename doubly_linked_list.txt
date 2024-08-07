@@ -148,3 +148,15 @@ CLASS DoublyLinkedList(inherit Node)
 		ASSIGN None to current.next
 		delete del_node
 		RETURN head
+
+	PROCESS display(head)
+		"""
+		Show the elements of the doubly linked list
+		"""
+
+		ASSIGN head to current
+
+		WHILE at current
+			PRINT (current.data, end=" <-> ")
+			ASSIGN current.next to current
+		PRINT (None)
