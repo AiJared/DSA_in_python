@@ -566,7 +566,7 @@ To delete a node at a given position in a doubly linked list in Python, you need
 - Update the previous pointer of the next node to point to the previous node of the node to be deleted.
 - Optionally, free the memory allocated to the deleted node.
 
-Check out its implementation in the file doubly_linked_list.py
+Check out its pseudocode in the file doubly_linked_list.txt and its implementation in the file doubly_linked_list.py
 
 <b>iii. Delete at the end</b>
 
