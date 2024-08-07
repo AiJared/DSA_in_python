@@ -529,9 +529,9 @@ As it is possible to insert a node at the beginning of the list, it is also poss
 - If the list is empty, that is, head is None, then make the new node the head of the list.
 - If not, traverse the list to find the last node.
 - Set the next pointer of the last node to point to the new node.
-- Optionally, update the ead of the list to point to the new node if it's the first node in the list.
+- Optionally, update the head of the list to point to the new node if it's the first node in the list.
 
-Check the implement in Python in the file doubly_linked_list.py
+Check the its pseudocode in the file doubly_linked_list.txt and its implementation in Python in the file doubly_linked_list.py
 
 #### Delete Operation
 
