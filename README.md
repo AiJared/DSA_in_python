@@ -578,7 +578,7 @@ Well it is also possible to delete a node at the end of the doubly linked list i
 - Set the next pointer of the second-to-last node to None.
 - Optionally, free the memory allocated to the deleted node.
 
-Check out the implementation in Python in the file doubly_linked_list.py
+Check out the pseudocode in the file doubly_linked_list.txt and its implementation in Python in the file doubly_linked_list.py
 
 ### iii. Circular Linked Lists
 
