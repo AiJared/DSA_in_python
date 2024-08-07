@@ -553,7 +553,7 @@ Below are the steps involved in deleting a node at the beginnig of a doubly link
 - Set the previous pointer of the new node to None
 - Optionally, free the memory allocated to the deleted node.
 
-Check the implementation in Python in the file doubly_linked_list.py
+Check out its pseudocode in the file doubly_linked_list.txt and the implementation in Python in the file doubly_linked_list.py
 
 <b>ii. Delete at a given position</b>
 
