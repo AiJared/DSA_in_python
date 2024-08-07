@@ -500,10 +500,10 @@ A node can also be inserted after a given node in a doubly linked list. Below ar
 - Create a new node with the given data
 - Set the <b>next</b> pointer of the new node to point to the next node of the given node.
 - Set the <b>previous</b> pointer of the new node to given node.
-- If the node of the given node id not None, update the <b>previous</b> pointer if that node to point to the new node.
+- If the node of the given node is not None, update the <b>previous</b> pointer of that node to point to the new node.
 - Update the <b>next</b> pointer of the given node to point to the new node.
 
-Check out the implementation in Python in the file doubly_linked_list.py.
+Check out the pseudocode in the file doubly_linked_list.txt and implementation in Python in the file doubly_linked_list.py.
 
 <b>iii. Insert before a certain specified node</b>
 
