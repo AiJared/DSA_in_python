@@ -93,3 +93,36 @@ CLASS DoublyLinkedList(inherit Node)
 		ASSIGN None to new_head.prev
 		del head
 		RETURN new_head
+
+	PROCESS delete_at_position(head and position)
+		"""
+		Delete the node at a given position from the list
+		"""
+
+		IF head is None
+			PRINT ("List is empty")
+			RETURN None
+
+		IF position is less than 0
+			PRINT ("Invalid position")
+			RETURN head
+
+		IF position equals 0
+			IF head.next exists
+				ASSIGN None to head.next.prev
+			RETURN head.next
+
+		ASSIGN head to current
+		ASSIGN 0 to count
+
+		WHILE current and count are less than position
+			ASSIGN current.next to current
+			INCREASE count by 1
+
+		IF current.next exists
+			ASSIGN current.prev to current.next.prev
+		IF current.prev exists
+			ASSIGN current.next to current.prev.next
+
+		delete current
+		RETURN head
