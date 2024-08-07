@@ -126,3 +126,25 @@ CLASS DoublyLinkedList(inherit Node)
 
 		delete current
 		RETURN head
+
+	PROCESS delete_at_end(head)
+		"""
+		Delete the last node of the list
+		"""
+
+		IF head is None
+			PRINT ("List is empty")
+			RETURN None
+
+		IF head.next is None
+			RETURN None
+
+		ASSIGN head to current
+
+		WHILE current.next.next
+			ASSIGN current.next to current
+
+		ASSIGN current.next to del_node
+		ASSIGN None to current.next
+		delete del_node
+		RETURN head
