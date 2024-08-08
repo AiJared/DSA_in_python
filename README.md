@@ -592,9 +592,9 @@ Now let's take a look at operations that can be carried out on a circular list.
 
 #### Traversal of a Circular Linked List in Python
 
-Traversing a circular linked list involves visiting each node of the list starting from the head node and continuing until the head node is encountered again.
+Traversing a circular linked list involves *visiting each node* of the list starting from the head node and continuing until the head node is encountered again.
 
-Check out its implementation in Python in the file circular_linked_list.py.
+Check out the pseudocode in the file circular_linked_list.txt its implementation in Python in the file circular_linked_list.py.
 
 The <b>Time Complexity</b> in our implementation is <b>O(N)</b> where N is the number of nodes in the list.
 
