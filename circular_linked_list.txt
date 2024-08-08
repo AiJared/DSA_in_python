@@ -1,0 +1,8 @@
+# Representing a circular linked list in Python
+CLASS Node
+	# Constructor
+	PROCESS init(self and data)
+		# Data stored in the node
+		ASSIGN data to self.data
+		# reference to the next node in the circular linked list
+		ASSIGN None to self.next
