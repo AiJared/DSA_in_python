@@ -6,3 +6,9 @@ CLASS Node
 		ASSIGN data to self.data
 		# reference to the next node in the circular linked list
 		ASSIGN None to self.next
+
+CLASS CircularLinkedList
+	PROCESS init(self)
+		# Intialize an empty circular linked list with head
+		# pointer pointing to None
+		ASSIGN None to self.head
