@@ -12,3 +12,16 @@ CLASS CircularLinkedList
 		# Intialize an empty circular linked list with head
 		# pointer pointing to None
 		ASSIGN None to self.head
+
+	PROCESS traverse(self)
+		# Traverse and display the elements of the circular linked list
+		IF not self.head # If head does not exist
+			PRINT ("The circular linked list is empty")
+			RETURN 
+		ASSIGN self.head to current
+		WHILE True
+			PRINT (current.data, end=" -> ")
+			ASSIGN current.next to current
+			IF current equals self.head
+				# Break the loop when we reach the head again
+				break
