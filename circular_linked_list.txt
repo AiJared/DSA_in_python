@@ -25,3 +25,9 @@ CLASS CircularLinkedList
 			IF current equals self.head
 				# Break the loop when we reach the head again
 				break
+
+	PROCESS insert_at_beginning(self and data)
+		# Insert a new node with data at the specified position in the list
+		create a Node(data) and ASSIGN it to new_node
+		ASSIGN self.head to new_node.next
+		ASSIGN new_node to self.head
