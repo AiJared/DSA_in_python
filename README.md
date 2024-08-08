@@ -614,7 +614,7 @@ Follow the following steps to inset a node at the beginnig of a circular linked 
 - Update the head to point to the new node.
 - Update the pointer of the last node to point to the new head, this helps maintain the circular structure.
 
-Check out the implementation in Python in the file circular_linked_list.py
+Check out the pseudocode in the file circular_linked_list.txt and its implementation in Python in the file circular_linked_list.py
 
 The <b>Time Complexity</b> of our implementation is <b>O(1)</b>.
 
