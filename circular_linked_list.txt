@@ -61,3 +61,19 @@ CLASS CircularLinkedList
 		# Insert the new node at the specified position
 		new_node.next is current.next
 		current.next is new_node
+
+	PROCESS append(self and data)
+		# Append a new node with data to the end of the list
+		new_node is Node(data)
+		IF not self.head # if head does not exist
+			# if the list is empty, make the new node the head
+			self.head is new_node
+			RETURN 
+		current is self.head
+		
+		WHILE there is current.next
+			# Traverse the list until the last node is reached.
+			current is current.next
+		# Assign the new node as the next node of the last node
+		current.next is new_node
+			
