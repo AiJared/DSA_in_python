@@ -631,7 +631,7 @@ Below are the steps followed to insert a node at a particular index position in 
 - Update the next pointer of the new node to point to the next node of the current node
 - Update the next pointer of the current node to point to the new node.
 
-Check out its implementation in the file circular_linked_list.py
+Check out the pseudocode in the file circular_linked_list.txt and its implementation in the file circular_linked_list.py
 
 The <b>Time Complexity</b> of our implementation is <b>O(N)</b>, where N is the number of nodes in the list.
 
