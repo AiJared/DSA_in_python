@@ -31,3 +31,33 @@ CLASS CircularLinkedList
 		create a Node(data) and ASSIGN it to new_node
 		ASSIGN self.head to new_node.next
 		ASSIGN new_node to self.head
+
+	PROCESS insert_at_position(self, position, data)
+		"""
+		Insert a new node with data at the specified index position
+		"""
+		create Node(data) and ASSIGN it to new_node
+		# check if the position is valid
+		IF position is less than 0
+			PRINT ("Invalid position!")
+			RETURN
+		# If the position is 0, insert the new node at the head 
+		IF position equals 0
+			ASSIGN self.head to new_node.next
+			ASSIGN new_node to self.head
+			RETURN
+
+		ASSIGN self.head to current
+		count is 0
+		# Traverse the list until the node before the specified position
+		WHILE count is less than position -1 and current
+			then current is current.next
+			INCREASE count with 1
+		
+		# If the position is out of range, print an error message
+		IF not current
+			PRINT ("Position is out of range.")
+			RETURN
+		# Insert the new node at the specified position
+		new_node.next is current.next
+		current.next is new_node
