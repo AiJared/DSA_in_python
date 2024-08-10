@@ -672,7 +672,7 @@ To delete the head of the list, follow the steps below.
 - Update the head to point to the second node.
 - Optionally, free the memory allocated to the deleted node.
 
-Check the implementation in Python in the file circular_linked_list.py.
+Check the pseudocode in the file circular_linked_list.txt and its implementation in Python in the file circular_linked_list.py.
 
 The <b>Time Complexity</b> of deleting at the beginning of a circular linked list is <b>O(1)</b>.
 
