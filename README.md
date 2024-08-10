@@ -688,6 +688,8 @@ You see just as it is possible to insert a node at a particular position in a ci
 - Update the next pointer of the current node to skip the node to be deleted (pointing to the next node of the node to be deleted).
 - Optionally, free the memory allocated to the deleted node.
 
+Check out the pseudocode in the file circular_linked_list.txt and the implementation in the file circular_linked_list.py
+
 The <b>Time Complexity</b> is <b>O(N)</b> where N is the number of nodes in the linked list.
 
 The <b>Auxiliary Space</b> is <b>O(1)</b>.
