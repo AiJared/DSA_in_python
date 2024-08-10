@@ -76,4 +76,23 @@ CLASS CircularLinkedList
 			current is current.next
 		# Assign the new node as the next node of the last node
 		current.next is new_node
-			
+	
+	PROCESS delete_at_beginning(self)
+		IF not self.head # If the head does not exist
+			PRINT("Circular linked list is empty")
+			RETURN
+
+		# If there is only one node in the list
+		IF self.next equals self.head
+			self.head is None
+			RETURN
+
+		current is self.head
+		WHILE current.next is not equal to self.head
+			THEN current is current.next
+
+		# Update the last node to point to the second node
+		current.next is self.head.next
+
+		# Update the head to point to the second node
+		self.head is self.head.next
