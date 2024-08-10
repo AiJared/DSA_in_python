@@ -96,3 +96,32 @@ CLASS CircularLinkedList
 
 		# Update the head to point to the second node
 		self.head is self.head.next
+
+	PROCESS delete_at_position(self, position)
+		IF not self.head # If head does not exist
+			PRINT("Circular linked list is empty")
+			RETURN
+		IF position is less than 0
+			PRINT("Invalid position")
+
+		# Delete the head node
+		IF position is 0
+			# Only one node in the list
+			IF self.head.next equals self.head
+				self.head is None
+			ELSE
+				current is self.head
+				WHILE current.next is not equal to self.head
+					current is current.next
+				current.next is self.head.next
+				self.head is self.head.next
+			RETURN
+		current = self.head
+		count us o
+		WHILE count is less than position-1 and current.next not equal to self.head
+			current is current.next
+			INCREASE count by 1
+		IF count is less than position -1
+			PRINT("Position out of range")
+			RETURN
+		current.next is current.next.next
