@@ -118,7 +118,7 @@ CLASS CircularLinkedList
 			RETURN
 		current = self.head
 		count us o
-		WHILE count is less than position-1 and current.next not equal to self.head
+		WHILE count is less than position -1 and current.next not equal to self.head
 			current is current.next
 			INCREASE count by 1
 		IF count is less than position -1
