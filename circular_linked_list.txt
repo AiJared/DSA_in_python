@@ -117,7 +117,7 @@ CLASS CircularLinkedList
 				self.head is self.head.next
 			RETURN
 		current = self.head
-		count us o
+		count is o
 		WHILE count is less than position -1 and current.next not equal to self.head
 			current is current.next
 			INCREASE count by 1
@@ -125,3 +125,18 @@ CLASS CircularLinkedList
 			PRINT("Position out of range")
 			RETURN
 		current.next is current.next.next
+
+	PROCESS delete_at_the_end(self)
+		"""
+		Method to delete the last node of a circular linked list
+		"""
+		IF not self.head # if head does not exist it means that is an empty list
+			PRINT ("The list is empty")
+			RETURN
+
+		# If there is only one node
+		IF self.head.next is None
+			self.head is None
+
+		current is self.head
+		WHILE current.next is not equal to self.head
