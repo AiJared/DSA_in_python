@@ -126,8 +126,12 @@ class CircularLinkedList:
             self.head = None
         
         current = self.head
-        if current.next == self.head:
-            current = None
+        while current.next.next:
+            current = current.next
+        
+        del_node = current.next
+        current.next = None
+        del del_node
 
     def display(self):
         # Display the elements of the linked list
