@@ -117,7 +117,7 @@ CLASS CircularLinkedList
 				self.head is self.head.next
 			RETURN
 		current = self.head
-		count is o
+		count is 0
 		WHILE count is less than position -1 and current.next not equal to self.head
 			current is current.next
 			INCREASE count by 1
@@ -139,4 +139,7 @@ CLASS CircularLinkedList
 			self.head is None
 
 		current is self.head
-		WHILE current.next is not equal to self.head
+		WHILE self.head.prev is not equal to self.head
+			current is self.head.prev
+		self.head.prev is current.prev
+		del current
