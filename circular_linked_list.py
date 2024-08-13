@@ -121,17 +121,13 @@ class CircularLinkedList:
             print("The circular linked list is empty.")
             return
         
-        # If there is only one node, Tthen assign it to None to delete it
+        # If there is only one node, then assign it to None to delete it
         if self.head.next is None:
             self.head = None
         
         current = self.head
-        
-        while self.head.prev != self.head:
-            current = self.head.prev
-        
-        self.head.prev = current.prev
-        del current
+        if current.next == self.head:
+            current = None
 
     def display(self):
         # Display the elements of the linked list
@@ -169,5 +165,5 @@ print()
 
 circular_linked_list.delete_at_the_end()
 
-print("Circular Linked List after deletion at position1: ")
+print("Circular Linked List after deletion at the end: ")
 circular_linked_list.display()
