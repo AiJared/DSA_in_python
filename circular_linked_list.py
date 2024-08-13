@@ -3,8 +3,9 @@ class Node:
     def __init__(self, data):
         # Data stored in the node
         self.data = data
-        # reference to the next node in the circular linked list
+        # reference to the next and previous node in the circular linked list
         self.next = None
+        self.pre = None
 
 class CircularLinkedList:
     def __init__(self):
