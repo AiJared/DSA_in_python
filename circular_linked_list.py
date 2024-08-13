@@ -5,7 +5,7 @@ class Node:
         self.data = data
         # reference to the next and previous node in the circular linked list
         self.next = None
-        self.pre = None
+        self.prev = None
 
 class CircularLinkedList:
     def __init__(self):
@@ -151,7 +151,7 @@ class CircularLinkedList:
             return
         current = self.head
         while True:
-            print(current.data, end=" -> ")
+            print(current.data, end=" <-> ")
             current = current.next
             if current == self.head:
                 # Break the loop when we reach the head again
@@ -167,7 +167,7 @@ print("Circular Linked List before deletion:")
 circular_linked_list.display()
 print()
 
-circular_linked_list.delete_at_position(1)
+circular_linked_list.delete_at_the_end()
 
 print("Circular Linked List after deletion at position1: ")
 circular_linked_list.display()
