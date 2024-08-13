@@ -113,6 +113,26 @@ class CircularLinkedList:
             return
         current.next = current.next.next
 
+    def delete_at_the_end(self):
+        """
+        Method to delete the last node of a circular linked list
+        """
+        if not self.head: # The list is empty
+            print("The circular linked list is empty.")
+            return
+        
+        # If there is only one node, Tthen assign it to None to delete it
+        if self.head.next is None:
+            self.head = None
+        
+        current = self.head
+        
+        while self.head.prev != self.head:
+            current = self.head.prev
+        
+        self.head.prev = current.prev
+        del current
+
     def display(self):
         # Display the elements of the linked list
         current = self.head
