@@ -139,5 +139,8 @@ CLASS CircularLinkedList
 			self.head is None
 
 		current is self.head
-		IF current.next is self.head
-			current is None
+		WHILE current.next.next
+			current is current.next
+		del_node is current.next
+		current.next is None
+		del del_node
