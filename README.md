@@ -720,7 +720,7 @@ Merge sort works like binary search but splitting up the problem into subproblem
 
 On the first pass we are going to split the problem into two smaller arrays [8 4 5 1] [3 2 6 7]. On the next pass we are going to split them into further evenly sized arrays [8 4] [5 1] [3 2] [6 7]. We are going to keep doing this until we are down to single element arrays [8] [4] [5] [1] [3] [2] [6] [7].
 
-After that the merge sort algorithm is going to work **backwards**, repeatedly merging those elements and sorting them at the same time. Since we start at the bottom, by merging two single element arrays, you only need to make a single comparison to sort the resulting merged array [4 8] [1 5] [2 3] [6 7]. By starting with smaller arrays that are sorted as it grows, merge sort has to make fewer sort operations than when it started at the end [1 4 5 8] [2 3 6 7] -> [1 2 3 4 5 6 7 8]. 
+After that the merge sort algorithm is going to work **backwards**, repeatedly merging those elements and sorting them at the same time. Since we start at the bottom, by merging two single element arrays, you only need to make a single comparison to sort the resulting merged array [4 8] [1 5] [2 3] [6 7]. By starting with smaller arrays that are sorted as it grows, merge sort has to make fewer **sort operations** than when it started at the end [1 4 5 8] [2 3 6 7] -> [1 2 3 4 5 6 7 8]. 
 
 Solving a problem like this by recursively breaking down the problem into small subparts until it is easily solved it's an algorithmic strategy called <b>divide and conquer</b> 
 
