@@ -17,4 +17,14 @@ PROCESS merge_sort (list)
 	right is merge_sort(right_half)
 	RETURN merge(left, right)
 
-	
+PROCESS split
+	"""
+	Divide the unsorted list at midpoint into sublists
+	Return two sublists - left and right
+	Takes O(k log n) time
+	"""
+	mid is len of list // 2
+	left is list[:mid]
+	right is list[mid:]
+
+	RETURN left, right
