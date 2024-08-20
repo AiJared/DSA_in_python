@@ -1,0 +1,13 @@
+PROCESS merge_sort (list)
+	"""
+	Sorts a list in ascending order
+	Returns a new sorted list
+
+	Divide: Find the midpoint of the list and divide into sublists
+	Conquer: Recursively sort the sublists created in previous step
+	Combine: Merge the sorted sublists in previous step
+
+	Takes O(kn log n) time 
+	"""
+
+	
