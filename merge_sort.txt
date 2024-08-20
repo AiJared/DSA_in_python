@@ -10,4 +10,11 @@ PROCESS merge_sort (list)
 	Takes O(kn log n) time 
 	"""
 
+	IF len of list is <= 1
+		RETURN list
+	left_half, right_half is split(list)
+	left is merge_sort(left_half)
+	right is merge_sort(right_half)
+	RETURN merge(left, right)
+
 	
