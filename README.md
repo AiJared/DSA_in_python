@@ -724,7 +724,7 @@ After that the merge sort algorithm is going to work **backwards**, **repeatedly
 
 Solving a problem like this by **recursively** breaking down the problem into small subparts until it is easily solved it's an algorithmic strategy called <b>divide and conquer</b> 
 
-Checkout the code in the file "merge_sort.py" to learn how the merge sort algorithm is implemented practically.
+Checkout the pseudocode in the file merge_sort.txt and the code in the file "merge_sort.py" to learn how the merge sort algorithm is implemented practically.
 
 ### The cost of running merge sort
 If we go back to the top level, that is the merge sort function in the code, what is the runtime does the runtime look like and what about it's space complexity, how does the memory usage grow as the algorithm runs?
