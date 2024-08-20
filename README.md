@@ -714,7 +714,7 @@ The <b>Auxiliary Space</b>is <b>O(1)</b>.
 ## Merge Sort Algorithm
 Let's take a look at how merge sort works conceptually by using arrays.
 
-Let's start with an unsorted array [8 4 5 1 3 2 6 7]. The goal is to end up with an array sorted in **ascending order**.
+Let's start with an unsorted array **[8 4 5 1 3 2 6 7]**. The goal is to end up with an array sorted in **ascending order**.
 
 Merge sort works like binary search but splitting up the problem into subproblems but it takes the process one step further.
 
