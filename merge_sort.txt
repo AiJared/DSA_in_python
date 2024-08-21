@@ -28,3 +28,23 @@ PROCESS split
 	right is list[mid:]
 
 	RETURN left, right
+
+PROCESS merge (left and right)
+	"""
+	Merges two lists(arrays), sorting them n the process
+	Returns a new merges list
+
+	Runs  overall O(n)
+	"""
+
+	l is []
+	i is 0
+	j is 0
+
+	WHILE i < len of left and j < len of right
+		IF left[i] is < right[j]
+			APPEND left[i] to l
+			INCREACE i with 1
+		ELSE
+			APPEND right[j] to l
+			INCREASE j with 1
