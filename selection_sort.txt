@@ -1,0 +1,13 @@
+IMPORT sys
+FROM load IMPORT load_numbers
+
+numbers is load_numbers(sys.argv[1])
+
+PROCESS selection_sort(values)
+	sorted_list is []
+	PRINT ("%-25s %-25s" % (values, sorted_list))
+	FOR i in RANGE(0, len of values)
+		index_to_move is index_of_min(values)
+		sorted_list.append(values.pop(index_to_move))
+		PRINT("%-25s %-25s" % (values, sorted_list))
+	RETURN sorted_list
