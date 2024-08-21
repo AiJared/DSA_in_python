@@ -783,7 +783,7 @@ This sorting algorithm **randomizes** the order of the values in the list repeat
 
 It is a very inefficient algorithm because it has to make attempts randomizing the order of values in the list over and over and again until when the list is sorted. For this reason, the number of attempts it can take varries and it can surprisingly take a lot of attempts for it to sort values of just a small list. This means that it does not make any progress towards sorting the items in each attempt it makes. Given a huge list, bogo sort would not be very helpful.
 
-Check out the implementation of bogo sort in the file "bogo_sort.py".
+Check out the pseudocode in the file bogo_sort.txt and its implementation of bogo sort in the file "bogo_sort.py".
 
 ### Selection Sort
 
