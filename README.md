@@ -789,11 +789,11 @@ Check out the pseudocode in the file bogo_sort.txt and its implementation of bog
 
 It is still a slow sorting algorithm but at least each pass brings us closer to completion. Our implementation of selection sort is going to use use two arrays, an unsorted array and a sorted one. The sorted list starts out empty but we will be moving values from the unsorted list to the sorted list one at a time.
 
-With each pass, we will look through the unsorted array, take the smallest value and move it to the sorted array. We will start by the first value in the array and mark it as the minimum value, then move to the next value in the array and mark it as minimum again, we will keep on doing that until we reach the end of the array and at that point we will have known what the minimum value of all the values in the unsorted array is and take it. Now here is the part that makes selection sort better than bogo sort, after noting the minimum value in the unsorted list, we then move it to the end of the sorted list. So that value won't be part of the unsorted list so we won't need to look for it anymore.
+With each pass, we will look through the unsorted array, take the smallest value and move it to the sorted array. We will start by the first value in the array and mark it as the **minimum value**, then move to the next value in the array and mark it as minimum again, we will keep on doing that until we reach the end of the array and at that point we will have known what the minimum value of all the values in the unsorted array is and take it. Now here is the part that makes selection sort better than bogo sort, after noting the minimum value in the unsorted list, we then move it to the end of the sorted list. So that value won't be part of the unsorted list so we won't need to look for it anymore.
 
 We will repeat the above steps again with the remaining values in the unsorted list, pick the minimum value and move it again to the end of the sorted list. We will keep on doing that untill there are no values in the unsorted array and we have sorted all values in the sorted array. 
 
-Check the implementation of selection sort in the file "selection_sort.py".
+Check the pseudocode in the file selection_sort.txt and its implementation of selection sort in the file "selection_sort.py".
 
 Now there is no doubt that selection sort works way better than bogo sort but in our implementation we have used smaller arrays, however in real life, you would mostly be handling lists with hundreds of thousands of values or even millions. Well dealing with that kind of array can take a lot of time.
 
