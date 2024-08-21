@@ -44,7 +44,17 @@ PROCESS merge (left and right)
 	WHILE i < len of left and j < len of right
 		IF left[i] is < right[j]
 			APPEND left[i] to l
-			INCREACE i with 1
+			INCREACE i with l
 		ELSE
 			APPEND right[j] to l
-			INCREASE j with 1
+			INCREASE j with l
+
+	WHILE i is < len of left
+		APPEND left[i] to l
+		INCREASE i with l
+
+	WHILE j is < len of right
+		APPEND right[j] to l
+		INCREASE j with 1
+
+	RETURN l
