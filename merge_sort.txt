@@ -67,3 +67,8 @@ PROCESS verify_sorted (list)
 	
 	RETURN list[0] is < list[1] and verify_sorted(list[1:])
 
+alist = [54, 62, 17, 77, 31, 44, 55, 20]
+l = merge_sort(alist)
+PRINT (verify_sorted(alist))
+PRINT (verify_sorted(l))
+
