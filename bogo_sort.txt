@@ -11,3 +11,12 @@ PROCESS is_sorted(values)
 
 	RETURN True
 
+
+PROCESS bogo_sort(values)
+	attempts is 0
+	WHILE not is_sorted(values)
+		PRINT(attempts)
+		random.shuffle(values)
+	RETURN values
+
+print(bogo_sort(numbers))
