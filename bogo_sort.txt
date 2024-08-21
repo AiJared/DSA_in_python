@@ -1,0 +1,13 @@
+IMPORT random
+IMPORT sys
+FROM load IMPORT load_numbers
+
+numbers is load_numbers(sys.argv[1])
+
+PROCESS is_sorted(values)
+	FOR index in RANGE(len of values - 1)
+		IF values[index] is > values[index + 1]
+			RETURN False
+
+	RETURN True
+
