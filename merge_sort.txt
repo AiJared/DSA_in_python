@@ -58,3 +58,12 @@ PROCESS merge (left and right)
 		INCREASE j with 1
 
 	RETURN l
+
+PROCESS verify_sorted (list)
+	n is len of list
+	
+	IF n equals 0 or n equals 1
+		RETURN True
+	
+	RETURN list[0] is < list[1] and verify_sorted(list[1:])
+
