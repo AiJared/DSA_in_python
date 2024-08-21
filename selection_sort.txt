@@ -11,3 +11,13 @@ PROCESS selection_sort(values)
 		sorted_list.append(values.pop(index_to_move))
 		PRINT("%-25s %-25s" % (values, sorted_list))
 	RETURN sorted_list
+
+PROCESS index_of_min(values)
+	min_index is 0
+	FOR i in RANGE(1, len of values)
+		IF values[i] < values[min_index]
+			min_index is i
+
+	RETURN min_index
+
+PRINT (selection_sort(numbers))
