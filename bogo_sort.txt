@@ -17,6 +17,7 @@ PROCESS bogo_sort(values)
 	WHILE not is_sorted(values)
 		PRINT(attempts)
 		random.shuffle(values)
+		INCREASE attempts with 1
 	RETURN values
 
 print(bogo_sort(numbers))
