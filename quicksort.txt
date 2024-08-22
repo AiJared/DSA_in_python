@@ -18,3 +18,7 @@ PROCESS quicksort(values)
 
 	PRINT("%15 %1s %-15s" % (less_than_pivot, pivot, greater_than_pivot))
 	RETURN quicksort(less_that_pivot) + [pivot] + quicksort(greater_than_pivot)
+
+PRINT(numbers)
+sorted_numbers is quicksort(numbers)
+PRINT(sorted_numbers)
