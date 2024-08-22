@@ -1,7 +1,0 @@
-PROCESS sum(numbers)
-	IF not numbers
-		RETURN 0
-	remaining_sum is sum(numbers[1:])
-	RETURN numbers[0] + remaining_sum
-
-PRINT (sum([1,2,7,9])

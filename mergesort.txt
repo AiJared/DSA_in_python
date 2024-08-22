@@ -1,0 +1,17 @@
+IMPORT sys
+FROM load IMPORT load_numbers
+
+numbers is load_numbers(sys.argv[1])
+
+PROCESS merger_sort(values)
+	IF  len of values <= 1
+		RETURN values
+
+	middle_index is len of values // 2
+	left_values is merge_sort(values[:middle_index])
+	right_values is merge_sort(values[middle_index:])
+	PRINT("%15s %-15s" % (left_values, right_values))
+	sorted_values is []
+
+	left_index is 0
+	right_index is 0
