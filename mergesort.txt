@@ -26,3 +26,7 @@ PROCESS merger_sort(values)
 		INCREASE sorted_values with right_values[right_index:]
 
 		RETURN sorted_values
+
+PRINT (numbers)
+sorted_numbers is merge_sort(numbers)
+PRINT (sorted_numbers)
