@@ -829,7 +829,7 @@ From the implementation of quick sort we can clearly see that it is faster than 
 
 Now we have already looked at merge sort algorithm in fact in details before but since we are understanding sorting algorithms let's look at it one more time shall we?
 
-Now both merge sort and quick sort are recursive algorithms. The difference comes in how they actually work, quick sort works by taking a pivot value then splitting the rest of the list based on values that are less than the pivot and those that are greater than the pivot. Merge sort on the other hand merge sort works by splitting the list into halves recursively then sorts the halves as it merges them back.
+Now both merge sort and quick sort are **recursive algorithms**. The difference comes in how they actually work, quick sort works by taking a **pivot value** then splitting the rest of the list based on values that are less than the pivot and those that are greater than the pivot. Merge sort on the other hand merge sort works by splitting the list into **halves** recursively then sorts the halves as it merges them back.
 
 In the file <b>mergesort.py</b> I have made another merge sort algorithm that I would recommend that you check it out because you might find it to be easier to understand than the previous one in the file <b>merge_sort.py</b> file.
 
