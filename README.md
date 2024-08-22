@@ -811,7 +811,7 @@ But we can do it using recursion as demonstrated in the file <b>recursion.py</b>
 
 We've seen bogo sort which doesn't make any progress in sorting items towards each pass. We've also seen selection sort which moves one value over to a sorted array on each pass so that it has fewer items to compare each time.
 
-<b>Quick sort</b> speeds up the process further but reducing the number of comparisons it makes. This algorithm relies on recursion. To implement it, we'll write a recursive function as demonstrated in the file <b>quicksort.py</b>
+<b>Quick sort</b> speeds up the process further buy reducing the *number of comparisons* it makes. This algorithm relies on **recursion**. To implement it, we'll write a recursive function as demonstrated in the file <b>quicksort.py</b>
 
 Now here is how the algorithm works. Suppose we load the numbers from our 8.txt file onto a list [4,6,3,2,9,7,3,5]. How do we divide it? It would probably be smart to have quick sort function divide the list in a way that brings it closer to being sorted. So we will pick an item from the list, say the first item 4. We will call this value we have picked the <b>pivot</b>. 
 
