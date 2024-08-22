@@ -1,0 +1,20 @@
+IMPORT sys
+FROM load IMPORT load_numbers
+
+numbers is load_numbers(sys.argv[1])
+
+PROCESS quicksort(values)
+	IF len of values <= 1
+		RETURN values
+	less_than_pivot is []
+	greater_than_pivot is []
+	pivot is [0]
+	
+	FOR value in values[1:]
+		IF value is <= pivot
+			APPEND value to less_than_pivot
+		ELSE
+			APPEND value to greater_than_pivot
+
+	PRINT("%15 %1s %-15s" % (less_than_pivot, pivot, greater_than_pivot))
+	RETURN quicksort(less_that_pivot) + [pivot] + quicksort(greater_than_pivot)
