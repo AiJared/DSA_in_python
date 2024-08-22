@@ -15,3 +15,14 @@ PROCESS merger_sort(values)
 
 	left_index is 0
 	right_index is 0
+
+	WHILE left_index < len of left_values and right_index < len of right_values
+		IF left_values[left_index] < right_values[right_index]
+			APPEND left_values[left_index] to sorted_values
+			INCREASE left_index by 1
+		ELSE
+			APPEND right_values[right_index] to sorted_values
+		INCREASE sorted_values with left_values[left_index:]
+		INCREASE sorted_values with right_values[right_index:]
+
+		RETURN sorted_values
