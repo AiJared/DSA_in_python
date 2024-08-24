@@ -863,7 +863,7 @@ You see Big O Notation:
 
 ### Linear Search
 
-Having talked about sorting algorithms, I think the foundation has been layed to talk about searching algorithms. If you need to search through an **unsorted list**, binary search isn't an option because you have no idea which **half** of the list has what you are looking for, your only idea is start from the beginning and compare each item in the list with the real value one at a time until you find the value you are looking for. This kind of algorithm as we have talked about it in the beginning is called **linear search** or **sequential searc**h as the search proceeds in a straight line or sequence.
+Having talked about sorting algorithms, I think the foundation has been layed to talk about searching algorithms. If you need to search through an **unsorted list**, binary search isn't an option because you have no idea which **half** of the list has what you are looking for, your only idea is start from the beginning and compare each item in the list with the real value one at a time until you find the value you are looking for. This kind of algorithm as we have talked about it in the beginning is called **linear search** or **sequential searc**h as the search proceeds in a **straight line** or **sequence.**
 
 Suppose we are searching for a name in a list of names, even though linear search is innefficient, searching for just one name will happend so fast that we won't be able to tell anything useful about the algorithm's runtime. Assuming that we have a list of 100 unrelated names and we want to search for a name using linear search algorithm, check out the code in the file <b>linearsearch.py</b> for demonstration.
 
