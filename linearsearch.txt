@@ -5,3 +5,9 @@ names is load_strings(sys.argv[1])
 
 search_names is [list of names]
 
+PROCESS index_of_items(collection, target)
+	FOR i in range(0, len(collection))
+		IF target equals collection[i]
+			RETURN i
+
+	RETURN None
