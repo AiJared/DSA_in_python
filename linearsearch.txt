@@ -1,0 +1,7 @@
+IMPORT sys
+FROM load IMPORT load_strings
+
+names is load_strings(sys.argv[1])
+
+search_names is [list of names]
+
