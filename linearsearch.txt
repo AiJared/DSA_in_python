@@ -11,3 +11,7 @@ PROCESS index_of_items(collection, target)
 			RETURN i
 
 	RETURN None
+
+FOR n in search_names
+	index is index_of_items(names, n)
+	PRINT(index)
