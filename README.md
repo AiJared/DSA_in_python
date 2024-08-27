@@ -161,7 +161,7 @@ Now let's look at it with respect to Binary Search Algorithm
 
 While playing the game, we noticed that with every turn we were able to discard half of the data but there is another pattern that we did not explore. Let's assume that the number of values is 10 and our target item is at 10, the number of tries we would make to reach our target value would be 4. If we double our n to 20 and our target value at 20, we would make 5 tries and if then double n to 40 and our target value at 40 we would make 6 tries. So from this we have noticed that everytime we *double the number of values*, the *number of tries increases by 1*.
 There is a mathematical pattern to this problem called the *logarithm of n* **(log n)**. Binary search works the same as logarithms. For example, given that our target value is 16 at a list of 16 values, using binary search we would start in the middle 8, then to 12 then to 14 then 15 then finally 16 which is 5 tries or **log2 of 16 + 1**. In general for a given value of n, the number of tries it takes to get the worst case scenario is
-**log2 of n + 1**. And this pattern is a logarithmic pattern, we then can say that the runtime of such alorithms is **logarithmic runtime**. Plotting it on a graph of n against Tries, the graph is a **curve** and in Big O notation it is represented as **O(log n)** or even sometimes as **O(ln n)** and it is read as **logarithmic time**.
+**log2 of n + 1**. And this pattern is a logarithmic pattern, we then can say that the runtime of such algorithms is **logarithmic runtime**. Plotting it on a graph of n against Tries, the graph is a **curve** and in Big O notation it is represented as **O(log n)** or even sometimes as **O(ln n)** and it is read as **logarithmic time**.
 
 The graph, as n grows really large the number of tries grows slowly and eventually flattens out. Since the line in the graph of a logarithmic runtime is below the linear search line, you might often here algorithms with logarithmic runtimes called **sublinear**.
 
@@ -891,6 +891,6 @@ So having seen that practically, let's understand their Big O Notations then.
 
 The Big O runtime for linear search is **O(n)** also know as **linear time**.
 
-The Big O runtime of binary search is O(log n).
+The Big O runtime of binary search is **O(log n)** also know as **logarithmic time**.
 
 Now that is just an introduction to algorithms and data structures, there is more to it than just those few algorithms and data structures we have looked at. We will look at more in a few. 
