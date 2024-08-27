@@ -873,9 +873,9 @@ Now linear search works for a **smaller list** well as demonstrated with searchi
 
 In the example we have implemented using linear search above, we have seen that searching for a smaller list of names is working well but realistically speaking the real implementation of search algorithms would mean a huge list of names that linear search might perform poorly.
 
-Here is where binary search comes in handy, however to implement binary search, our list would need to be sorted first.
+Here is where binary search comes in handy, however to implement binary search, our list would need to be **sorted first**.
 
-We need to load our unsorted list from a file, sort it, then write the sorted names back to a new file. We will quick sort to achieve this.
+We need to load our unsorted list from a file, sort it, then write the sorted names back to a new file. We will use **quick sort** to achieve this.
 
 So we created another quick sort algorithm specifically for sorting strings. The code for the quick sort function is just the same as the one we used to sort numbers, the only difference is at the top where we load strings from a file instead of numbers. Then we used the algorithm to sort the unsorted list of 500 names to another sorted list but remember these names are in text files, the first file being <b>unsorted.txt</b> and the sorted being <b>sorted.txt</b>. The quick sort for strings code is in the file <b>quicksort_strings.py</b> so please make sure to check it out.
 
