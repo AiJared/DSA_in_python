@@ -879,7 +879,7 @@ We need to load our unsorted list from a file, sort it, then write the sorted na
 
 So we created another quick sort algorithm specifically for sorting strings. The code for the quick sort function is just the same as the one we used to sort numbers, the only difference is at the top where we load strings from a file instead of numbers. Then we used the algorithm to sort the unsorted list of 500 names to another sorted list but remember these names are in text files, the first file being <b>unsorted.txt</b> and the sorted being <b>sorted.txt</b>. The quick sort for strings pseudocode is in the file **quicksort_strings.txt** and its code is in the file <b>quicksort_strings.py</b> so please make sure to check it out.
 
-Now that we have a sorted list of names, we can use binary search upon it. Let's see if it can speed up the search of hundred names from the whole list. The code for implementing this is in the file <b>binarysearch.py</b> so make sure to check it out.
+Now that we have a sorted list of names, we can use binary search upon it. Let's see if it can speed up the search of hundred names from the whole list. The pseudocode is in the file **binarysearch.txt** and the code for implementing this is in the file <b>binarysearch.py</b> so make sure to check it out.
 
 ## Big O Notations of Linear Search and Binary Search
 
