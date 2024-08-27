@@ -1,0 +1,19 @@
+IMPORT sys
+FROM load IMPORT load_strings
+
+names is load_strings(sys.argv[1])
+
+PROCESS quicksort(values)
+	IF len(values) <= 1
+		RETURN values
+	less_than_pivot is []
+	greater_than_pivot is []
+	pivot is values[0]
+
+	FOR value in values[1:]
+		IF value <= pivot
+			APPEND value to les_than_pivot
+		ELSE
+			APPEND value to greater_than_pivot
+
+	RETURN quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
