@@ -20,3 +20,7 @@ PROCESS binary_search(collection, target)
 		last is midpoint - 1
 
 	RETURN None
+
+FOR n in search_names
+	index is binary_search(names, n)
+	PRINT(index)
