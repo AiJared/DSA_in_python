@@ -17,3 +17,8 @@ PROCESS quicksort(values)
 			APPEND value to greater_than_pivot
 
 	RETURN quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
+
+sorted_names is quicksort(names)
+
+FOR n in sorted_names
+	PRINT(n)
