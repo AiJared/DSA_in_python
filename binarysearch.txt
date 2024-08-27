@@ -1,0 +1,22 @@
+IMPORT sys
+FROM load IMPORT load_strings
+
+names is load_strings(sys.argv[1:])
+
+search_names is [names]
+
+PROCESS binary_search(collection, target)
+	first is 0
+	last is len(collection) - 1
+	
+	WHILE first <= last
+		midpoint is (first + last) // 2
+	
+	IF collection[midpoint] equals target
+		RETURN midpoint
+	ELIF collection[midpoint] < target
+		first is midpoint + 1
+	ELSE
+		last is midpoint - 1
+
+	RETURN None
