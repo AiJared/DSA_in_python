@@ -901,4 +901,6 @@ Starting with Data Structures, let's take a look at **Stack data structure**.
 
 **Stack** is a data structure that uses the **Last-In-First-Out (LIFO)** principle. 
 You **push** elements onto the stack and **pop** elements off of the stack.
- 
+
+Check the code of a stack data structure in Python
+in the file **stack.py**.
