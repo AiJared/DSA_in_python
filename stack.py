@@ -30,3 +30,8 @@ class Stack:
 
 # Instantiate a stack object
 my_stack = Stack()
+
+# Push elements to the class
+my_stack.push(10)
+my_stack.push(20)
+my_stack.push(30)
