@@ -20,4 +20,7 @@ class Stack:
         else:
             return "Stack is empty"
     
+    # Check if the stack is empty
+    def is_empty(self):
+        return (self.items) == 0
     
