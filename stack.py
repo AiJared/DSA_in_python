@@ -4,7 +4,7 @@ class Stack:
     
     # Add elements ontop of the stack
     def push(self, item):
-        self.items.append()
+        self.items.append(item)
     
     # Remove elements from the top of the stack
     def pop(self):
@@ -35,3 +35,6 @@ my_stack = Stack()
 my_stack.push(10)
 my_stack.push(20)
 my_stack.push(30)
+
+# Check the topmost element
+print(my_stack.peek())
