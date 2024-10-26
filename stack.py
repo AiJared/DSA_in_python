@@ -41,3 +41,6 @@ print(my_stack.peek())
 
 # Pop elements off of the stack
 print(my_stack.pop())
+
+# Check the size of the stack
+print(my_stack.size())
