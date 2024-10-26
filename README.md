@@ -896,4 +896,9 @@ The Big O runtime of binary search is **O(log n)** also know as **logarithmic ti
 Now that is just an introduction to algorithms and data structures, there is more to it than just those few algorithms and data structures we have looked at. We will look at more in a few. 
 
 Starting with Data Structures, let's take a look at **Stack data structure**.
+
 ## Stack Data Structure
+
+**Stack** is a data structure that uses the **Last-In-First-Out (LIFO)** principle. 
+You **push** elements onto the stack and **pop** elements off of the stack.
+ 
