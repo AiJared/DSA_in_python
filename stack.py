@@ -13,3 +13,11 @@ class Stack:
         else:
             return "Stack is empty"
     
+    # Check the topmost element without removing it
+    def peek(self):
+        if not is_empty():
+            return self.items[-1]
+        else:
+            return "Stack is empty"
+    
+    
