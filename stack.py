@@ -8,14 +8,14 @@ class Stack:
     
     # Remove elements from the top of the stack
     def pop(self):
-        if not is_empty():
+        if not self.is_empty():
             self.items.pop()
         else:
             return "Stack is empty"
     
     # Check the topmost element without removing it
     def peek(self):
-        if not is_empty():
+        if not self.is_empty():
             return self.items[-1]
         else:
             return "Stack is empty"
