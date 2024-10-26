@@ -9,7 +9,7 @@ class Stack:
     # Remove elements from the top of the stack
     def pop(self):
         if not self.is_empty():
-            self.items.pop()
+            return self.items.pop()
         else:
             return "Stack is empty"
     
@@ -38,3 +38,6 @@ my_stack.push(30)
 
 # Check the topmost element
 print(my_stack.peek())
+
+# Pop elements off of the stack
+print(my_stack.pop())
