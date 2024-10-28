@@ -44,3 +44,6 @@ print(queue.peek())
 
 # Remove the front element from the queue
 print(queue.deque())
+
+# Check the size of the queue
+print(queue.size())
