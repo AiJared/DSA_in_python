@@ -928,3 +928,4 @@ person to get in the line is the first one to be served.
  - **Peek**: Check the front element without removing it.
  - **is_empty**: Check if the queue is empty.
 
+Check out the implementation in the file **queue.py**.
