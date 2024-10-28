@@ -9,3 +9,10 @@ class Queue:
         
     
     def deque(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        else:
+            return "Queue is empty"
+    
+    
+        
