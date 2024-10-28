@@ -27,4 +27,6 @@ class Queue:
     def is_empty(self):
         return (self.items) == 0
     
-    
+    # check the size of the queue
+    def size(self):
+        return len(self.items)
