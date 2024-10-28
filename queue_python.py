@@ -12,7 +12,10 @@ class Queue:
         if not self.is_empty():
             return self.items.pop(0)
         else:
-            return "Queue is empty"
+            return "Queue is empty!"
     
-    
-        
+    def peek(self):
+        if not self.is_empty():
+            return self.items[0]
+        else:
+            return "Queue is empty!"
