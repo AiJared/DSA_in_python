@@ -39,3 +39,5 @@ queue.enque("a")
 queue.enque("b")
 queue.enque("c")
 
+# View the front element without removing it
+print(queue.peek())
