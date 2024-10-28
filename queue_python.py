@@ -41,3 +41,6 @@ queue.enque("c")
 
 # View the front element without removing it
 print(queue.peek())
+
+# Remove the front element from the queue
+print(queue.deque())
