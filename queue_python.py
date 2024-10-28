@@ -22,3 +22,9 @@ class Queue:
             return self.items[0]
         else:
             return "Queue is empty!"
+    
+    # check if the queue is empty
+    def is_empty(self):
+        return (self.items) == 0
+    
+    
