@@ -34,3 +34,8 @@ class Queue:
 # Create a queue object
 queue = Queue()
 
+# Add elements to the queue
+queue.enque("a")
+queue.enque("b")
+queue.enque("c")
+
