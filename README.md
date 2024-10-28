@@ -915,3 +915,9 @@ As explained above in stack data structure, the last item to be pushed in is the
  - **peek()**: This method checks the topmost item of the stack without removing it.
  - **is_empty()**: This is the mothod used to check if the stack is empty.
  - **size()**: This method is used to check the size of the stack, or the number of items in the stack.
+
+## Queue Data Structure
+
+A queue is a data structure that follows a **First-In-First-Out** principle whereby the first
+element in is the first element to be removed. Think of it like a line in a **store**. The first
+person to get in the line is the first one to be served.
