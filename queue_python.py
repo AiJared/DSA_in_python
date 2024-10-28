@@ -5,9 +5,7 @@ class Queue:
         self.items = []
     
     def enque(self, item):
-        if not self.is_empty():
-            return self.items.append(item)
-        else:
-            return "Queue is empty"
+        return self.items.append(item)
+        
     
-    
+    def deque(self):
