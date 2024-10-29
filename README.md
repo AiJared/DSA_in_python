@@ -933,7 +933,7 @@ Check out the implementation in the file **queue.py**.
 
 ## Trees
 
-A tree is a **hierachicall** data structures consisting **nodes** connected by **edges**. Trees 
+A tree is a **hierachical** data structures consisting **nodes** connected by **edges**. Trees 
 have several special types (like, binary trees, binary search trees, AVL trees etc.) but they
 all have the following basic properties:
 
@@ -942,3 +942,12 @@ all have the following basic properties:
  - **Parent**: The converse nortion of a child.
  - **Leaf**: A node with no children.
  - **Subtree**: A tree formed from a node and its descendants.
+
+### Types of Trees
+ 1. **Binary tree**: A tree where each node has at most two children, known as **left** and
+ **right** children.
+ 2. **Binary Search Tree (BST)**: It is a binary tree with the property that the left child is
+ less than the parent node and the right child is greater.
+ 3. **AVL Tree**: A self balancing binary tree where the difference between heights of left and
+ right subtrees is at most one for every node.
+ 4. **Heap Tree**: Often implemented as binary tree but with unique ordering properties.
