@@ -937,3 +937,8 @@ A tree is a **hierachicall** data structures consisting **nodes** connected by *
 have several special types (like, binary trees, binary search trees, AVL trees etc.) but they
 all have the following basic properties:
 
+ - **Root**: The top node of the tree
+ - **Child**: A node connected directly to another node when moving away from the root.
+ - **Parent**: The converse nortion of a child.
+ - **Leaf**: A node with no children.
+ - **Subtree**: A tree formed from a node and its descendants.
