@@ -897,6 +897,7 @@ Now that is just an introduction to algorithms and data structures, there is mor
 
 Starting with Data Structures, let's take a look at **Stack data structure**.
 
+# Data Structures 2.0
 ## Stack Data Structure
 
 **Stack** is a data structure that uses the **Last-In-First-Out (LIFO)** principle. 
@@ -929,3 +930,10 @@ person to get in the line is the first one to be served.
  - **is_empty**: Check if the queue is empty.
 
 Check out the implementation in the file **queue.py**.
+
+## Trees
+
+A tree is a **hierachicall** data structures consisting **nodes** connected by **edges**. Trees 
+have several special types (like, binary trees, binary search trees, AVL trees etc.) but they
+all have the following basic properties:
+
