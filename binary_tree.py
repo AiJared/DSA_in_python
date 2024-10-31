@@ -5,7 +5,7 @@ class Node:
         self.right = None
         self.value = key
 
-# Insert nodes a binary tree
+# Insert nodes in a binary tree
 def insert(root, key):
     if root is None:
         return Node(key)
