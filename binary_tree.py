@@ -5,3 +5,14 @@ class Node:
         self.right = None
         self.value = key
 
+# Insert nodes a binary tree
+def insert(root, key):
+    if root is None:
+        return Node(key)
+    else:
+        if key < root.value:
+            root.left = insert(root.left, key)
+        else:
+            root.right = insert(root.right, key)
+    
+    return root
