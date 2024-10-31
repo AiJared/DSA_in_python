@@ -951,3 +951,6 @@ all have the following basic properties:
  3. **AVL Tree**: A self balancing binary tree where the difference between heights of left and
  right subtrees is at most one for every node.
  4. **Heap Tree**: Often implemented as binary tree but with unique ordering properties.
+
+Check out a simple binary tree that focuses on **insertion** and **traversal** in the file
+**binary_tree.py**. 
