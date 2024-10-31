@@ -16,3 +16,10 @@ def insert(root, key):
             root.right = insert(root.right, key)
     
     return root
+
+# In order traversal (left, root, right)
+def inorder_traversal(root):
+    if root:
+        inorder_traversal(root.left)
+        print(root.value, end="")
+        inorder_traversal(root.right)
