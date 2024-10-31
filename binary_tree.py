@@ -1,6 +1,6 @@
 class Node:
     # constructor method initializing left and right nodes and value
-    def __init__(self, left, right, key):
+    def __init__(self, key):
         self.left = None
         self.right = None
         self.value = key
@@ -23,3 +23,13 @@ def inorder_traversal(root):
         inorder_traversal(root.left)
         print(root.value, end="")
         inorder_traversal(root.right)
+
+# Example usage
+root = Node(10)
+insert(root, 5)
+insert(root, 15)
+insert(root, 2)
+insert(root, 7)
+
+print("In-order traversal:")
+inorder_traversal(root)
