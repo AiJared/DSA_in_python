@@ -3,9 +3,9 @@ import heapq
 
 # Creating a Min Heap
 heap = []
-
+# Create a list of numbers
 numbers = [20, 15, 10, 30, 40]
-
+# Loop through the list of numbers as we push the elements to the heap list
 for num in numbers:
     heapq.heappush(heap, num)
 
