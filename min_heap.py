@@ -11,6 +11,5 @@ for num in numbers:
 
 # output the heap inform of a list
 print("Min-Heap: ", heap)
-
 # Remove the smallest element from the heap then output it
 print("Smallest Element: ", heapq.heappop(heap))

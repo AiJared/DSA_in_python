@@ -964,3 +964,11 @@ A **heap** is a specialized **tree-based** data structure that satisfies the hea
 Heaps are commonly used to implement **priority queues** where the highest or lowest priority queue is always at the root.
 
 Check out an implementation of a min-heap using Python list in the file **min_heap.py**.
+
+Let's understant the code:
+ - **heapq**: Python's heapq module allows to use lists as heaps efficiently.
+ - **heap**: It is our min-heap created inform of an empty list.
+ - **numbers**: We then create a list called numbers then loop through it as we push its elements to the empty heap we created above.
+ - We out the heap inform of a list.
+ - **heapqpop()**: We finally use heapqpop method to remove the smallest element of the heap then output it.
+
