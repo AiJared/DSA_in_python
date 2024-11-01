@@ -962,3 +962,5 @@ A **heap** is a specialized **tree-based** data structure that satisfies the hea
  - **Min-heap**: Every parent node is less than or equal to its children.
 
 Heaps are commonly used to implement **priority queues** where the highest or lowest priority queue is always at the root.
+
+Check out an implementation of a min-heap using Python list in the file **min_heap.py**.
