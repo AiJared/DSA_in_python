@@ -960,3 +960,5 @@ Check out a simple binary tree that focuses on **insertion** and **traversal** i
 A **heap** is a specialized **tree-based** data structure that satisfies the heap property.
  - **Max-heap**: Every parent node is greater than or equal to its children.
  - **Min-heap**: Every parent node is less than or equal to its children.
+
+Heaps are commonly used to implement **priority queues** where the highest or lowest priority queue is always at the root.
