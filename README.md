@@ -954,3 +954,7 @@ all have the following basic properties:
 
 Check out a simple binary tree that focuses on **insertion** and **traversal** in the file
 **binary_tree.py**. 
+
+## Heaps
+
+A **heap** is a specialized **tree-based** data structure that satisfies the heap property.
