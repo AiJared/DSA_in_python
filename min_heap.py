@@ -7,3 +7,9 @@ numbers = [20, 15, 10, 30, 40]
 
 for num in numbers:
     heapq.heappush(heap, num)
+
+# output the heap inform of a list
+print("Min-Heap: ", heap)
+
+# Remove the smallest element from the heap then output it
+print("Smallest Element: ", heapq.heappop(heap))
