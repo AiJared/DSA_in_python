@@ -972,3 +972,8 @@ Let's understant the code:
  - We output the heap inform of a list.
  - **heapqpop()**: We finally use heapqpop method to remove the smallest element of the heap then output it.
 
+## Graphs
+
+A **graph** is a collection of **vertices (nodes)** and **edges** that connect pairs of nodes. A graph can be:
+ - **Directed or Unidirected**: Whether the connections have a direction.
+ - **Weighted or Unweighted**: Whether the edges have weights (values associated with them).
