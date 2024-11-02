@@ -979,3 +979,7 @@ A **graph** is a collection of **vertices (nodes)** and **edges** that connect p
  - **Weighted or Unweighted**: Whether the edges have weights (values associated with them).
 
 Graphs are used in **networking**, **social network**, **pathfinding** and many more.
+
+### Types of Graph Representation
+ 1. **Adjancency Matrix**: IS a 2D array where each cell **(i, j)** indicates whether there is an edge between the nodes **i** and **j**.
+ 2. **Adjancency List**: Is a dictionary where each key is a node the value is a list of adjacent nodes.
