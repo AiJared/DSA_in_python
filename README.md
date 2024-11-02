@@ -977,3 +977,5 @@ Let's understant the code:
 A **graph** is a collection of **vertices (nodes)** and **edges** that connect pairs of nodes. A graph can be:
  - **Directed or Unidirected**: Whether the connections have a direction.
  - **Weighted or Unweighted**: Whether the edges have weights (values associated with them).
+
+Graphs are used in **networking**, **social network**, **pathfinding** and many more.
