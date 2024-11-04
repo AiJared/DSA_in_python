@@ -8,7 +8,7 @@ class Graph:
         if u in self.graph:
             self.graph[u].append(v)
         else:
-            self.graph[u] = self.graph[v]
+            self.graph[u] = [v]
     
     # method to display nodes of the graph
     def display_nodes(self):
