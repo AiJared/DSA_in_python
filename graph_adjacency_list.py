@@ -14,3 +14,7 @@ class Graph:
     def display_graph(self):
         for node in self.graph:
             print(f"{node} -> {self.graph[node]}")
+
+# Instantiate the the graph object
+graph = Graph()
+
