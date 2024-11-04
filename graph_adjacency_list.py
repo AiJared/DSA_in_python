@@ -10,3 +10,7 @@ class Graph:
         else:
             self.graph[u] = self.graph[v]
     
+    # method to display nodes of the graph
+    def display_nodes(self):
+        for node in self.graph:
+            print(f"{node} -> {self.graph[node]}")
