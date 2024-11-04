@@ -18,3 +18,9 @@ class Graph:
 # Instantiate the the graph object
 graph = Graph()
 
+# Add nodes to the graph
+graph.add_node(0, 1)
+graph.add_node(0, 2)
+graph.add_node(1, 2)
+graph.add_node(2, 0)
+graph.add_node(2, 3)
