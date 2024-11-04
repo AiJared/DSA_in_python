@@ -983,3 +983,6 @@ Graphs are used in **networking**, **social network**, **pathfinding** and many 
 ### Types of Graph Representation
  1. **Adjancency Matrix**: IS a 2D array where each cell **(i, j)** indicates whether there is an edge between the nodes **i** and **j**.
  2. **Adjancency List**: Is a dictionary where each key is a node the value is a list of adjacent nodes.
+
+Check out the implementation of a graph using the **adjancency list** in the file 
+**graph_adjacency_list.py**.
