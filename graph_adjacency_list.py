@@ -24,3 +24,7 @@ graph.add_node(0, 2)
 graph.add_node(1, 2)
 graph.add_node(2, 0)
 graph.add_node(2, 3)
+
+# Display the graph
+print("Graph Adjacency List: ")
+graph.display_graph()
