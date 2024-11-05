@@ -141,7 +141,7 @@ Big O can also be referred to as the **Upper Bound** of the algorithm. This mean
 Now these Big O notation variables for time compexity looks different in our two search algorithms that we have looked into so far, 
 that is, Linear Search and Binary Search respectively as shown below.
 
-For Linear Search it is just **O(n)**
+For Linear Search it is just **O(n)** which is **linear time** as I mentioned earlier.
 
 For Binary Search it is **O(log n)** - more on this later.
 
