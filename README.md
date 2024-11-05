@@ -59,7 +59,7 @@ If the above two are not met, then the algorithm is not correct.
 
 ## 2. Efficiency
 
-Efficiency helps us solve a problem *faster*.
+Efficiency helps us **solve** a problem **faster**.
 
 There are two measures when it comes to evaluating efficiency
 
@@ -69,7 +69,7 @@ There are two measures when it comes to evaluating efficiency
 **Time complexity** is the measure of how long it takes for a program
 to run.
 
-**Space complexity** - deals with the amount of *memory* taken up on the computer
+**Space complexity** - deals with the amount of **memory** taken up on the computer.
 
 Good algorithms need to balance between these two to be useful.
 For example, if an algorithm is extremely fast but consumes more memory than
