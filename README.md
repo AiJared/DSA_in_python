@@ -190,7 +190,7 @@ the numbers. Then we carry out **comparison operations** so that we can sort tho
 
 The runtimes we have looked at here are called **Polynomial Runtimes**. An algorithm is considered to have a polynomial runtime if for a given value of n, its worst case value is in the form of **O(n^k)** where k just means some value such as k = 2 (for quadratic runtime) k = 3 for a cubic runtime etc.
 
-Algorithms with an upper bound or a runtime with a Big O value that is Polynomial, are considerd efficient algorithms and likely to used in practise.
+Algorithms with an upper bound or a runtime with a Big O value that is **Polynomial**, are considerd efficient algorithms and likely to used in practise.
 
 Next let's look at algorithms that are considered to be inefficient. These algorithms are called **Exponential Algorithms**.
 
