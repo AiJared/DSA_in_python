@@ -2,7 +2,7 @@
 
 ## Introduction to Algorithms
 
-An algorithm is a set of steps taken by a program to perform a task. 
+An **algorithm** is a *set of steps* taken by a program to *perform a task*. 
 
 ### Algorithmic Thinking
 
