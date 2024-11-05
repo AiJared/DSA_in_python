@@ -95,11 +95,11 @@ time complexity.
 
 Meet **Binary Search**
 
-In this scenario, binary search can be implemented by guessing the number in the *middle* of the whole list
+In this case, binary search can be implemented by guessing the number in the **middle** of the whole list
 say 50 if the total number of the items in the whole list is 100 and our target number is 100.
 The person would then ask if 50 is the target number then I'll tell him that the number provided is too low.
-In this case the person will *eliminate* all the numbers from 1 to 50 because they are irrelevant. He will then
-pick another number in the middle of the remaining list and keep on eliminating untill he reaches to 100 which is 
+In this case the person will **eliminate** all the numbers from 1 to 50 because they are **irrelevant**. He will then
+pick another number in the middle of the remaining list and keep on eliminating until he reaches to 100 which is 
 the target number.
 
 Given that Linear Search requires trying out from the first number one all the way to the target number 100,
