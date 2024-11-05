@@ -105,7 +105,7 @@ the target number.
 Given that Linear Search requires trying out from the first number one all the way to the target number 100,
 it would take a lot of time to reach to the target number than Binary Search which works by guessing a middle
 number, then eliminating half of the numbers that are irrelevant to reaching the target number hence reaching
-the target number faster.
+the target number faster. This makes binary search a much better option over linear search when it comes to searching in a huge list and if the worst case scenario is that the number is the last one in the list. However, if the list is small or the target is our best case and by best case I mean it is the first value, then linear search becomes the best option, also for binary search to work, the list has to be sorted while linear search will still work either way. Generally though binary search is a much more better option than linear search and we will see that later.
 
 ## Time Complexity
 
