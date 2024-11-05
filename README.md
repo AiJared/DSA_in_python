@@ -25,7 +25,7 @@ This is what is called **algorithmic thinking**.
 
 The strategies used in the above scenario are examples of **search algorithms**. The strategy
 of starting from the beginning and adding one number after the other is called **linear search**
-or **sequential search** or just **simple search**.
+or **sequential search** or just **simple search**. The second strategy of picking the middle number then check if it is the correct one or if it is less or greater than the target number then removing half of the numbers that are not close to it while adjusting the middle number over and over until the target number is reached is called **binary search**.
 
 ### Example of an Algorithm (Linear Search)
 
