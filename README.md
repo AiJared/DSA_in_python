@@ -80,13 +80,13 @@ you have available then it is not a good algorithm.
 ### 1. Running Time
 
 The measure of the *amount of time* it took for an algorithm to run for a given set
-of values. It is used to define time compexity.
+of values. It is used to define **time compexity**.
 
 There are three ways we can measure how well an algorithm does
 
-a. **Best Case Scenario** - This is when the algorithm takes *less running time* to complete the task. 
-b. **Average Case Scenario** - Is the *average running time* an algorithm takes to complete the task.
-c. **Worst Case Scenario** - This is the *maximum amount of time* an algorithm can take to complete a task.
+ - a. **Best Case Scenario** - This is when the algorithm takes *less running time* to complete the task. 
+ - b. **Average Case Scenario** - Is the *average running time* an algorithm takes to complete the task.
+ - c. **Worst Case Scenario** - This is the *maximum amount of time* an algorithm can take to complete a task.
 
 While going back to the real life scenario of thinking of a number and letting other people guess 
 the correct number, we have already seen how Linear Search can be used to achieve it, now let's see how 
