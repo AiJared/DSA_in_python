@@ -121,22 +121,22 @@ grows when the number of sets increases.
 This brings us to what is known as **Big O**
 
 ### Big O
-This is the theoretical definition of the **complexity** of an algorithm as a *function of the size*.
+This is the theoretical definition of the **complexity** of an algorithm as a **function of the size**.
 
 It is simply a **notation** used to describe complexity. An example of complexity written in terms of Big O looks like
 
-**O(n)**.
+**O(n)** meaning linear time.
 
 The O comes from **Order of magnitude of complexity**. The complexity refers to the **exercise of measuring the efficiency**.
 
-Complexity is a relative measure, which means that to measure complexity of an algorithm, we need to do it with comparison to another algorithm.
+Complexity is a *relative measure*, which means that to measure complexity of an algorithm, we need to do it with *comparison to another algorithm*.
 
 With that in mind, Big O is a usefull notation for understanding both time and space complexities but only when
 comparing among algorithms that **solve the same problem**.
 
 The last bit **(n)** is the **function of the size**. This means that Big O measures complexity as the *input size increases*.
 
-Big O can also be referred to as the **Upper Bound** of the algorithm. This means that Big O also measures how the algorithm performs in the worst case scenario.
+Big O can also be referred to as the **Upper Bound** of the algorithm. This means that Big O also measures how the algorithm performs in the *worst case scenario*.
 
 Now these Big O notation variables for time compexity looks different in our two search algorithms that we have looked into so far, 
 that is, Linear Search and Binary Search respectively as shown below.
