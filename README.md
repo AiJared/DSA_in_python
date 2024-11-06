@@ -223,11 +223,19 @@ you reach one. For example the factorial of 3, 3!, is 3 * 2 * 1 = 6 which is the
 combinations we came up with for 3 cities, while the factorial of 4, 4!, is 4 * 3 * 2 * 1 = 24 
 which is number of combinations we came up with for 4 cities. 
 
-In solving the travelling salesman problem, the most efficient algorithm will have a **factorial/combinatorial runtime**. On low values of n algorithms of a factorial runtime may be used with larger values like 200! it would take longer than humans have been alive to solve the problem.
+In solving the travelling salesman problem, the most efficient algorithm will have a 
+**factorial/combinatorial runtime**. On low values of n algorithms of a factorial runtime 
+may be used with larger values like 200! it would take longer than humans have been alive to 
+solve the problem.
 
-Plotting the runtime on a graph, an algorithm that solves a problem with a factorial runtime has a worst case of **O(n!)**. Studying exponential runtimes like this one are usefull for two reasons
-1. In studying how to make those algorithms efficient, we develope strategies that are usefull across the board and can be potentially used to make even existing algorithms efficient.
-2. It is important to be aware of problems that take a long time to solve, knowing right a way that a problem can take longer than realistic amount of time to solve, helps you focus on other aspects of the problem.
+Plotting the runtime on a graph, an algorithm that solves a problem with a factorial runtime 
+has a worst case of **O(n!)**. Studying exponential runtimes like this one are usefull for two 
+reasons:
+ 1. In studying how to make those algorithms efficient, we develope strategies that are usefull 
+ across the board and can be potentially used to make even existing algorithms efficient.
+ 2. It is important to be aware of problems that take a long time to solve, knowing right a 
+ way that a problem can take longer than realistic amount of time to solve, helps you focus 
+ on other aspects of the problem.
 
 ## How to Determine the Worst Case Complexities of Different Algorithms
 
