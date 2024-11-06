@@ -207,9 +207,12 @@ it to 2 and try again. You'll keep on doing it and if you still haven't succeede
 second then you go back to the first dial, change it to 1 and start working with the second 
 dial again. The range of values you will have to go trough is from 00 to 99 which is 100 values. This can be generalized to 10^2 since there are 10 values on each dial raised to 2 dials. Searching trough each individual value until you reach to the correct one is a strategy known as **Brute Force**. Brute force algorithms have exponential runtimes. Here there are 2 dials so n = 2 and each has 10 values so then we can generalize this algorithm as *10 ^ n* where n is the number of dials. The reason why this algorithm is so inefficient is because with just one more dial on the lock, the number of operations increases siginificantly. With 3 dials, the number of combinations in the worst case scenario where the correct code is the last digit in the range is 10 ^ 3 or 1000 values. With an increase in the number of n the number of operations increases exponentially to a point where it becomes unsolvable in a realistic amount of time.
 
-The next class of Exponential Algorithms is best highlighted by a popular problem known as the **Traveling Salesman**.
+The next class of Exponential Algorithms is best highlighted by a popular problem known as 
+the **Traveling Salesman**.
 
-The problem statement goes like this; given a list of cities and the distance between each pair of cities, what is the shortest distance possible that travels each city and returns to the origin city?
+The problem statement goes like this; given a list of cities and the distance between each pair 
+of cities, what is the shortest distance possible that travels each city and returns to the 
+origin city?
 
 Now assuming that we have 3 cities A B and C, we have 6 possible routes, that is, A-B-C,A-C-B, B-A-C, B-C-A, C-A-B, C-B-A. From those 6 routes, we can determmine the shortest. If we increase them to 4 cities we jump to 24 combinations. The mathematical explanation that defines this is called a **Factorial** and it is denoted as **n!**. Factorials are basically n(n-1)(n-2)...(2)(1), that is n times n - 1 repeated until you reach one. For example the factorial of 3, 3!, is 3 * 2 * 1 = 6 which is the number of combinations we came up with for 3 cities, while the factorial of 4, 4!, is 4 * 3 * 2 * 1 = 24 which is number of combinations we came up with for 4 cities. 
 
