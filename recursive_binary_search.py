@@ -1,5 +1,6 @@
-# This one will behave a bit differently that the first binary search function.
-# Instead of returning an index value, it will return a True value if it exists and False if it does not
+# This one will behave a bit differently than the first binary search function.
+# Instead of returning an index value, it will return a True value if it exists and 
+# False if it does not
 def recursive_binary_search(list, target):
     if len(list) == 0:
         return False
