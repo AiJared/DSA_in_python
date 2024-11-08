@@ -285,7 +285,7 @@ book which required another lookup in the same book which required another looku
 book. The recursive binary search function works in a similar manner.
 
 ### Recursion and Space Complexity
-A <b>recursive function</b> is the one that calls itself. A good example is the recursive binary search we created. The <b>recursive_binary_search</b> function called itself inside the body of the function. When writing a recursive function you always need a **stopping condition** and typically we always start the body of the recursive function with a stopping condition. It's common to call the stopping condition a <b>base case</b>.
+A **recursive function** is the one that *calls itself*. A good example is the recursive binary search we created. The <b>recursive_binary_search</b> function called itself inside the body of the function. When writing a recursive function you always need a **stopping condition** and typically we always start the body of the recursive function with a stopping condition. It's common to call the stopping condition a <b>base case</b>.
 
 In the recursive binary search function we created, we had two stopping conditions
 
