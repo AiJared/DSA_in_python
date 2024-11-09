@@ -291,7 +291,7 @@ In the recursive binary search function we created, we had two stopping conditio
 
 1. What the function should **return** if the list is **empty**.
 
-2. If the value at the midpoint is the same as the target, then we'll return True.
+2. If the value at the midpoint is the same as the target, then we'll **return True**.
 
 With the above two stopping conditions, we have covered all the possible paths of logic through the search algorithm, you can either find the value or you don't.
 
