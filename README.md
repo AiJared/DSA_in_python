@@ -289,7 +289,7 @@ A **recursive function** is the one that *calls itself*. A good example is the r
 
 In the recursive binary search function we created, we had two stopping conditions
 
-1. What the function should return if the list is empty.
+1. What the function should **return** if the list is **empty**.
 
 2. If the value at the midpoint is the same as the target, then we'll return True.
 
