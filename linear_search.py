@@ -26,3 +26,10 @@ verify(result)
 
 result = linear_search(numbers, 6)
 verify(result)
+
+# A Class to demonstrate linear search
+class LinearSearch:
+    # constructor to initialize the list of values
+    def __init__(self, lst):
+        self.lst = lst
+    
