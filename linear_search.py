@@ -35,6 +35,10 @@ class LinearSearch:
     
     # method to actually do linear search
     def linear_search(self, target):
+        """
+        Search for the value in the list starting from the first index value.
+        If the value is in the list return its index value.
+        """
         for i in range(0, len(self.lst)):
             if self.lst[i] == target:
                 return i
