@@ -60,3 +60,6 @@ search = LinearSearch(numbers)
 # Implement the linear_search() method to a value that exists in the list
 search_result = search.linear_search(4)
 search.verify(search_result)
+# Implement the linear_search() method to a value that does not exist in the list
+search_result2 = search.linear_search(60)
+search.verify(search_result2)
