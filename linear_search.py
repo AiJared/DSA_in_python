@@ -27,6 +27,7 @@ verify(result)
 result = linear_search(numbers, 6)
 verify(result)
 
+# Linear Search can also be created inside a class as demonstrated in the class below
 # A Class to demonstrate linear search
 class LinearSearch:
     # constructor to initialize the list of values
