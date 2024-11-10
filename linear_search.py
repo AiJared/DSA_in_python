@@ -57,3 +57,6 @@ class LinearSearch:
 # Instantiate the LinearSearch object
 numbers = [1,2,12,3,4,5,34,20,15,9]
 search = LinearSearch(numbers)
+# Implement the linear_search() method to a value that exists in the list
+search_result = search.linear_search(4)
+search.verify(search_result)
