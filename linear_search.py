@@ -33,3 +33,10 @@ class LinearSearch:
     def __init__(self, lst):
         self.lst = lst
     
+    # method to actually do linear search
+    def linear_search(self, target):
+        for i in range(0, len(self.lst)):
+            if self.lst[i] == target:
+                return i
+        return None
+    
