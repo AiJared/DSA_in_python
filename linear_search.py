@@ -53,3 +53,7 @@ class LinearSearch:
             print("Target found at index: ", index)
         else:
             print("Target not found!")
+
+# Instantiate the LinearSearch object
+numbers = [1,2,12,3,4,5,34,20,15,9]
+search = LinearSearch(numbers)
