@@ -71,3 +71,5 @@ numbers = [1,2,4,6,7,9,10,13,17]
 # instantiate BinarySearch object
 binarysearch = BinarySearch(numbers)
 
+# implement binarysearch object on a target value that exists
+rslt = binarysearch(6)
