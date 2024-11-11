@@ -67,3 +67,7 @@ class BinarySearch:
 
 # list of numbers
 numbers = [1,2,4,6,7,9,10,13,17]
+
+# instantiate BinarySearch object
+binarysearch = BinarySearch(numbers)
+
