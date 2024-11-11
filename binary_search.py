@@ -64,3 +64,6 @@ class BinarySearch:
             print("Target found at index: ", index)
         else:
             print("target not found!")
+
+# list of numbers
+numbers = [1,2,4,6,7,9,10,13,17]
