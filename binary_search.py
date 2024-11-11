@@ -72,4 +72,9 @@ numbers = [1,2,4,6,7,9,10,13,17]
 binarysearch = BinarySearch(numbers)
 
 # implement binarysearch object on a target value that exists
-rslt = binarysearch(6)
+rslt = binarysearch.search(6)
+binarysearch.verify(rslt)
+
+# implemet binarysearch object on a target value that doesn't exist
+rslt2 = binarysearch.search(12)
+binarysearch.verify(rslt2)
