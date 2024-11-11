@@ -40,5 +40,21 @@ class BinarySearch:
     def __init__(self, lst):
         self.lst = lst
     
-    
+    # method that actually carries out binary search
+    def search(self, target):
+        first = 0
+        last = len(self.lst) - 1
+
+        # determine the midpoint of the list
+        while first <= last:
+            midpoint = (first + last) // 2
+
+            # check if the midpoint is the target value
+            if self.lst[midpoint] == target:
+                return midpoint
+            elif self.lst[midpoint] < target:
+                first = midpoint + 1
+            else:
+                last = midpoint - 1
+        return None
     
