@@ -33,3 +33,12 @@ verify(result)
 
 result = binary_search(numbers, 6)
 verify(result)
+
+# Binary Search Algorithm cal also be implemented using a class as show below
+class BinarySearch:
+    # Initialize the list of values
+    def __init__(self, lst):
+        self.lst = lst
+    
+    
+    
