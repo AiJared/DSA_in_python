@@ -58,3 +58,9 @@ class BinarySearch:
                 last = midpoint - 1
         return None
     
+    # method to verify the results of the search method above
+    def verify(self, index):
+        if index is not None:
+            print("Target found at index: ", index)
+        else:
+            print("target not found!")
