@@ -61,3 +61,6 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Instantiate the RecursiveBinarySearch object
 re_binary_search = RecursiveBinarySearch(nums)
 
+# Implement re_binary_search object on a target value that exists on the list
+rslt = re_binary_search.recursive_binary_search(4)
+re_binary_search.verify(rslt)
