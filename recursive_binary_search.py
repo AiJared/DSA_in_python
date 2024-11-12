@@ -64,3 +64,7 @@ re_binary_search = RecursiveBinarySearch(nums)
 # Implement re_binary_search object on a target value that exists on the list
 rslt = re_binary_search.recursive_binary_search(4)
 re_binary_search.verify(rslt)
+
+# Implement re_binary_search object on a target value that does not exist on the list
+rslt2 = re_binary_search.recursive_binary_search(12)
+re_binary_search.verify(rslt2)
