@@ -50,3 +50,8 @@ class RecursiveBinarySearch:
                     return recursive_binary_search(self.lst[midpoint+1:], target)
                 else:
                     return recursive_binary_search(self.lst[:midpoint], target)
+    
+    # Method to verify the results of the recursive_binary_search() method above
+    def verify(self, result):
+        print("Target found: ", result)
+
