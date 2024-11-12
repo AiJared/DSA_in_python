@@ -32,3 +32,9 @@ class RecursiveBinarySearch:
     def __init__(self, lst):
         self.lst = lst
     
+    # Method that carries out the recursive binary search
+    def recursive_binary_search(self, target):
+        # Return False if the list is empty
+        if len(self.lst) == 0:
+            return False
+        
