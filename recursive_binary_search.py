@@ -37,4 +37,7 @@ class RecursiveBinarySearch:
         # Return False if the list is empty
         if len(self.lst) == 0:
             return False
-        
+        else:
+            # Determine the midpoint then compare it to the midpoint and adjust from there 
+            # depending on whether the target is less or greater than the midpoint value
+            midpoint = len(self.lst) // 2
