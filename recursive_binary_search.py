@@ -44,6 +44,8 @@ class RecursiveBinarySearch:
             if self.lst[midpoint] == target:
                 return True
             else:
+                # Recursively adjust the midpoint depending on the size of the midpoint
+                # in comparison to the midpoint
                 if self.lst[midpoint] < target:
                     return recursive_binary_search(self.lst[midpoint+1:], target)
                 else:
