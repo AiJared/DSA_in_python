@@ -25,3 +25,10 @@ verify(result)
 
 result = recursive_binary_search(numbers, 6)
 verify(result) 
+
+# Recursive Binary Search can be implemented inside a class
+class RecursiveBinarySearch:
+    # Initialize the list of values
+    def __init__(self, lst):
+        self.lst = lst
+    
