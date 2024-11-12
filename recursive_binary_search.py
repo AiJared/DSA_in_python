@@ -58,3 +58,6 @@ class RecursiveBinarySearch:
 # Create a list of numbers
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+# Instantiate the RecursiveBinarySearch object
+re_binary_search = RecursiveBinarySearch(nums)
+
